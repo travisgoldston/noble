@@ -61,7 +61,7 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-site flex-col gap-2 px-6 py-5 text-xs text-white/45 sm:flex-row sm:justify-between">
-          <p>© 2026 NOBLE. All rights reserved.</p>
+          <p>© 2026 Noble. All rights reserved.</p>
           <p>nobleseo.co</p>
         </div>
       </div>

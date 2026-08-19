@@ -4,7 +4,7 @@ import { AssessmentForm } from "@/components/AssessmentForm";
 export const metadata: Metadata = {
   title: "Get a Search Assessment",
   description:
-    "Request a practical search assessment from NOBLE. We will look at the Google presence and tell you whether it makes sense to work together.",
+    "Request a practical search assessment from Noble. We will look at the Google presence and tell you whether it makes sense to work together.",
 };
 
 export default function ContactPage() {
@@ -20,7 +20,7 @@ export default function ContactPage() {
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-stone">
             Share enough context to understand the business and the search
-            challenge. If NOBLE can help, the next conversation is about
+            challenge. If Noble can help, the next conversation is about
             priorities, not a pitch deck.
           </p>
         </div>

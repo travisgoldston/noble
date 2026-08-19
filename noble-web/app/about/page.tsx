@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Button } from "@/components/Button";
 import { RelatedLinks } from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "NOBLE is Travis Goldston's search practice. Small on purpose. The biggest impact is helping small businesses get found.",
+    "Noble is Travis and Victoria Goldston's search practice. Small on purpose. Your story matters more than ours.",
 };
 
 export default function AboutPage() {
@@ -17,10 +18,10 @@ export default function AboutPage() {
             About
           </p>
           <h1 className="font-serif mt-4 max-w-[14ch] text-5xl tracking-tightest md:text-6xl">
-            Your story matters more than mine.
+            Your story matters more than ours.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-stone">
-            People like to know who they are working with. I will share that.
+            People like to know who they are working with. We will share that.
             The point of the page is still you: the business, the goals, and
             what “good” looks like from your side.
           </p>
@@ -28,31 +29,38 @@ export default function AboutPage() {
       </section>
 
       <section className="py-16">
-        <div className="mx-auto max-w-site px-6">
-          <article className="max-w-3xl">
+        <div className="mx-auto grid max-w-site items-start gap-12 px-6 lg:grid-cols-[0.9fr_1.1fr]">
+          <figure className="overflow-hidden rounded-xl border border-mist shadow-card">
+            <Image
+              src="/travis-and-victoria.png"
+              alt="Travis and Victoria"
+              width={720}
+              height={720}
+              className="h-auto w-full"
+              priority
+            />
+          </figure>
+          <article>
             <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-              Who I am
+              Who we are
             </p>
             <h2 className="font-serif mt-3 text-3xl tracking-tight md:text-4xl">
-              Not an agency. One person who wants the work to matter.
+              Not an agency. A husband and wife who want small businesses found.
             </h2>
             <p className="mt-5 text-stone">
-              I am Travis. NOBLE is me. Strategy, writing, the website, the
-              listings. When you work with NOBLE, you work with the person
-              doing the work. No handoffs. No retelling your story to someone
-              new.
+              We are Travis and Victoria. Noble is the two of us. We do the work
+              ourselves: the strategy, the writing, the website, the listings.
+              When you work with us, you work with the people actually doing the
+              work. No handoffs, no repeating your story to someone new.
             </p>
             <p className="mt-4 text-stone">
-              I like making the most impact I can with the hours I have. The
-              biggest impact I can make is helping small businesses get found.
-              A good operator should not lose the job because a louder website
-              showed up first.
-            </p>
-            <p className="mt-4 text-stone">
-              I started this after watching that happen too many times. They
-              were strong at the work. Another business showed up in Google,
-              not because it was better, because it was easier to find. I am
-              here to close that gap, not to sell a package you do not need.
+              We started this because we saw too many good businesses invisible
+              online. They were great at what they did, but when someone
+              searched for their service, another business showed up, not
+              because that business was better, but because they were easier to
+              find. We wanted to help level that. We&apos;re not here to sell
+              you a package you don&apos;t need. We&apos;re here to help you get
+              found so you can do more of what you&apos;re already good at.
             </p>
           </article>
         </div>
@@ -68,9 +76,9 @@ export default function AboutPage() {
               Direct contact. Plain language. No runaround.
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-stone">
-              You will have my contact. Text or call when something is on your
-              mind. I do not use a ticket queue. I explain the work in plain
-              English. If something is not working, I say so and adjust.
+              You will have our contact. Text or call when something is on your
+              mind. We do not use a ticket queue. We explain the work in plain
+              English. If something is not working, we say so and adjust.
             </p>
           </article>
           <article className="rounded-xl border border-mist bg-white p-8">
@@ -81,10 +89,10 @@ export default function AboutPage() {
               Show up. Do it right. Treat people fairly.
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-stone">
-              That is the bar I learned from my dad, a Texas master electrician
-              for more than thirty years. I try to carry the same craft into
-              search work. The moment that matters is when the right customer
-              finds you and decides to call.
+              That is the bar Travis learned from his dad, a Texas master
+              electrician for more than thirty years. We try to carry the same
+              craft into search work. The moment that matters is when the right
+              customer finds you and decides to call.
             </p>
           </article>
         </div>
@@ -100,15 +108,16 @@ export default function AboutPage() {
           </h2>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             <div className="rounded-xl border border-mist p-6">
-              <p className="font-medium">Who is behind NOBLE?</p>
+              <p className="font-medium">Who is behind Noble?</p>
               <p className="mt-2 text-sm text-stone">
-                Travis Goldston. I run the practice and do the work myself.
+                Travis and Victoria, a husband and wife team. We run the
+                practice and do the work ourselves.
               </p>
             </div>
             <div className="rounded-xl border border-mist p-6">
               <p className="font-medium">Are you an agency?</p>
               <p className="mt-2 text-sm text-stone">
-                No. Intentionally small. You work with me directly.
+                No. Intentionally small. You work with us directly.
               </p>
             </div>
             <div className="rounded-xl border border-mist p-6">
@@ -122,7 +131,7 @@ export default function AboutPage() {
               <p className="font-medium">Why so small?</p>
               <p className="mt-2 text-sm text-stone">
                 Capacity stays limited so the work stays direct. No junior
-                handoffs. No package you do not need. The impact is the point.
+                handoffs. No package you do not need.
               </p>
             </div>
           </div>

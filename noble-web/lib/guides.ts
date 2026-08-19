@@ -55,7 +55,7 @@ export const guides: Guide[] = [
       },
     ],
     example: {
-      heading: "How NOBLE would fix a Google Search problem",
+      heading: "How Noble would fix a Google Search problem",
       setup:
         "A Fort Worth roofer’s site ranks for the company name and nothing else. People searching “roof leak Fort Worth” land on national lead sites and a competitor with a simple service page.",
       steps: [
@@ -112,7 +112,7 @@ export const guides: Guide[] = [
       },
     ],
     example: {
-      heading: "How NOBLE would fix a Local Pack problem",
+      heading: "How Noble would fix a Local Pack problem",
       setup:
         "A McKinney plumber used to sit in the pack for “water heater repair near me.” New companies near Adriatica and Trinity Falls filled in. The old profile still has one category and a service area that lists half of North Texas.",
       steps: [
@@ -169,7 +169,7 @@ export const guides: Guide[] = [
       },
     ],
     example: {
-      heading: "How NOBLE would fix a branded search problem",
+      heading: "How Noble would fix a branded search problem",
       setup:
         "A Plano dentist gets referrals from Legacy West offices. People Google the name and find an old suite number, Saturday hours that are no longer true, and a second listing from a previous partner.",
       steps: [
@@ -226,7 +226,7 @@ export const guides: Guide[] = [
       },
     ],
     example: {
-      heading: "How NOBLE would fix a Google Maps problem",
+      heading: "How Noble would fix a Google Maps problem",
       setup:
         "An Irving company in Las Colinas has the pin in the wrong building. Travelers leaving the Toyota Music Factory search Maps, tap the listing, and get directions to a vacant suite.",
       steps: [
@@ -250,7 +250,7 @@ export const guides: Guide[] = [
         heading: "What it is",
         body: [
           "AI powered search is any result where software writes or assembles an answer instead of only listing links. It still depends on sources: your website, your Maps listing, reviews, and other public facts.",
-          "NOBLE does not promise that an AI tool will name you. Nobody honest can. The useful work is making the business easy to understand so those systems have something solid to use.",
+          "Noble does not promise that an AI tool will name you. Nobody honest can. The useful work is making the business easy to understand so those systems have something solid to use.",
         ],
       },
       {
@@ -283,7 +283,7 @@ export const guides: Guide[] = [
       },
     ],
     example: {
-      heading: "How NOBLE would fix an AI powered search problem",
+      heading: "How Noble would fix an AI powered search problem",
       setup:
         "Two Arlington HVAC companies look the same online. Stock copy. “Serving DFW.” Someone asks a chat tool who to call for a same day repair near Globe Life Field. Neither business is specific enough to cite.",
       steps: [
@@ -340,7 +340,7 @@ export const guides: Guide[] = [
       },
     ],
     example: {
-      heading: "How NOBLE would fix a reviews and entities problem",
+      heading: "How Noble would fix a reviews and entities problem",
       setup:
         "A Denton shop on the Square has three spellings of the name, a Facebook page that is current, and a Google listing that still uses the previous owner’s phone. Reviews say “Great!” and never mention downtown Denton.",
       steps: [

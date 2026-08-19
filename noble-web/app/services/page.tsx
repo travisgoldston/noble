@@ -6,7 +6,7 @@ import { capabilities, locations, searchSurfaces } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "SEO, local SEO, Google Business Profile, technical SEO, and AI search visibility from NOBLE. Plus plain English guides to Google Search, the Local Pack, Maps, branded search, reviews, and AI powered search.",
+    "SEO, local SEO, Google Business Profile, technical SEO, and AI search visibility from Noble. Plus plain English guides to Google Search, the Local Pack, Maps, branded search, reviews, and AI powered search.",
 };
 
 export default function ServicesPage() {
@@ -44,7 +44,7 @@ export default function ServicesPage() {
               <p className="mt-4 max-w-2xl text-stone">{item.body}</p>
               <div className="mt-8 max-w-3xl rounded-xl border border-mist bg-cream p-7">
                 <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-                  How NOBLE would fix it
+                  How Noble would fix it
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-stone">{item.exampleSetup}</p>
                 <p className="mt-3 text-sm leading-relaxed text-stone">{item.exampleFix}</p>

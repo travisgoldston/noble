@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "@/components/Button";
 import { BudgetocityFeature } from "@/components/BudgetocityFeature";
 import { HeroQuiz } from "@/components/HeroQuiz";
@@ -22,7 +23,7 @@ export default function HomePage() {
               Dallas-Fort Worth SEO and Growth for Businesses That Want to Be Found.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-stone md:text-xl">
-              NOBLE builds SEO, local search, Google Business Profile, and
+              Noble builds SEO, local search, Google Business Profile, and
               AI search visibility into a practical growth system for small
               businesses with real ambition and realistic budgets.
             </p>
@@ -110,7 +111,7 @@ export default function HomePage() {
             Search work connected to business outcomes.
           </h2>
           <p className="mt-5 max-w-2xl text-stone">
-            NOBLE does not sell a pile of disconnected tactics. Each service
+            Noble does not sell a pile of disconnected tactics. Each service
             supports a clearer, more useful search presence.
           </p>
           <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -141,7 +142,7 @@ export default function HomePage() {
       <section className="bg-ink py-20 text-white md:py-24">
         <div className="mx-auto max-w-site px-6">
           <p className="text-[0.72rem] font-medium tracking-[0.22em] text-white/50 uppercase">
-            How NOBLE works
+            How Noble works
           </p>
           <h2 className="font-serif mt-4 max-w-[14ch] text-4xl tracking-tightest md:text-5xl">
             SEO is an operating system, not a one time tweak.
@@ -236,33 +237,40 @@ export default function HomePage() {
       </section>
 
       <section id="about" className="border-y border-mist bg-cream py-20 md:py-24">
-        <div className="mx-auto grid max-w-site gap-12 px-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
+        <div className="mx-auto grid max-w-site items-center gap-12 px-6 lg:grid-cols-[0.9fr_1.1fr]">
+          <figure className="overflow-hidden rounded-xl border border-mist shadow-card">
+            <Image
+              src="/travis.png"
+              alt="Travis Goldston"
+              width={900}
+              height={1125}
+              className="h-auto w-full object-cover"
+            />
+          </figure>
           <div>
             <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
               About
             </p>
             <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
-              The biggest impact is helping small businesses get found.
+              Your story matters more than mine.
             </h2>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-stone">
-              I am Travis. I like making the most impact I can with the hours I
-              have. That impact is not another layer of agency process. It is
-              helping a small business show up when a real customer is ready to
-              choose.
+              I am Travis. Noble is not a full agency. Capacity stays small on
+              purpose, so the work stays direct, and the emphasis stays on you.
             </p>
+            <aside className="mt-8 rounded-xl border border-mist bg-white p-7">
+              <p className="font-serif text-2xl tracking-tight">No bloat. No layers.</p>
+              <p className="mt-3 text-sm leading-relaxed text-stone">
+                If we work together, you work with me, not an account team
+                handing notes down a chain. The first conversation is about fit.
+              </p>
+              <div className="mt-6">
+                <Button href="/about" variant="secondary">
+                  About Noble
+                </Button>
+              </div>
+            </aside>
           </div>
-          <aside className="rounded-xl border border-mist bg-white p-7">
-            <p className="font-serif text-2xl tracking-tight">No bloat. No layers.</p>
-            <p className="mt-3 text-sm leading-relaxed text-stone">
-              If we work together, you work with me, not an account team
-              handing notes down a chain. The first conversation is about fit.
-            </p>
-            <div className="mt-6">
-              <Button href="/about" variant="secondary">
-                About NOBLE
-              </Button>
-            </div>
-          </aside>
         </div>
       </section>
 

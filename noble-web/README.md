@@ -1,4 +1,4 @@
-# NOBLE | SEO
+# Noble | SEO
 
 Next.js (App Router) site for [nobleseo.co](https://nobleseo.co).
 

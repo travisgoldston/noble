@@ -19,17 +19,17 @@ const newsreader = Newsreader({
 export const metadata: Metadata = {
   metadataBase: new URL("https://nobleseo.co"),
   title: {
-    default: "NOBLE | SEO",
-    template: "%s | NOBLE",
+    default: "Noble | SEO",
+    template: "%s | Noble",
   },
   description:
     "Dallas-Fort Worth SEO and growth for businesses that want to be found. SEO, local search, Google Business Profile, and AI search visibility, without agency overhead.",
   openGraph: {
-    title: "NOBLE | SEO",
+    title: "Noble | SEO",
     description:
       "Dallas-Fort Worth SEO and growth for businesses that want to be found. Practical SEO for small businesses with real ambition and realistic budgets.",
     url: "https://nobleseo.co",
-    siteName: "NOBLE",
+    siteName: "Noble",
     type: "website",
   },
   icons: {
@@ -42,8 +42,8 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Organization",
-      name: "NOBLE",
-      alternateName: "NOBLE SEO",
+      name: "Noble",
+      alternateName: "Noble SEO",
       url: "https://nobleseo.co",
       email: "travis@nobleseo.co",
       founder: { "@type": "Person", name: "Travis Goldston" },
@@ -53,7 +53,7 @@ const jsonLd = {
     },
     {
       "@type": "WebSite",
-      name: "NOBLE",
+      name: "Noble",
       url: "https://nobleseo.co",
     },
   ],

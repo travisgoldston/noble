@@ -22,7 +22,7 @@ export default function LocationsPage() {
             DFW cities we work in.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-stone">
-            NOBLE helps local businesses get found on Google across North Texas.
+            Noble helps local businesses get found on Google across North Texas.
             These pages are a starting set, not a claim that we only work in
             eight zip codes.
           </p>
