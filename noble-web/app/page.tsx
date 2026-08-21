@@ -13,7 +13,7 @@ import {
 export default function HomePage() {
   return (
     <>
-      <section className="relative overflow-hidden bg-[radial-gradient(circle_at_88%_0%,rgba(17,80,54,0.10),transparent_36%),linear-gradient(180deg,#f8f9fa_0%,#ffffff_72%)]">
+      <section className="relative overflow-hidden bg-[radial-gradient(circle_at_88%_0%,rgba(91,184,255,0.28),transparent_40%),radial-gradient(circle_at_12%_100%,rgba(58,86,228,0.10),transparent_42%),linear-gradient(180deg,#f8f9fa_0%,#ffffff_72%)]">
         <div className="mx-auto grid max-w-site items-start gap-12 px-6 py-16 md:py-24 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div>
             <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">

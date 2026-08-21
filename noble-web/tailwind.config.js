@@ -8,15 +8,15 @@ module.exports = {
     extend: {
       colors: {
         forest: {
-          DEFAULT: "#115036",
-          deep: "#0D3B22",
-          mist: "#E7F0EB",
+          DEFAULT: "#3A56E4",
+          deep: "#2B42C7",
+          mist: "#E8F3FF",
         },
         ink: "#0A111A",
         cream: "#F8F9FA",
         paper: "#FFFFFF",
         stone: "#5C6770",
-        mist: "#E6E9E7",
+        mist: "#E3E8F2",
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)", "system-ui", "sans-serif"],
