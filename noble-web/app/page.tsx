@@ -49,16 +49,22 @@ export default function HomePage() {
               href="https://budgetocity.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="block"
-              aria-label="Budgetocity"
+              className="flex flex-col items-center"
             >
               <img
                 src="/budgetocity-logo.png"
-                alt="Budgetocity"
+                alt=""
                 width={88}
                 height={88}
                 className="h-[88px] w-[88px] rounded-full object-contain"
               />
+              <span
+                className="mt-2.5 font-sans text-[0.7rem] font-medium tracking-[0.22em] uppercase"
+                style={{ color: "#77C578" }}
+              >
+                Budgetocity
+                <sup className="ml-0.5 text-[0.45rem] tracking-normal">TM</sup>
+              </span>
             </a>
             <span className="hidden h-px w-24 bg-mist sm:block" aria-hidden="true" />
           </div>
