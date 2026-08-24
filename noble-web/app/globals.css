@@ -18,8 +18,8 @@
   --color-paper: #ffffff;
   --color-stone: #5c6770;
   --color-mist: #e3e8f2;
-  --font-sans: var(--font-geist-sans);
-  --font-serif: var(--font-newsreader);
+  --font-sans: var(--font-montserrat);
+  --font-serif: var(--font-montserrat);
 }
 
 html {
@@ -29,7 +29,7 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), system-ui, sans-serif;
+  font-family: var(--font-sans), Montserrat, system-ui, sans-serif;
 }
 
 ::selection {
@@ -38,7 +38,7 @@ body {
 }
 
 .serif-display {
-  font-family: var(--font-serif), Georgia, serif;
+  font-family: var(--font-montserrat), Montserrat, system-ui, sans-serif;
 }
 
 @media (prefers-reduced-motion: reduce) {

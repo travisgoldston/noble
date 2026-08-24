@@ -19,8 +19,8 @@ module.exports = {
         mist: "#E3E8F2",
       },
       fontFamily: {
-        sans: ["var(--font-geist-sans)", "system-ui", "sans-serif"],
-        serif: ["var(--font-newsreader)", "Georgia", "Times New Roman", "serif"],
+        sans: ["var(--font-montserrat)", "Montserrat", "system-ui", "sans-serif"],
+        serif: ["var(--font-montserrat)", "Montserrat", "system-ui", "sans-serif"],
       },
       letterSpacing: {
         tightest: "-0.045em",
