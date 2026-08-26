@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { Button } from "@/components/Button";
 import { RelatedLinks } from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Noble is Travis and Victoria Goldston's search practice. Small on purpose. Your story matters more than ours.",
+    "Noble is a small search practice. Your story matters more than ours.",
 };
 
 export default function AboutPage() {
@@ -29,29 +28,19 @@ export default function AboutPage() {
       </section>
 
       <section className="py-16">
-        <div className="mx-auto grid max-w-site items-start gap-12 px-6 lg:grid-cols-[0.9fr_1.1fr]">
-          <figure className="overflow-hidden rounded-xl border border-mist shadow-card">
-            <Image
-              src="/travis-and-victoria.png"
-              alt="Travis and Victoria"
-              width={720}
-              height={720}
-              className="h-auto w-full"
-              priority
-            />
-          </figure>
-          <article>
+        <div className="mx-auto max-w-site px-6">
+          <article className="max-w-3xl">
             <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
               Who we are
             </p>
             <h2 className="font-serif mt-3 text-3xl tracking-tight md:text-4xl">
-              Not an agency. A husband and wife who want small businesses found.
+              Not an agency. A small practice that wants businesses found.
             </h2>
             <p className="mt-5 text-stone">
-              We are Travis and Victoria. Noble is the two of us. We do the work
-              ourselves: the strategy, the writing, the website, the listings.
-              When you work with us, you work with the people actually doing the
-              work. No handoffs, no repeating your story to someone new.
+              We do the work ourselves: the strategy, the writing, the website,
+              the listings. When you work with us, you work with the people
+              actually doing the work. No handoffs, no repeating your story to
+              someone new.
             </p>
             <p className="mt-4 text-stone">
               We started this because we saw too many good businesses invisible
@@ -89,10 +78,8 @@ export default function AboutPage() {
               Show up. Do it right. Treat people fairly.
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-stone">
-              That is the bar Travis learned from his dad, a Texas master
-              electrician for more than thirty years. We try to carry the same
-              craft into search work. The moment that matters is when the right
-              customer finds you and decides to call.
+              That is the bar we hold. The moment that matters is when the
+              right customer finds you and decides to call.
             </p>
           </article>
         </div>
@@ -110,8 +97,8 @@ export default function AboutPage() {
             <div className="rounded-xl border border-mist p-6">
               <p className="font-medium">Who is behind Noble?</p>
               <p className="mt-2 text-sm text-stone">
-                Travis and Victoria, a husband and wife team. We run the
-                practice and do the work ourselves.
+                A small specialist practice. We run it and do the work
+                ourselves.
               </p>
             </div>
             <div className="rounded-xl border border-mist p-6">

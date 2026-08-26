@@ -33,8 +33,8 @@ export default function ContactPage() {
             Prefer to write directly?
           </p>
           <p className="mt-2">
-            <a className="text-forest hover:text-forest-deep" href="mailto:travis@nobleseo.co">
-              travis@nobleseo.co
+            <a className="text-forest hover:text-forest-deep" href="mailto:hello@nobleseo.co">
+              hello@nobleseo.co
             </a>
           </p>
           <p className="mt-6 text-sm text-stone">

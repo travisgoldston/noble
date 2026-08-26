@@ -39,8 +39,7 @@ const jsonLd = {
       name: "Noble",
       alternateName: "Noble SEO",
       url: "https://nobleseo.co",
-      email: "travis@nobleseo.co",
-      founder: { "@type": "Person", name: "Travis Goldston" },
+      email: "hello@nobleseo.co",
       description:
         "Specialist search growth practice for local SEO, Google Business Profile, technical SEO, and AI search visibility.",
       sameAs: socialLinks.map((item) => item.href),

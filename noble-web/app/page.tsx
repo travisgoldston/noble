@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Button } from "@/components/Button";
 import { BudgetocityFeature } from "@/components/BudgetocityFeature";
 import { HeroQuiz } from "@/components/HeroQuiz";
@@ -243,40 +242,31 @@ export default function HomePage() {
       </section>
 
       <section id="about" className="border-y border-mist bg-cream py-20 md:py-24">
-        <div className="mx-auto grid max-w-site items-center gap-12 px-6 lg:grid-cols-[0.9fr_1.1fr]">
-          <figure className="overflow-hidden rounded-xl border border-mist shadow-card">
-            <Image
-              src="/travis.png"
-              alt="Travis Goldston"
-              width={900}
-              height={1125}
-              className="h-auto w-full object-cover"
-            />
-          </figure>
+        <div className="mx-auto grid max-w-site gap-12 px-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
           <div>
             <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
               About
             </p>
             <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
-              Your story matters more than mine.
+              Your story matters more than ours.
             </h2>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-stone">
-              I am Travis. Noble is not a full agency. Capacity stays small on
-              purpose, so the work stays direct, and the emphasis stays on you.
+              Noble is not a full agency. Capacity stays small on purpose, so
+              the work stays direct, and the emphasis stays on you.
             </p>
-            <aside className="mt-8 rounded-xl border border-mist bg-white p-7">
-              <p className="font-serif text-2xl tracking-tight">No bloat. No layers.</p>
-              <p className="mt-3 text-sm leading-relaxed text-stone">
-                If we work together, you work with me, not an account team
-                handing notes down a chain. The first conversation is about fit.
-              </p>
-              <div className="mt-6">
-                <Button href="/about" variant="secondary">
-                  About Noble
-                </Button>
-              </div>
-            </aside>
           </div>
+          <aside className="rounded-xl border border-mist bg-white p-7">
+            <p className="font-serif text-2xl tracking-tight">No bloat. No layers.</p>
+            <p className="mt-3 text-sm leading-relaxed text-stone">
+              If we work together, you work with us, not an account team
+              handing notes down a chain. The first conversation is about fit.
+            </p>
+            <div className="mt-6">
+              <Button href="/about" variant="secondary">
+                About Noble
+              </Button>
+            </div>
+          </aside>
         </div>
       </section>
 

@@ -8,7 +8,7 @@ export function AssessmentForm() {
   function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setStatus(
-      "Thank you. This form is not connected yet. Email travis@nobleseo.co and I will follow up."
+      "Thank you. This form is not connected yet. Email hello@nobleseo.co and I will follow up."
     );
     event.currentTarget.reset();
   }

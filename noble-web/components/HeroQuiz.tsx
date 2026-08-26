@@ -50,8 +50,8 @@ export function HeroQuiz() {
       {done ? (
         <p className="mt-6 rounded-xl bg-forest-mist px-4 py-4 text-sm text-forest-deep" role="status">
           Got it. This form is not connected yet. Email{" "}
-          <a href="mailto:travis@nobleseo.co" className="underline">
-            travis@nobleseo.co
+          <a href="mailto:hello@nobleseo.co" className="underline">
+            hello@nobleseo.co
           </a>{" "}
           and we’ll follow up with a plain English look, not a sales pitch.
         </p>

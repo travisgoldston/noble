@@ -127,7 +127,7 @@ export default function WorkPage() {
           <aside className="rounded-xl border border-mist bg-white p-8">
             <p className="font-serif text-2xl tracking-tight">What you can expect</p>
             <ul className="mt-5 grid gap-3 text-sm text-stone">
-              <li>Direct work with Travis, not an account layer</li>
+              <li>Direct work, not an account layer</li>
               <li>A review of the Google presence before any retainer talk</li>
               <li>No ranking guarantees, courses, or Hire Me theater</li>
               <li>Capacity stays limited on purpose</li>
