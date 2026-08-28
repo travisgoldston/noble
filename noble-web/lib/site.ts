@@ -21,6 +21,7 @@ export const paths = {
   contact: "/contact",
   thanks: "/contact/thanks",
   resources: "/resources",
+  pricing: "/pricing",
 } as const;
 
 export function cityPath(slug: string) {
@@ -34,13 +35,7 @@ export const cta = {
   proof: "See the Proof",
 };
 
-export const pricing = {
-  starting: 1250,
-  startingLabel: "$1,250/month",
-  rangeLabel: "$1,250–$2,500/month",
-  summary:
-    "Most clients invest $1,250–$2,500/month depending on market, competition, and scope. Every campaign is custom-scoped. We don't sell one-size-fits-all SEO packages.",
-};
+export { pricing } from "./pricing";
 
 export const primaryServices = [
   {

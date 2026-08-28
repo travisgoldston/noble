@@ -138,7 +138,7 @@ export const homeFaqs = [
   {
     question: "How much does local SEO cost?",
     answer:
-      "Local SEO starts at $1,250/month. Most clients invest $1,250–$2,500/month depending on market, competition, and scope. Campaigns are custom-scoped. We do not sell Bronze/Silver/Gold packages.",
+      "Maps is $1,250/month, Local is $1,850/month, and Competitive is $2,500/month. The plans are different intensities of the same product — not Bronze/Silver/Gold filler. Details are on the pricing page.",
   },
   {
     question: "What happens after I request an audit?",

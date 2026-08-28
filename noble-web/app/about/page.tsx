@@ -112,8 +112,8 @@ export default function AboutPage() {
             <div className="rounded-xl border border-mist p-6">
               <p className="font-medium">What do you sell?</p>
               <p className="mt-2 text-sm text-stone">
-                Local SEO, starting at $1,250/month. Not social, PPC, branding,
-                or generic web design.
+                Local SEO: $1,250, $1,850, or $2,500/month. Not social, PPC,
+                branding, or generic web design.
               </p>
             </div>
             <div className="rounded-xl border border-mist p-6">
@@ -128,7 +128,7 @@ export default function AboutPage() {
             title="Where this work happens"
             items={[
               { href: paths.areas, label: "DFW areas" },
-              { href: paths.services, label: "Services" },
+              { href: paths.pricing, label: "Pricing" },
               { href: paths.caseStudies, label: "Case studies" },
             ]}
           />

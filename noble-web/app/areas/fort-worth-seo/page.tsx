@@ -36,7 +36,7 @@ const faqs = [
   {
     question: "How much does Fort Worth local SEO cost?",
     answer:
-      "Local SEO starts at $1,250/month. Most clients invest $1,250–$2,500/month depending on competition and scope. No Bronze/Silver/Gold packages.",
+      "Maps is $1,250/month, Local is $1,850/month, and Competitive is $2,500/month depending on competition and how much of the site needs work. The plans are scopes of local SEO, not Bronze/Silver/Gold filler.",
   },
 ];
 

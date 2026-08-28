@@ -83,6 +83,7 @@ export default function ServicesPage() {
             title="Start with the market"
             items={[
               { href: paths.areas, label: "DFW areas" },
+              { href: paths.pricing, label: "Pricing" },
               { href: paths.caseStudies, label: "Case studies" },
             ]}
           />

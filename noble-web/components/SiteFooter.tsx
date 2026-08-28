@@ -35,6 +35,9 @@ export function SiteFooter() {
           <Link href={paths.caseStudies} className="hover:text-white">
             Case studies
           </Link>
+          <Link href={paths.pricing} className="hover:text-white">
+            Pricing
+          </Link>
           <Link href={paths.about} className="hover:text-white">
             About
           </Link>

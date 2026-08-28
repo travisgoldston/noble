@@ -63,3 +63,29 @@ export function serviceSchema({
     serviceType: name,
   };
 }
+
+export function offerCatalogSchema(
+  offers: { name: string; description: string; price: number }[],
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "OfferCatalog",
+    name: "Noble SEO local SEO plans",
+    url: "https://nobleseo.co/pricing",
+    itemListElement: offers.map((offer, index) => ({
+      "@type": "Offer",
+      position: index + 1,
+      name: offer.name,
+      description: offer.description,
+      url: "https://nobleseo.co/pricing",
+      price: String(offer.price),
+      priceCurrency: "USD",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: offer.price,
+        priceCurrency: "USD",
+        billingDuration: "P1M",
+      },
+    })),
+  };
+}

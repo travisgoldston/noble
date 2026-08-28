@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...caseStudies.map((study) => `${paths.caseStudies}/${study.slug}`),
     paths.about,
     paths.resources,
+    paths.pricing,
     paths.contact,
     paths.areas,
     paths.fortWorth,

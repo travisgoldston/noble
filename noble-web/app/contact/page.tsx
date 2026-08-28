@@ -45,9 +45,13 @@ export default function ContactPage() {
             </a>
           </p>
           <p className="mt-6 text-sm text-stone">
-            Local SEO starts at $1,250/month. The audit is free either way.
+            Local SEO is $1,250, $1,850, or $2,500/month. The audit is free
+            either way.
           </p>
-          <div className="mt-6">
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Button href={paths.pricing} variant="secondary">
+              See pricing
+            </Button>
             <Button href={paths.caseStudies} variant="secondary">
               {cta.proof}
             </Button>

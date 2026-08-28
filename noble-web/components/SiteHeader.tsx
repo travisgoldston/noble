@@ -80,6 +80,9 @@ export function SiteHeader() {
           <Link href={paths.caseStudies} className="transition-colors hover:text-ink">
             Proof
           </Link>
+          <Link href={paths.pricing} className="transition-colors hover:text-ink">
+            Pricing
+          </Link>
           <Dropdown label="Areas" href={paths.areas}>
             <div className="min-w-56 rounded-xl border border-mist bg-white py-2 shadow-card">
               <Link href={paths.areas} className="block px-4 py-2 text-ink hover:bg-cream">
@@ -143,6 +146,9 @@ export function SiteHeader() {
             ))}
             <Link href={paths.caseStudies} className="mt-3 text-ink" onClick={() => setOpen(false)}>
               Proof
+            </Link>
+            <Link href={paths.pricing} className="text-ink" onClick={() => setOpen(false)}>
+              Pricing
             </Link>
             <p className="mt-3 text-xs font-medium tracking-[0.14em] text-stone uppercase">Areas</p>
             <Link href={paths.areas} className="text-ink" onClick={() => setOpen(false)}>
