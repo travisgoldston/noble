@@ -5,6 +5,7 @@ import { useState, type ReactNode } from "react";
 import { BrandMark } from "@/components/BrandMark";
 import { Button } from "@/components/Button";
 import { capabilities, locations, searchSurfaces } from "@/lib/content";
+import { cityPath, cta, paths } from "@/lib/site";
 
 function Dropdown({
   label,
@@ -41,16 +42,13 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-site items-center gap-6 px-6 py-4">
         <BrandMark />
         <nav className="ml-auto hidden items-center gap-6 text-sm text-stone lg:flex" aria-label="Primary">
-          <Dropdown label="Services" href="/services">
+          <Dropdown label="Services" href={paths.services}>
             <div className="grid w-[34rem] grid-cols-2 gap-6 rounded-xl border border-mist bg-white p-5 shadow-card">
               <div>
                 <p className="px-2 text-[0.68rem] font-medium tracking-[0.16em] text-stone uppercase">
                   What we do
                 </p>
-                <Link
-                  href="/services"
-                  className="mt-2 block rounded-lg px-2 py-2 text-ink hover:bg-cream"
-                >
+                <Link href={paths.services} className="mt-2 block rounded-lg px-2 py-2 text-ink hover:bg-cream">
                   All services
                 </Link>
                 {capabilities.map((item) => (
@@ -79,18 +77,18 @@ export function SiteHeader() {
               </div>
             </div>
           </Dropdown>
-          <Dropdown label="Locations" href="/locations">
+          <Link href={paths.caseStudies} className="transition-colors hover:text-ink">
+            Proof
+          </Link>
+          <Dropdown label="Areas" href={paths.areas}>
             <div className="min-w-56 rounded-xl border border-mist bg-white py-2 shadow-card">
-              <Link
-                href="/locations"
-                className="block px-4 py-2 text-ink hover:bg-cream"
-              >
-                All DFW cities
+              <Link href={paths.areas} className="block px-4 py-2 text-ink hover:bg-cream">
+                All DFW areas
               </Link>
               {locations.map((item) => (
                 <Link
                   key={item.slug}
-                  href={`/locations/${item.slug}`}
+                  href={cityPath(item.slug)}
                   className="block px-4 py-2 text-stone hover:bg-cream hover:text-ink"
                 >
                   {item.name}
@@ -98,18 +96,15 @@ export function SiteHeader() {
               ))}
             </div>
           </Dropdown>
-          <Link href="/work" className="transition-colors hover:text-ink">
-            Work
-          </Link>
-          <Link href="/about" className="transition-colors hover:text-ink">
+          <Link href={paths.about} className="transition-colors hover:text-ink">
             About
           </Link>
-          <Link href="/resources" className="transition-colors hover:text-ink">
+          <Link href={paths.resources} className="transition-colors hover:text-ink">
             Resources
           </Link>
         </nav>
         <div className="ml-auto hidden lg:block lg:ml-0">
-          <Button href="/contact">Get a Search Assessment</Button>
+          <Button href={paths.contact}>{cta.primary}</Button>
         </div>
         <button
           type="button"
@@ -130,7 +125,7 @@ export function SiteHeader() {
         <nav className="max-h-[80vh] overflow-y-auto border-t border-mist px-6 py-4 lg:hidden" aria-label="Mobile">
           <div className="flex flex-col gap-3 text-sm">
             <p className="text-xs font-medium tracking-[0.14em] text-stone uppercase">Services</p>
-            <Link href="/services" className="text-ink" onClick={() => setOpen(false)}>
+            <Link href={paths.services} className="text-ink" onClick={() => setOpen(false)}>
               All services
             </Link>
             {capabilities.map((item) => (
@@ -146,30 +141,30 @@ export function SiteHeader() {
                 {item.title}
               </Link>
             ))}
-            <p className="mt-3 text-xs font-medium tracking-[0.14em] text-stone uppercase">Locations</p>
-            <Link href="/locations" className="text-ink" onClick={() => setOpen(false)}>
-              All DFW cities
+            <Link href={paths.caseStudies} className="mt-3 text-ink" onClick={() => setOpen(false)}>
+              Proof
+            </Link>
+            <p className="mt-3 text-xs font-medium tracking-[0.14em] text-stone uppercase">Areas</p>
+            <Link href={paths.areas} className="text-ink" onClick={() => setOpen(false)}>
+              All DFW areas
             </Link>
             {locations.map((item) => (
               <Link
                 key={item.slug}
-                href={`/locations/${item.slug}`}
+                href={cityPath(item.slug)}
                 className="text-ink"
                 onClick={() => setOpen(false)}
               >
                 {item.name}
               </Link>
             ))}
-            <Link href="/work" className="mt-3 text-ink" onClick={() => setOpen(false)}>
-              Work
-            </Link>
-            <Link href="/about" className="text-ink" onClick={() => setOpen(false)}>
+            <Link href={paths.about} className="mt-3 text-ink" onClick={() => setOpen(false)}>
               About
             </Link>
-            <Link href="/resources" className="text-ink" onClick={() => setOpen(false)}>
+            <Link href={paths.resources} className="text-ink" onClick={() => setOpen(false)}>
               Resources
             </Link>
-            <Button href="/contact">Get a Search Assessment</Button>
+            <Button href={paths.contact}>{cta.primary}</Button>
           </div>
         </nav>
       ) : null}

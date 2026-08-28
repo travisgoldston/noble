@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { Button } from "@/components/Button";
 import { RelatedLinks } from "@/components/RelatedLinks";
 import { capabilities, locations, searchSurfaces } from "@/lib/content";
+import { cityPath, cta, paths } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
-  return locations.map((city) => ({ slug: city.slug }));
+  return locations
+    .filter((city) => city.slug !== "fort-worth")
+    .map((city) => ({ slug: city.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -17,11 +20,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Local SEO in ${city.name}, TX`,
     description: city.intro,
+    alternates: { canonical: cityPath(slug) },
   };
 }
 
 export default async function LocationCityPage({ params }: Props) {
   const { slug } = await params;
+  if (slug === "fort-worth") redirect("/areas/fort-worth-seo");
   const city = locations.find((item) => item.slug === slug);
   if (!city) notFound();
 
@@ -41,8 +46,8 @@ export default async function LocationCityPage({ params }: Props) {
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-stone">{city.intro}</p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="/contact">Get a Search Assessment</Button>
-            <Button href="/services" variant="secondary">
+            <Button href={paths.contact}>{cta.primary}</Button>
+            <Button href={paths.services} variant="secondary">
               See services
             </Button>
           </div>
@@ -92,9 +97,9 @@ export default async function LocationCityPage({ params }: Props) {
               ))}
             </ol>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button href="/contact">Get a Search Assessment</Button>
-              <Button href="/work" variant="secondary">
-                See Our Work
+              <Button href={paths.contact}>{cta.primary}</Button>
+              <Button href={paths.caseStudies} variant="secondary">
+                {cta.proof}
               </Button>
             </div>
           </div>
@@ -116,9 +121,9 @@ export default async function LocationCityPage({ params }: Props) {
           <RelatedLinks
             title="Nearby DFW cities"
             items={[
-              { href: "/locations", label: "All DFW cities" },
+              { href: paths.areas, label: "All DFW areas" },
               ...nearby.map((item) => ({
-                href: `/locations/${item.slug}`,
+                href: cityPath(item.slug),
                 label: item.name,
               })),
             ]}
@@ -132,11 +137,11 @@ export default async function LocationCityPage({ params }: Props) {
               See how {city.name} customers find you today.
             </h2>
             <div className="flex flex-wrap gap-3">
-              <Button href="/contact" variant="light">
-                Get a Search Assessment
+              <Button href={paths.contact} variant="light">
+                {cta.primary}
               </Button>
-              <Button href="/work" variant="onDark">
-                See Our Work
+              <Button href={paths.caseStudies} variant="onDark">
+                {cta.proof}
               </Button>
             </div>
           </div>

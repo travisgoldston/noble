@@ -2,6 +2,7 @@ import { Button } from "@/components/Button";
 import { RelatedLinks } from "@/components/RelatedLinks";
 import type { Guide } from "@/lib/guides";
 import { capabilities, locations, searchSurfaces } from "@/lib/content";
+import { cityPath, cta, paths } from "@/lib/site";
 
 export function GuidePage({ guide }: { guide: Guide }) {
   const jsonLd = {
@@ -12,12 +13,12 @@ export function GuidePage({ guide }: { guide: Guide }) {
     inLanguage: "en-US",
     author: {
       "@type": "Organization",
-      name: "Noble",
+      name: "Noble SEO",
       url: "https://nobleseo.co",
     },
     publisher: {
       "@type": "Organization",
-      name: "Noble",
+      name: "Noble SEO",
       url: "https://nobleseo.co",
     },
     mainEntityOfPage: `https://nobleseo.co/${guide.slug}`,
@@ -39,9 +40,9 @@ export function GuidePage({ guide }: { guide: Guide }) {
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-stone">{guide.intro}</p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="/contact">Get a Search Assessment</Button>
-            <Button href="/locations" variant="secondary">
-              DFW cities
+            <Button href={paths.contact}>{cta.primary}</Button>
+            <Button href={paths.areas} variant="secondary">
+              DFW areas
             </Button>
           </div>
         </div>
@@ -78,9 +79,9 @@ export function GuidePage({ guide }: { guide: Guide }) {
             </ol>
           </div>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="/contact">Get a Search Assessment</Button>
-            <Button href="/work" variant="secondary">
-              See Our Work
+            <Button href={paths.contact}>{cta.primary}</Button>
+            <Button href={paths.caseStudies} variant="secondary">
+              {cta.proof}
             </Button>
           </div>
           <RelatedLinks
@@ -97,11 +98,11 @@ export function GuidePage({ guide }: { guide: Guide }) {
             }))}
           />
           <RelatedLinks
-            title="DFW cities"
+            title="DFW areas"
             items={[
-              { href: "/locations", label: "All DFW cities" },
+              { href: paths.areas, label: "All DFW areas" },
               ...locations.map((city) => ({
-                href: `/locations/${city.slug}`,
+                href: cityPath(city.slug),
                 label: city.name,
               })),
             ]}
@@ -114,8 +115,8 @@ export function GuidePage({ guide }: { guide: Guide }) {
             <h2 className="font-serif max-w-[16ch] text-3xl tracking-tightest">
               Want this applied to your business, not just explained?
             </h2>
-            <Button href="/contact" variant="light">
-              Get a Search Assessment
+            <Button href={paths.contact} variant="light">
+              {cta.primary}
             </Button>
           </div>
         </div>

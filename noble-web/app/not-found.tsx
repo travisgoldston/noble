@@ -1,4 +1,5 @@
 import { Button } from "@/components/Button";
+import { cta, paths } from "@/lib/site";
 
 export default function NotFound() {
   return (
@@ -14,8 +15,8 @@ export default function NotFound() {
       </p>
       <div className="mt-8 flex flex-wrap gap-4">
         <Button href="/">Back to home</Button>
-        <Button href="/contact" variant="secondary">
-          Get a Search Assessment
+        <Button href={paths.contact} variant="secondary">
+          {cta.primary}
         </Button>
       </div>
     </section>

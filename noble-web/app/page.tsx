@@ -1,39 +1,88 @@
+import { AuditForm } from "@/components/AuditForm";
 import { Button } from "@/components/Button";
-import { BudgetocityFeature } from "@/components/BudgetocityFeature";
-import { HeroQuiz } from "@/components/HeroQuiz";
+import { CaseStudyCard } from "@/components/CaseStudyCard";
+import { FaqList } from "@/components/FaqList";
+import { FinalCta } from "@/components/FinalCta";
+import { JsonLd, faqSchema } from "@/components/JsonLd";
+import { PricingBlock } from "@/components/PricingBlock";
+import { caseStudies } from "@/lib/case-studies";
 import {
   capabilities,
+  homeFaqs,
   locations,
   processSteps,
-  resourceNotes,
   searchSurfaces,
+  whoWeHelp,
 } from "@/lib/content";
+import { cityPath, cta, paths } from "@/lib/site";
+import type { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Noble SEO | SEO built on proof",
+  },
+  description:
+    "Founder-led local SEO for Dallas–Fort Worth businesses. We help local companies turn Google Search and Maps visibility into more qualified calls.",
+  alternates: { canonical: "/" },
+};
 
 export default function HomePage() {
+  const proof = caseStudies[0];
+
   return (
     <>
+      <JsonLd data={faqSchema(homeFaqs)} />
       <section className="relative overflow-hidden bg-[radial-gradient(circle_at_88%_0%,rgba(91,184,255,0.28),transparent_40%),radial-gradient(circle_at_12%_100%,rgba(58,86,228,0.10),transparent_42%),linear-gradient(180deg,#f8f9fa_0%,#ffffff_72%)]">
         <div className="mx-auto grid max-w-site items-start gap-12 px-6 py-16 md:py-24 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div>
             <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-              SEO. Local Search. AI Visibility
+              Noble SEO
             </p>
-            <h1 className="font-serif mt-5 max-w-[18ch] text-5xl leading-[1.05] tracking-tightest text-ink md:text-6xl">
-              Dallas-Fort Worth SEO and Growth for Businesses That Want to Be Found.
+            <h1 className="font-serif mt-5 max-w-[14ch] text-5xl leading-[1.05] tracking-tightest text-ink md:text-6xl">
+              SEO built on{" "}
+              <Link
+                href={paths.caseStudies}
+                className="underline decoration-forest decoration-2 underline-offset-[0.18em] hover:text-forest"
+              >
+                proof
+              </Link>
+              .
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-stone md:text-xl">
-              Noble builds SEO, local search, Google Business Profile, and
-              AI search visibility into a practical growth system for small
-              businesses with real ambition and realistic budgets.
+            <p className="mt-6 max-w-xl text-lg font-medium text-ink md:text-xl">
+              Founder-led local SEO for Dallas–Fort Worth businesses.
+            </p>
+            <p className="mt-4 max-w-xl text-lg leading-relaxed text-stone">
+              We help local businesses turn Google Search and Google Maps
+              visibility into more qualified calls, leads, and customers —
+              without bloated agency retainers or black-box reporting.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
-              <Button href="/contact">Get a Search Assessment</Button>
-              <Button href="/work" variant="secondary">
-                See Our Work
+              <Button href={paths.contact}>{cta.primary}</Button>
+              <Button href={paths.caseStudies} variant="secondary">
+                {cta.proof}
               </Button>
             </div>
           </div>
-          <HeroQuiz />
+          <div className="rounded-xl border border-mist bg-white p-6 shadow-card md:p-7">
+            <p className="text-[0.72rem] font-medium tracking-[0.18em] text-forest uppercase">
+              No big deal
+            </p>
+            <h2 className="font-serif mt-2 text-2xl tracking-tight">
+              A 30 second look. You can walk away after.
+            </h2>
+            <p className="mt-2 text-sm text-stone">
+              Tell us a little. We will look at how the business shows up in
+              Search and Maps. No pitch deck. No obligation.
+            </p>
+            <div className="mt-6">
+              <AuditForm compact />
+            </div>
+            <p className="mt-5 text-xs leading-relaxed text-stone">
+              This first look is just information for you. You can choose to do
+              nothing with it.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -52,7 +101,7 @@ export default function HomePage() {
             >
               <img
                 src="/budgetocity-logo.png"
-                alt=""
+                alt="Budgetocity"
                 width={88}
                 height={88}
                 className="h-[88px] w-[88px] rounded-full object-contain"
@@ -67,20 +116,37 @@ export default function HomePage() {
             </a>
             <span className="hidden h-px w-24 bg-mist sm:block" aria-hidden="true" />
           </div>
+          <div className="mt-10 grid gap-4 md:grid-cols-3">
+            {proof.results.map((stat) => (
+              <div key={stat.label} className="rounded-xl border border-mist bg-cream p-6 text-center">
+                <p className="font-serif text-3xl tracking-tight">{stat.value}</p>
+                <p className="mt-2 text-sm text-stone">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-6 text-center text-sm text-stone">
+            From the{" "}
+            <Link href={paths.budgetocity} className="text-forest hover:text-forest-deep">
+              Budgetocity organic SEO case study
+            </Link>
+            . Local service results are published the same way: with numbers,
+            caveats, and permission.
+          </p>
         </div>
       </section>
 
       <section className="bg-cream py-20 md:py-24">
         <div className="mx-auto max-w-site px-6">
           <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-            Search changed
+            How people find you
           </p>
           <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
-            Your customers search across more than ten blue links.
+            Customers search across more than ten blue links.
           </h2>
           <p className="mt-5 max-w-2xl text-stone">
             The job is to make the business clear wherever a serious customer
-            looks. Not to chase every new channel with a new product.
+            looks — Search, the Local Pack, Maps, and branded results. That is
+            local SEO, not a pile of disconnected products.
           </p>
           <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {searchSurfaces.map((item) => (
@@ -98,33 +164,48 @@ export default function HomePage() {
               </article>
             ))}
           </div>
-          <div className="mt-10 flex flex-wrap gap-4">
-            <Button href="/contact">Get a Search Assessment</Button>
-            <Button href="/services" variant="secondary">
-              See all services
-            </Button>
-          </div>
         </div>
       </section>
 
-      <section id="services" className="py-20 md:py-24">
+      <section className="py-20 md:py-24">
         <div className="mx-auto max-w-site px-6">
           <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-            Capabilities
+            Who this is for
           </p>
           <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
-            Search work connected to business outcomes.
+            Owner-led local service businesses.
           </h2>
           <p className="mt-5 max-w-2xl text-stone">
-            Noble does not sell a pile of disconnected tactics. Each service
-            supports a clearer, more useful search presence.
+            Noble is built for companies where a new customer is worth real
+            money. If a booked job, a new patient, or a signed project pays for
+            the work, local SEO can make sense.
           </p>
-          <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          <ul className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {whoWeHelp.map((item) => (
+              <li key={item} className="rounded-xl border border-mist bg-cream px-5 py-4 text-sm">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section id="services" className="border-y border-mist bg-cream py-20 md:py-24">
+        <div className="mx-auto max-w-site px-6">
+          <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
+            What Noble does
+          </p>
+          <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
+            Local SEO. That is the product.
+          </h2>
+          <p className="mt-5 max-w-2xl text-stone">
+            Google Business Profile, Maps, on-page work, and technical fixes
+            are tactics. The customer buys search growth: more of the right
+            people finding the business and calling.
+          </p>
+          <div className="mt-12 grid gap-4 md:grid-cols-3">
             {capabilities.map((item) => (
-              <article
-                key={item.id}
-                className="flex flex-col rounded-xl border border-mist bg-white p-7"
-              >
+              <article key={item.id} className="flex flex-col rounded-xl border border-mist bg-white p-7">
                 <h3 className="font-serif text-2xl tracking-tight">{item.title}</h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-stone">{item.body}</p>
                 <div className="mt-5">
@@ -135,12 +216,6 @@ export default function HomePage() {
               </article>
             ))}
           </div>
-          <div className="mt-10 flex flex-wrap gap-4">
-            <Button href="/contact">Get a Search Assessment</Button>
-            <Button href="/locations" variant="secondary">
-              DFW cities
-            </Button>
-          </div>
         </div>
       </section>
 
@@ -150,13 +225,13 @@ export default function HomePage() {
             How Noble works
           </p>
           <h2 className="font-serif mt-4 max-w-[14ch] text-4xl tracking-tightest md:text-5xl">
-            SEO is an operating system, not a one time tweak.
+            Diagnose. Prioritize. Fix. Monitor.
           </h2>
           <p className="mt-5 max-w-2xl text-white/65">
-            A deliberate cycle keeps the work tied to evidence and prevents
-            small budgets from disappearing into low value activity.
+            A short cycle keeps the budget on the problems that actually block
+            calls, not a retainer full of activity.
           </p>
-          <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {processSteps.map((step) => (
               <article
                 key={step.n}
@@ -177,16 +252,16 @@ export default function HomePage() {
               slow, confusing, or unclear site does not turn into calls.
             </p>
             <p className="mt-4 text-white/70">
-              That is why we pair local and on page SEO with technical work when
-              the site itself is holding you back. Getting found only helps if
-              the next step is obvious.
+              That is why local SEO is paired with technical work when the site
+              itself is holding you back. Getting found only helps if the next
+              step is obvious.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Button href="/contact" variant="light">
-                Get a Search Assessment
+              <Button href={paths.contact} variant="light">
+                {cta.primary}
               </Button>
-              <Button href="/work" variant="onDark">
-                See Our Work
+              <Button href={paths.technical} variant="onDark">
+                Technical SEO
               </Button>
             </div>
           </div>
@@ -196,73 +271,54 @@ export default function HomePage() {
       <section className="border-y border-mist bg-cream py-20 md:py-24">
         <div className="mx-auto max-w-site px-6">
           <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-            Dallas Fort Worth
+            Dallas–Fort Worth
           </p>
           <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
             Local SEO for the cities you actually serve.
           </h2>
           <p className="mt-5 max-w-2xl text-stone">
             Search behaves differently in Fort Worth than it does in McKinney.
-            These pages are built around how people here look for a business.
+            These pages are built around how people here look for a business —
+            not a city name swapped into a template. We serve DFW remotely and
+            do not claim a physical office.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             {locations.map((city) => (
-              <Button key={city.slug} href={`/locations/${city.slug}`} variant="secondary">
+              <Button key={city.slug} href={cityPath(city.slug)} variant="secondary">
                 {city.name}
               </Button>
             ))}
           </div>
           <div className="mt-8">
-            <Button href="/locations">All DFW cities</Button>
+            <Button href={paths.areas}>All DFW areas</Button>
           </div>
         </div>
       </section>
 
-      <section id="work" className="py-20 md:py-24">
-        <div className="mx-auto max-w-site px-6">
-          <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-            Selected work
-          </p>
-          <h2 className="font-serif mt-4 text-4xl tracking-tightest md:text-5xl">
-            What success looks like
-          </h2>
-          <p className="mt-5 max-w-2xl text-stone">
-            Real organic work. No ad spend required to move the needle.
-          </p>
-          <div className="mt-12">
-            <BudgetocityFeature />
-          </div>
-          <div className="mt-10 flex flex-wrap gap-4">
-            <Button href="/contact">Get a Search Assessment</Button>
-            <Button href="/work" variant="secondary">
-              See Our Work
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" className="border-y border-mist bg-cream py-20 md:py-24">
+      <section className="py-20 md:py-24">
         <div className="mx-auto grid max-w-site gap-12 px-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
           <div>
             <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-              About
+              Why founder-led
             </p>
             <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
-              Your story matters more than ours.
+              You work with the person doing the work.
             </h2>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-stone">
-              Noble is not a full agency. Capacity stays small on purpose, so
-              the work stays direct, and the emphasis stays on you.
+              Noble is not a full-service agency. Capacity stays small on
+              purpose. Strategy, diagnosis, and client communication stay with
+              the founder. That is how the work stays tied to proof instead of
+              an account layer.
             </p>
           </div>
-          <aside className="rounded-xl border border-mist bg-white p-7">
+          <aside className="rounded-xl border border-mist bg-cream p-7">
             <p className="font-serif text-2xl tracking-tight">No bloat. No layers.</p>
             <p className="mt-3 text-sm leading-relaxed text-stone">
               If we work together, you work with us, not an account team
               handing notes down a chain. The first conversation is about fit.
             </p>
             <div className="mt-6">
-              <Button href="/about" variant="secondary">
+              <Button href={paths.about} variant="secondary">
                 About Noble
               </Button>
             </div>
@@ -270,55 +326,37 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="resources" className="py-20 md:py-24">
+      <section id="work" className="border-y border-mist bg-cream py-20 md:py-24">
         <div className="mx-auto max-w-site px-6">
           <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-            Resources
+            Selected work
           </p>
-          <h2 className="font-serif mt-4 max-w-[14ch] text-4xl tracking-tightest md:text-5xl">
-            Free education lives on social. Implementation starts here.
+          <h2 className="font-serif mt-4 text-4xl tracking-tightest md:text-5xl">
+            The brand promise is proof.
           </h2>
           <p className="mt-5 max-w-2xl text-stone">
-            The channels teach. The website is for businesses that have decided
-            they want the work done. Notes will live here as they are useful.
+            Real organic work. No ad spend required to move the needle. We do
+            not fabricate results, and we do not imply causation we cannot
+            establish.
           </p>
-          <div className="mt-12 grid gap-4 md:grid-cols-3">
-            {resourceNotes.map((note) => (
-              <article key={note.title} className="rounded-xl border border-mist p-6">
-                <p className="text-xs font-medium tracking-[0.16em] text-forest uppercase">
-                  Coming soon. {note.topic}
-                </p>
-                <h3 className="font-serif mt-3 text-2xl tracking-tight">{note.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-stone">{note.body}</p>
-              </article>
-            ))}
+          <div className="mt-12">
+            <CaseStudyCard study={proof} />
           </div>
           <div className="mt-10 flex flex-wrap gap-4">
-            <Button href="/contact">Get a Search Assessment</Button>
-            <Button href="/resources" variant="secondary">
-              Browse resources
+            <Button href={paths.contact}>{cta.primary}</Button>
+            <Button href={paths.caseStudies} variant="secondary">
+              {cta.proof}
             </Button>
           </div>
         </div>
       </section>
 
-      <section className="pb-20 md:pb-24">
-        <div className="mx-auto max-w-site px-6">
-          <div className="flex flex-col items-start justify-between gap-8 rounded-xl bg-forest-deep px-8 py-12 text-white md:flex-row md:items-center md:px-12">
-            <div>
-              <p className="text-[0.72rem] font-medium tracking-[0.22em] text-white/55 uppercase">
-                A practical first step
-              </p>
-              <h2 className="font-serif mt-3 max-w-[14ch] text-4xl tracking-tightest">
-                Find out where the business is losing search visibility.
-              </h2>
-            </div>
-            <Button href="/contact" variant="light">
-              Get a Search Assessment
-            </Button>
-          </div>
-        </div>
-      </section>
+      <PricingBlock />
+      <FaqList items={homeFaqs} />
+      <FinalCta
+        title="Find out whether the Google presence is costing you jobs."
+        body="A free SEO audit of Search, Maps, and the site. Then a clear yes, no, or not yet."
+      />
     </>
   );
 }

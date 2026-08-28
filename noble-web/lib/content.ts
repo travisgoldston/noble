@@ -39,30 +39,20 @@ export const searchSurfaces = [
 
 export const capabilities = [
   {
-    id: "seo",
-    title: "SEO",
-    href: "/services#seo",
-    body: "Build durable organic visibility around the searches that actually influence revenue.",
-    exampleSetup:
-      "A Fort Worth contractor’s homepage says “quality you can trust” and never names roof repair, kitchen remodels, or the cities they actually work. Google has nothing specific to rank.",
-    exampleFix:
-      "Noble would rebuild the important pages around the jobs people type, add honest service pages, and tie titles, headings, and internal links to those phrases. Then we measure in Search Console instead of guessing.",
-  },
-  {
     id: "local-seo",
     title: "Local SEO",
-    href: "/services#local-seo",
-    body: "Compete across Google Search, Maps, and the Local Pack when nearby customers need you.",
+    href: "/local-seo",
+    body: "Improve local visibility, rankings, on-page signals, and the factors that influence Google Search and Maps when nearby customers are ready to hire.",
     exampleSetup:
-      "A McKinney plumber shows up for the business name, then disappears for “water heater repair near me.” The profile lists half of Collin County. The site never mentions Adriatica, the Square, or Trinity Falls.",
+      "A Fort Worth plumber shows up for the business name, then disappears for “water heater repair near me.” The profile lists half of Tarrant County. The site never names south Fort Worth, the Stockyards, or the jobs they actually want.",
     exampleFix:
-      "Noble would tighten service areas to the cities they actually drive, match categories to the work they want, and write pages that sound like how a McKinney customer searches. Distance still matters. Confusion should not.",
+      "Noble would tighten service areas to the cities they actually drive, match categories to the work they want, and write pages that sound like how a Fort Worth customer searches. Distance still matters. Confusion should not.",
   },
   {
     id: "google-business-profile",
     title: "Google Business Profile",
-    href: "/services#google-business-profile",
-    body: "Make business information accurate, complete, credible, and useful to local searchers.",
+    href: "/google-business-profile",
+    body: "Categories, services, photos, posts, reviews, and ongoing monitoring so the listing matches the business and earns the call.",
     exampleSetup:
       "A Plano dentist’s listing still has Saturday hours from two owners ago, stock photos, and a website link that 404s. People search the name after a referral and keep looking.",
     exampleFix:
@@ -71,22 +61,12 @@ export const capabilities = [
   {
     id: "technical-seo",
     title: "Technical SEO",
-    href: "/services#technical-seo",
-    body: "Remove crawl, indexing, architecture, and performance barriers that suppress good content.",
+    href: "/technical-seo",
+    body: "Site health, indexing, crawlability, structured data, internal linking, and Core Web Vitals — the technical work that supports local visibility.",
     exampleSetup:
       "A Frisco home services site looks fine on a laptop and dies on a phone in the Stonebriar parking lot. Important pages are noindex by accident. The blog is a maze of tags.",
     exampleFix:
       "Noble would fix crawl and index rules first, speed up the templates that actually get traffic, and simplify the structure so Google can find the service pages. Content cannot help if the engine is broken.",
-  },
-  {
-    id: "ai-search-visibility",
-    title: "AI Search Visibility",
-    href: "/services#ai-search-visibility",
-    body: "Strengthen the signals that help search systems understand, trust, and reference your business.",
-    exampleSetup:
-      "Two Arlington HVAC companies look identical online. Same stock copy. Same “serving DFW.” An answer tool has no reason to name either one.",
-    exampleFix:
-      "Noble would make the public record specific: real services, real cities, matching name and phone, and reviews that mention actual jobs. That is the same hygiene that helps classic Google Search.",
   },
 ];
 
@@ -94,53 +74,85 @@ export const processSteps = [
   {
     n: "01",
     title: "Diagnose",
-    body: "Find the technical, content, local, and conversion gaps that are actually in the way.",
+    body: "Review Google Business Profile, Maps, the website, and the searches that should produce calls. Find the gaps that are actually in the way.",
   },
   {
     n: "02",
     title: "Prioritize",
-    body: "Focus the budget on the work most likely to change outcomes, not a menu of busywork.",
+    body: "Focus the budget on the work most likely to change visibility and leads, not a menu of busywork.",
   },
   {
     n: "03",
-    title: "Optimize",
-    body: "Fix important pages, profiles, and technical foundations before adding more surface area.",
+    title: "Fix",
+    body: "Correct the listing, the important pages, and the technical issues suppressing them. Then build only what is still missing.",
   },
   {
     n: "04",
-    title: "Build",
-    body: "Create the missing content and connections customers need to understand the offer.",
-  },
-  {
-    n: "05",
-    title: "Measure",
-    body: "Track visibility, qualified actions, and business context, not vanity screenshots.",
-  },
-  {
-    n: "06",
-    title: "Improve",
-    body: "Use evidence to choose the next useful move. SEO is an operating system, not a campaign.",
+    title: "Monitor",
+    body: "Track rankings, Maps visibility, and qualified actions. Use evidence to choose the next useful move.",
   },
 ];
 
-export const budgetocity = {
-  name: "Budgetocity",
-  url: "https://budgetocity.com",
-  logo: "/budgetocity-logo.png",
-  kicker: "Case study. Organic SEO",
-  metric:
-    "Avg. position 31.2 to 6.2. +28% clicks year over year. Content engine built without paid ads",
-  summary:
-    "We rebuilt their organic presence, structure, on page SEO, and content that ranks, so people searching for paycheck budgeting could find the product without a dollar of ad spend.",
-  headline: "Budgetocity: from page 3 to page 1 with organic SEO",
-  subhead:
-    "How we transformed their web content and search foundation without spending a dime on ads.",
-  stats: [
-    { value: "31.2 to 6.2", label: "Average Google search position" },
-    { value: "+28%", label: "Clicks, year over year" },
-    { value: "~$0 ads", label: "Growth driven by organic SEO and content" },
-  ],
-};
+export const whoWeHelp = [
+  "HVAC",
+  "Plumbing",
+  "Roofing",
+  "Electrical",
+  "Landscaping",
+  "Foundation repair",
+  "Remodeling",
+  "Garage doors",
+  "Concrete",
+  "Fencing",
+  "Other high-value local service businesses",
+];
+
+export const supportingTactics = [
+  "Google Business Profile optimization",
+  "Google Maps visibility",
+  "On-page SEO",
+  "Technical SEO",
+  "Keyword and service-page strategy",
+  "Local content",
+  "Review strategy",
+  "Local authority and link acquisition",
+  "Search visibility",
+];
+
+export const homeFaqs = [
+  {
+    question: "What does Noble actually do?",
+    answer:
+      "Noble is a founder-led local SEO practice. The core work is local search visibility: Google Business Profile, Google Maps, on-page SEO, and the technical issues that keep a good business from showing up. We do not sell social media, PPC, or a pile of unrelated marketing services.",
+  },
+  {
+    question: "Who is this for?",
+    answer:
+      "Owner-operated local service businesses — HVAC, plumbing, roofing, electrical, landscaping, and similar trades — where a new customer is worth real money. If a single booked job pays for the work, local SEO can make sense.",
+  },
+  {
+    question: "Where do you work?",
+    answer:
+      "We serve businesses across Dallas–Fort Worth. We work remotely and do not claim a physical office in any DFW city.",
+  },
+  {
+    question: "How much does local SEO cost?",
+    answer:
+      "Local SEO starts at $1,250/month. Most clients invest $1,250–$2,500/month depending on market, competition, and scope. Campaigns are custom-scoped. We do not sell Bronze/Silver/Gold packages.",
+  },
+  {
+    question: "What happens after I request an audit?",
+    answer:
+      "We review how the business shows up in Google Search and Maps, then reply with a plain-English read on what is in the way and whether it makes sense to work together. Typical response time is one business day. There is no obligation.",
+  },
+  {
+    question: "Can you guarantee rankings?",
+    answer:
+      "No. Anyone who guarantees rankings is selling you something Google does not sell. We diagnose, fix what is actually broken, and measure. Proof lives in case studies, not promises.",
+  },
+];
+
+export { cityPath } from "./site";
 
 export const resourceNotes = [
   {
@@ -416,6 +428,25 @@ export const locations: CityLocation[] = [
     nearby: ["dallas", "arlington", "fort-worth"],
   },
 ];
+
+export const budgetocity = {
+  name: "Budgetocity",
+  url: "https://budgetocity.com",
+  logo: "/budgetocity-logo.png",
+  kicker: "Case study. Organic SEO",
+  metric:
+    "Avg. position 31.2 to 6.2. +28% clicks year over year. Content engine built without paid ads",
+  summary:
+    "We rebuilt their organic presence, structure, on-page SEO, and content that ranks, so people searching for paycheck budgeting could find the product without a dollar of ad spend.",
+  headline: "Budgetocity: from page 3 to page 1 with organic SEO",
+  subhead:
+    "How we transformed their web content and search foundation without spending a dime on ads.",
+  stats: [
+    { value: "31.2 to 6.2", label: "Average Google search position" },
+    { value: "+28%", label: "Clicks, year over year" },
+    { value: "~$0 ads", label: "Growth driven by organic SEO and content" },
+  ],
+};
 
 export const socialLinks = [
   { label: "X", href: "https://x.com/noble_seo", handle: "@noble_seo" },

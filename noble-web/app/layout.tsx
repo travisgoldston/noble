@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import { Analytics } from "@/components/Analytics";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { socialLinks } from "@/lib/content";
@@ -13,18 +14,25 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL("https://nobleseo.co"),
   title: {
-    default: "Noble | SEO",
-    template: "%s | Noble",
+    default: "Noble SEO | SEO built on proof",
+    template: "%s | Noble SEO",
   },
   description:
-    "Dallas-Fort Worth SEO and growth for businesses that want to be found. SEO, local search, Google Business Profile, and AI search visibility, without agency overhead.",
+    "Founder-led local SEO for Dallas–Fort Worth businesses. Google Business Profile, local rankings, and technical SEO — without bloated agency retainers.",
   openGraph: {
-    title: "Noble | SEO",
+    title: "Noble SEO | SEO built on proof",
     description:
-      "Dallas-Fort Worth SEO and growth for businesses that want to be found. Practical SEO for small businesses with real ambition and realistic budgets.",
+      "Founder-led local SEO for Dallas–Fort Worth businesses. We help local companies turn Google Search and Maps visibility into more qualified calls.",
     url: "https://nobleseo.co",
-    siteName: "Noble",
+    siteName: "Noble SEO",
     type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Noble SEO | SEO built on proof",
+    description:
+      "Founder-led local SEO for Dallas–Fort Worth businesses. SEO built on proof.",
   },
   icons: {
     icon: "/favicon.svg",
@@ -36,18 +44,44 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Organization",
+      "@id": "https://nobleseo.co/#organization",
       name: "Noble",
+      legalName: "Noble SEO",
       alternateName: "Noble SEO",
       url: "https://nobleseo.co",
       email: "hello@nobleseo.co",
       description:
-        "Specialist search growth practice for local SEO, Google Business Profile, technical SEO, and AI search visibility.",
+        "Founder-led local SEO practice serving Dallas-Fort Worth businesses remotely.",
       sameAs: socialLinks.map((item) => item.href),
+      areaServed: [
+        { "@type": "AdministrativeArea", name: "Dallas-Fort Worth" },
+        { "@type": "City", name: "Dallas" },
+        { "@type": "City", name: "Fort Worth" },
+      ],
     },
     {
       "@type": "WebSite",
-      name: "Noble",
+      "@id": "https://nobleseo.co/#website",
+      name: "Noble SEO",
       url: "https://nobleseo.co",
+      publisher: { "@id": "https://nobleseo.co/#organization" },
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://nobleseo.co/#service",
+      name: "Noble SEO",
+      url: "https://nobleseo.co",
+      email: "hello@nobleseo.co",
+      image: "https://nobleseo.co/favicon.svg",
+      description:
+        "Founder-led local SEO for Dallas-Fort Worth businesses, including Google Business Profile, local search, and technical SEO.",
+      areaServed: [
+        { "@type": "AdministrativeArea", name: "Dallas-Fort Worth" },
+        { "@type": "City", name: "Dallas" },
+        { "@type": "City", name: "Fort Worth" },
+      ],
+      serviceType: ["Local SEO", "Google Business Profile", "Technical SEO"],
+      parentOrganization: { "@id": "https://nobleseo.co/#organization" },
     },
   ],
 };
@@ -58,15 +92,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${montserrat.variable} h-full antialiased`}
-    >
+    <html lang="en" className={`${montserrat.variable} h-full antialiased`}>
       <body className={`${montserrat.className} min-h-full bg-paper font-sans text-ink flex flex-col`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <Analytics />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-md focus:bg-ink focus:px-3 focus:py-2 focus:text-white"
