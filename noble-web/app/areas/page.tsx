@@ -24,7 +24,7 @@ export default function AreasPage() {
             Local SEO across Dallas–Fort Worth.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-stone">
-            Noble serves businesses throughout DFW. These pages exist because
+            NOBLE serves businesses throughout DFW. These pages exist because
             search behaves differently in each city — not as thin doorway pages
             with the city name swapped. We work remotely and do not claim a
             physical office.

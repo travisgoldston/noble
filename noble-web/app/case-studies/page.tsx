@@ -7,7 +7,7 @@ import { paths } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Case Studies",
   description:
-    "SEO built on proof. Case studies from Noble SEO with baseline metrics, work performed, results, and caveats — no fabricated numbers.",
+    "Case studies from NOBLE SEO with baseline metrics, work performed, results, and caveats — no fabricated numbers.",
   alternates: { canonical: "/case-studies" },
 };
 
@@ -19,8 +19,8 @@ export default function CaseStudiesPage() {
           <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
             Proof
           </p>
-          <h1 className="font-serif mt-4 max-w-[14ch] text-5xl tracking-tightest md:text-6xl">
-            SEO built on proof.
+          <h1 className="font-serif mt-4 max-w-[16ch] text-5xl tracking-tightest md:text-6xl">
+            The work, the numbers, and the caveats.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-stone">
             Case studies are the primary trust mechanism. Each one includes the

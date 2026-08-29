@@ -14,23 +14,23 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL("https://nobleseo.co"),
   title: {
-    default: "Noble SEO | SEO built on proof",
-    template: "%s | Noble SEO",
+    default: "NOBLE SEO | SEO built on proof",
+    template: "%s | NOBLE SEO",
   },
   description:
     "Founder-led local SEO for Dallas–Fort Worth businesses. Google Business Profile, local rankings, and technical SEO — without bloated agency retainers.",
   openGraph: {
-    title: "Noble SEO | SEO built on proof",
+    title: "NOBLE SEO | SEO built on proof",
     description:
       "Founder-led local SEO for Dallas–Fort Worth businesses. We help local companies turn Google Search and Maps visibility into more qualified calls.",
     url: "https://nobleseo.co",
-    siteName: "Noble SEO",
+    siteName: "NOBLE SEO",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Noble SEO | SEO built on proof",
+    title: "NOBLE SEO | SEO built on proof",
     description:
       "Founder-led local SEO for Dallas–Fort Worth businesses. SEO built on proof.",
   },
@@ -45,9 +45,9 @@ const jsonLd = {
     {
       "@type": "Organization",
       "@id": "https://nobleseo.co/#organization",
-      name: "Noble",
-      legalName: "Noble SEO",
-      alternateName: "Noble SEO",
+      name: "NOBLE",
+      legalName: "NOBLE SEO",
+      alternateName: "NOBLE SEO",
       url: "https://nobleseo.co",
       email: "hello@nobleseo.co",
       description:
@@ -62,14 +62,14 @@ const jsonLd = {
     {
       "@type": "WebSite",
       "@id": "https://nobleseo.co/#website",
-      name: "Noble SEO",
+      name: "NOBLE SEO",
       url: "https://nobleseo.co",
       publisher: { "@id": "https://nobleseo.co/#organization" },
     },
     {
       "@type": "ProfessionalService",
       "@id": "https://nobleseo.co/#service",
-      name: "Noble SEO",
+      name: "NOBLE SEO",
       url: "https://nobleseo.co",
       email: "hello@nobleseo.co",
       image: "https://nobleseo.co/favicon.svg",

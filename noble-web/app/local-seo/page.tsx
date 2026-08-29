@@ -12,7 +12,7 @@ const faqs = [
   {
     question: "Is local SEO the same as Google Business Profile work?",
     answer:
-      "GBP is a major piece of local SEO, not the whole job. Rankings also depend on on-page signals, reviews, proximity, and whether the website can be crawled and understood. Noble treats the listing and the site as one system.",
+      "GBP is a major piece of local SEO, not the whole job. Rankings also depend on on-page signals, reviews, proximity, and whether the website can be crawled and understood. NOBLE treats the listing and the site as one system.",
   },
   {
     question: "How long before we see movement?",
@@ -105,7 +105,7 @@ export default function LocalSeoPage() {
             </h2>
             <p className="mt-4 text-stone">
               It is not social media management, branding, generic web design,
-              or PPC. Those can be useful. They are not what Noble sells.
+              or PPC. Those can be useful. They are not what NOBLE sells.
             </p>
           </article>
           <RelatedLinks

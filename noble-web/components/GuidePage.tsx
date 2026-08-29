@@ -13,12 +13,12 @@ export function GuidePage({ guide }: { guide: Guide }) {
     inLanguage: "en-US",
     author: {
       "@type": "Organization",
-      name: "Noble SEO",
+      name: "NOBLE SEO",
       url: "https://nobleseo.co",
     },
     publisher: {
       "@type": "Organization",
-      name: "Noble SEO",
+      name: "NOBLE SEO",
       url: "https://nobleseo.co",
     },
     mainEntityOfPage: `https://nobleseo.co/${guide.slug}`,

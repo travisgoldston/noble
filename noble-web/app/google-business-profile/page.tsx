@@ -16,7 +16,7 @@ const faqs = [
   {
     question: "Can you use a virtual office or a family address to rank in a DFW city?",
     answer:
-      "No. If the business is a service-area business, the listing should be configured that way. Manufacturing an address to game Maps is against Google’s rules and against how Noble works.",
+      "No. If the business is a service-area business, the listing should be configured that way. Manufacturing an address to game Maps is against Google’s rules and against how NOBLE works.",
   },
   {
     question: "Is GBP work a one-time cleanup?",

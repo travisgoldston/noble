@@ -46,7 +46,7 @@ export const capabilities = [
     exampleSetup:
       "A Fort Worth plumber shows up for the business name, then disappears for “water heater repair near me.” The profile lists half of Tarrant County. The site never names south Fort Worth, the Stockyards, or the jobs they actually want.",
     exampleFix:
-      "Noble would tighten service areas to the cities they actually drive, match categories to the work they want, and write pages that sound like how a Fort Worth customer searches. Distance still matters. Confusion should not.",
+      "NOBLE would tighten service areas to the cities they actually drive, match categories to the work they want, and write pages that sound like how a Fort Worth customer searches. Distance still matters. Confusion should not.",
   },
   {
     id: "google-business-profile",
@@ -56,7 +56,7 @@ export const capabilities = [
     exampleSetup:
       "A Plano dentist’s listing still has Saturday hours from two owners ago, stock photos, and a website link that 404s. People search the name after a referral and keep looking.",
     exampleFix:
-      "Noble would correct hours, services, and the site link, replace empty photos with real rooms and faces, and set a simple weekly check so Google edits do not sit unanswered.",
+      "NOBLE would correct hours, services, and the site link, replace empty photos with real rooms and faces, and set a simple weekly check so Google edits do not sit unanswered.",
   },
   {
     id: "technical-seo",
@@ -66,7 +66,7 @@ export const capabilities = [
     exampleSetup:
       "A Frisco home services site looks fine on a laptop and dies on a phone in the Stonebriar parking lot. Important pages are noindex by accident. The blog is a maze of tags.",
     exampleFix:
-      "Noble would fix crawl and index rules first, speed up the templates that actually get traffic, and simplify the structure so Google can find the service pages. Content cannot help if the engine is broken.",
+      "NOBLE would fix crawl and index rules first, speed up the templates that actually get traffic, and simplify the structure so Google can find the service pages. Content cannot help if the engine is broken.",
   },
 ];
 
@@ -121,9 +121,9 @@ export const supportingTactics = [
 
 export const homeFaqs = [
   {
-    question: "What does Noble actually do?",
+    question: "What does NOBLE actually do?",
     answer:
-      "Noble is a founder-led local SEO practice. The core work is local search visibility: Google Business Profile, Google Maps, on-page SEO, and the technical issues that keep a good business from showing up. We do not sell social media, PPC, or a pile of unrelated marketing services.",
+      "NOBLE is a founder-led local SEO practice. The core work is local search visibility: Google Business Profile, Google Maps, on-page SEO, and the technical issues that keep a good business from showing up. We do not sell social media, PPC, or a pile of unrelated marketing services.",
   },
   {
     question: "Who is this for?",
@@ -206,7 +206,7 @@ export const locations: CityLocation[] = [
     ],
     whoFor:
       "Trades, clinics, restaurants, and professional firms that live in Fort Worth or regularly take jobs across Tarrant County. If your week includes the south side one day and Keller the next, local search has to explain that without sounding like you serve the entire state.",
-    exampleTitle: "How Noble would fix a Fort Worth HVAC listing that keeps losing south side jobs",
+    exampleTitle: "How NOBLE would fix a Fort Worth HVAC listing that keeps losing south side jobs",
     exampleProblem:
       "A heating and cooling company keeps the shop on the north side. Google Business Profile categories are vague. Photos are the truck from 2018. The website says “DFW Metroplex.” Families leaving the Fort Worth Zoo search “AC repair near me,” see three other companies, and never find this one.",
     exampleFix: [
@@ -236,7 +236,7 @@ export const locations: CityLocation[] = [
     ],
     whoFor:
       "Dentists, med spas, home services, restaurants, and professional firms in McKinney, Fairview, and nearby Allen. Established owners who feel the phone getting quieter as new competitors open on 380 or near Craig Ranch.",
-    exampleTitle: "How Noble would fix a McKinney clinic that lost the pack after Adriatica filled in",
+    exampleTitle: "How NOBLE would fix a McKinney clinic that lost the pack after Adriatica filled in",
     exampleProblem:
       "A family practice near the Square used to be the obvious Google result. New clinics opened closer to Adriatica and Trinity Falls. The old listing still has one category, no services, and a website that never names McKinney neighborhoods. Pack visibility slipped. Same doctors. Worse findability.",
     exampleFix: [
@@ -266,7 +266,7 @@ export const locations: CityLocation[] = [
     ],
     whoFor:
       "Independent restaurants, clinics, contractors, and professional firms that serve a real Dallas pocket, not a slogan that claims the whole metro. If you work Oak Cliff and skip Far North Dallas, the site should say so.",
-    exampleTitle: "How Noble would fix a Dallas contractor who ranks for the company name and nothing else",
+    exampleTitle: "How NOBLE would fix a Dallas contractor who ranks for the company name and nothing else",
     exampleProblem:
       "A remodeling company in East Dallas gets referrals. Google the name and they appear. Google “kitchen remodel near Lakewood” and they vanish. The site is a slideshow. Service pages do not exist. The Google Business Profile category is General Contractor, which is true and useless.",
     exampleFix: [
@@ -296,7 +296,7 @@ export const locations: CityLocation[] = [
     ],
     whoFor:
       "Home services, dental and medical practices, and B2B services based in Plano or regularly taking jobs off the Dallas North Tollway. Owners who already know customers shop them against two other Google results.",
-    exampleTitle: "How Noble would fix a Plano home service company that loses the click after Maps",
+    exampleTitle: "How NOBLE would fix a Plano home service company that loses the click after Maps",
     exampleProblem:
       "An electrician shows in the Local Pack for Plano. People tap the website. The homepage is a stock hero and a phone number. No service list. No mention of panel upgrades, EV chargers, or west Plano. They bounce and call the next listing.",
     exampleFix: [
@@ -326,7 +326,7 @@ export const locations: CityLocation[] = [
     ],
     whoFor:
       "Restaurants, clinics, gyms, and home services in Frisco, Little Elm, and the edge of Plano. Owners opening a second location who do not want the old listing and the new one to fight each other.",
-    exampleTitle: "How Noble would fix a Frisco restaurant that is invisible two miles from The Star",
+    exampleTitle: "How NOBLE would fix a Frisco restaurant that is invisible two miles from The Star",
     exampleProblem:
       "A restaurant sits close enough that people leaving The Star could eat there tonight. Google Maps shows a pin with two photos and no menu link. The website is a PDF. Categories are Restaurant, which tells Google almost nothing.",
     exampleFix: [
@@ -356,7 +356,7 @@ export const locations: CityLocation[] = [
     ],
     whoFor:
       "Hospitality near the stadiums, home services across residential Arlington, and medical or auto businesses that see both locals and visitors. Owners who lose work to Grand Prairie or Fort Worth because Maps is confused.",
-    exampleTitle: "How Noble would fix an Arlington locksmith that only shows up on game day by accident",
+    exampleTitle: "How NOBLE would fix an Arlington locksmith that only shows up on game day by accident",
     exampleProblem:
       "A locksmith gets a spike when someone is stuck near AT&T Stadium, then goes quiet. The listing hours say Open, even when they are not. Categories are mixed with towing. The website is a template that says “locksmith Dallas Fort Worth Arlington Plano Frisco McKinney.”",
     exampleFix: [
@@ -386,7 +386,7 @@ export const locations: CityLocation[] = [
     ],
     whoFor:
       "Independent shops on the Square, clinics that take students and families, and trades that cover Denton and the towns around it. Owners who do not want a Dallas sized agency process.",
-    exampleTitle: "How Noble would fix a Denton shop on the Square that Facebook forgot to send to Google",
+    exampleTitle: "How NOBLE would fix a Denton shop on the Square that Facebook forgot to send to Google",
     exampleProblem:
       "A storefront on the Square is busy in person and quiet online. The Facebook page is current. The Google Business Profile still has last year’s hours and no website. Search “shop downtown Denton” and a chain on Loop 288 appears instead.",
     exampleFix: [
@@ -416,7 +416,7 @@ export const locations: CityLocation[] = [
     ],
     whoFor:
       "B2B services in Las Colinas, hospitality near the airport and Music Factory, and home services that cover Irving, Coppell, and the inner suburbs. Owners whose “we serve DFW” line is true and currently unreadable to Google.",
-    exampleTitle: "How Noble would fix an Irving B2B firm that Google treats like a vacant suite",
+    exampleTitle: "How NOBLE would fix an Irving B2B firm that Google treats like a vacant suite",
     exampleProblem:
       "A professional services office in Las Colinas has a real team and a dead Google listing. The pin is in the wrong building. The website never says Irving. Employees search the company name before a vendor meeting and find an old suite number.",
     exampleFix: [

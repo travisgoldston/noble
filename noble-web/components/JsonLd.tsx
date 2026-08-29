@@ -52,7 +52,7 @@ export function serviceSchema({
     url: `https://nobleseo.co${url}`,
     provider: {
       "@type": "Organization",
-      name: "Noble SEO",
+      name: "NOBLE SEO",
       url: "https://nobleseo.co",
     },
     areaServed: [
@@ -70,7 +70,7 @@ export function offerCatalogSchema(
   return {
     "@context": "https://schema.org",
     "@type": "OfferCatalog",
-    name: "Noble SEO local SEO plans",
+    name: "NOBLE SEO local SEO plans",
     url: "https://nobleseo.co/pricing",
     itemListElement: offers.map((offer, index) => ({
       "@type": "Offer",

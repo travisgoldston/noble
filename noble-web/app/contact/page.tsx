@@ -6,7 +6,7 @@ import { cta, paths } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Free SEO Audit",
   description:
-    "Request a free SEO audit from Noble. We review Google Search and Maps visibility and tell you whether it makes sense to work together.",
+    "Request a free SEO audit from NOBLE. We review Google Search and Maps visibility and tell you whether it makes sense to work together.",
   alternates: { canonical: "/contact" },
 };
 
@@ -35,7 +35,7 @@ export default function ContactPage() {
           <ol className="mt-4 grid gap-3 text-sm text-stone">
             <li>1. We confirm we received the request.</li>
             <li>2. Typical response time is one business day.</li>
-            <li>3. You get a short audit: what is in the way, and whether Noble is a fit.</li>
+            <li>3. You get a short audit: what is in the way, and whether NOBLE is a fit.</li>
             <li>4. If it is a fit, we schedule a conversation. If it is not, we say so.</li>
           </ol>
           <p className="mt-6 text-sm text-stone">Prefer to write directly?</p>

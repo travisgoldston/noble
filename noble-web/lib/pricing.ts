@@ -86,7 +86,7 @@ export const pricingPlan = [
   {
     n: "01",
     title: "See the problem",
-    body: "A free audit of Search, Maps, and the site. You get a plain-English read on what is costing calls — and whether Noble is a fit. You can walk away.",
+    body: "A free audit of Search, Maps, and the site. You get a plain-English read on what is costing calls — and whether NOBLE is a fit. You can walk away.",
   },
   {
     n: "02",
@@ -119,7 +119,7 @@ export const pricingGuide = {
   empathy:
     "If the trucks are busy and Google still sends the next job to someone else, that is not a branding problem. It is a findability problem. Owners feel it as a quieter phone and a thicker stack of invoices they cannot defend.",
   authority:
-    "Noble is a founder-led local SEO practice, not a full-service agency. Capacity stays small on purpose. The work is Google Search, Maps, on-page, and technical SEO for Dallas–Fort Worth businesses. We publish proof with numbers and caveats. We do not fabricate case studies, guarantee rankings, or claim a storefront we do not occupy.",
+    "NOBLE is a founder-led local SEO practice, not a full-service agency. Capacity stays small on purpose. The work is Google Search, Maps, on-page, and technical SEO for Dallas–Fort Worth businesses. We publish proof with numbers and caveats. We do not fabricate case studies, guarantee rankings, or claim a storefront we do not occupy.",
 };
 
 export const pricingSuccess = {
@@ -135,7 +135,7 @@ export const pricingFailure = {
 export const pricingComparisons = [
   {
     id: "noble",
-    name: "Noble SEO",
+    name: "NOBLE SEO",
     kicker: "Founder-led local SEO",
     highlight: true,
     points: [
@@ -192,7 +192,7 @@ export const pricingFaqs = [
   {
     question: "Why not a bigger SEO agency?",
     answer:
-      "A larger agency can be the right fit if you want a full marketing department. You will usually pay for account layers, a stacked retainer, and a process built to scale their bench — not to diagnose your Maps listing on a Tuesday. Noble stays small so strategy, diagnosis, and the work stay with the founder. If you need PPC, social, and branding under one roof, we are not the right firm.",
+      "A larger agency can be the right fit if you want a full marketing department. You will usually pay for account layers, a stacked retainer, and a process built to scale their bench — not to diagnose your Maps listing on a Tuesday. NOBLE stays small so strategy, diagnosis, and the work stay with the founder. If you need PPC, social, and branding under one roof, we are not the right firm.",
   },
   {
     question: "Can you guarantee rankings or a number of leads?",
@@ -232,12 +232,12 @@ export const pricingFaqs = [
   {
     question: "Are there setup fees or surprise add-ons?",
     answer:
-      "The monthly number is the plan. If the site needs a one-time technical rescue beyond the plan, we say so before that work starts. We do not upsell social, PPC, branding, or web design. Those can be useful. They are not what Noble sells.",
+      "The monthly number is the plan. If the site needs a one-time technical rescue beyond the plan, we say so before that work starts. We do not upsell social, PPC, branding, or web design. Those can be useful. They are not what NOBLE sells.",
   },
   {
     question: "I also need a new website, ads, or social. Can you do that?",
     answer:
-      "No. Noble is local SEO: Maps, Google Business Profile, on-page, and technical work that supports visibility. If the engine is broken we will say so. We will not take a branding or media retainer to keep the invoice interesting.",
+      "No. NOBLE is local SEO: Maps, Google Business Profile, on-page, and technical work that supports visibility. If the engine is broken we will say so. We will not take a branding or media retainer to keep the invoice interesting.",
   },
   {
     question: "Which plan should I pick?",

@@ -3,7 +3,7 @@ import { resourceNotes } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Resources",
-  description: "Practical notes on local SEO, Google Business Profile, and modern search from Noble.",
+  description: "Practical notes on local SEO, Google Business Profile, and modern search from NOBLE.",
 };
 
 export default function ResourcesPage() {

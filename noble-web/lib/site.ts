@@ -1,6 +1,6 @@
 export const site = {
-  name: "Noble",
-  businessName: "Noble SEO",
+  name: "NOBLE",
+  businessName: "NOBLE SEO",
   url: "https://nobleseo.co",
   email: "hello@nobleseo.co",
   instagram: "https://www.instagram.com/noble.seo",

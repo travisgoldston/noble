@@ -26,7 +26,7 @@ import { cta, paths } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Noble local SEO pricing for Dallas–Fort Worth businesses: Maps $1,250, Local $1,850, and Competitive $2,500 per month. Founder-led work, public prices, no agency black box.",
+    "NOBLE local SEO pricing for Dallas–Fort Worth businesses: Maps $1,250, Local $1,850, and Competitive $2,500 per month. Founder-led work, public prices, no agency black box.",
   alternates: { canonical: "/pricing" },
 };
 
@@ -60,7 +60,7 @@ export default function PricingPage() {
             Your customers are searching. Make sure they find you.
           </h1>
           <p className="mt-6 max-w-2xl text-lg font-medium text-ink">
-            Owner-led Dallas–Fort Worth businesses hire Noble to turn Google
+            Owner-led Dallas–Fort Worth businesses hire NOBLE to turn Google
             Search and Maps visibility into more qualified calls.
           </p>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-stone">
@@ -226,7 +226,7 @@ export default function PricingPage() {
       <section className="border-y border-mist bg-cream py-20 md:py-24">
         <div className="mx-auto max-w-site px-6">
           <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-            Noble vs other SEO
+            NOBLE vs other SEO
           </p>
           <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
             You are not buying a logo and a login.

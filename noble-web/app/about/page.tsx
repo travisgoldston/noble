@@ -6,7 +6,7 @@ import { paths } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Noble is a founder-led local SEO practice serving Dallas–Fort Worth. We work remotely and stay small on purpose.",
+    "NOBLE is a founder-led local SEO practice serving Dallas–Fort Worth. We work remotely and stay small on purpose.",
   alternates: { canonical: "/about" },
 };
 
@@ -22,7 +22,7 @@ export default function AboutPage() {
             A founder-led local SEO practice.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-stone">
-            Noble SEO is not a full-service agency. It is a specialist practice
+            NOBLE SEO is not a full-service agency. It is a specialist practice
             built to produce proof: more of the right customers finding local
             businesses on Google Search and Maps.
           </p>
@@ -39,7 +39,7 @@ export default function AboutPage() {
               Direct work. Limited capacity. No account layer.
             </h2>
             <p className="mt-5 text-stone">
-              When you work with Noble, you work with the person doing the
+              When you work with NOBLE, you work with the person doing the
               strategy, the diagnosis, and the client communication. That is
               intentional. Local SEO fails when the work is handed down a chain
               of people who never looked at the listing.

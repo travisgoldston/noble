@@ -25,7 +25,7 @@ export default function ServicesPage() {
             Local SEO is the product.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-stone">
-            Noble is not a full-service marketing agency. The customer buys
+            NOBLE is not a full-service marketing agency. The customer buys
             search growth: more of the right people finding the business on
             Google Search and Maps.
           </p>
@@ -49,7 +49,7 @@ export default function ServicesPage() {
               <p className="mt-4 max-w-2xl text-stone">{item.body}</p>
               <div className="mt-8 max-w-3xl rounded-xl border border-mist bg-cream p-7">
                 <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-                  How Noble would fix it
+                  How NOBLE would fix it
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-stone">{item.exampleSetup}</p>
                 <p className="mt-3 text-sm leading-relaxed text-stone">{item.exampleFix}</p>

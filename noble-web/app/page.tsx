@@ -20,7 +20,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Noble SEO | SEO built on proof",
+    absolute: "NOBLE SEO | SEO built on proof",
   },
   description:
     "Founder-led local SEO for Dallas–Fort Worth businesses. We help local companies turn Google Search and Maps visibility into more qualified calls.",
@@ -37,7 +37,7 @@ export default function HomePage() {
         <div className="mx-auto grid max-w-site items-start gap-12 px-6 py-16 md:py-24 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div>
             <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-              Noble SEO
+              NOBLE SEO
             </p>
             <h1 className="font-serif mt-5 max-w-[14ch] text-5xl leading-[1.05] tracking-tightest text-ink md:text-6xl">
               SEO built on{" "}
@@ -176,7 +176,7 @@ export default function HomePage() {
             Owner-led local service businesses.
           </h2>
           <p className="mt-5 max-w-2xl text-stone">
-            Noble is built for companies where a new customer is worth real
+            NOBLE is built for companies where a new customer is worth real
             money. If a booked job, a new patient, or a signed project pays for
             the work, local SEO can make sense.
           </p>
@@ -193,7 +193,7 @@ export default function HomePage() {
       <section id="services" className="border-y border-mist bg-cream py-20 md:py-24">
         <div className="mx-auto max-w-site px-6">
           <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-            What Noble does
+            What NOBLE does
           </p>
           <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
             Local SEO. That is the product.
@@ -222,7 +222,7 @@ export default function HomePage() {
       <section className="bg-ink py-20 text-white md:py-24">
         <div className="mx-auto max-w-site px-6">
           <p className="text-[0.72rem] font-medium tracking-[0.22em] text-white/50 uppercase">
-            How Noble works
+            How NOBLE works
           </p>
           <h2 className="font-serif mt-4 max-w-[14ch] text-4xl tracking-tightest md:text-5xl">
             Diagnose. Prioritize. Fix. Monitor.
@@ -305,7 +305,7 @@ export default function HomePage() {
               You work with the person doing the work.
             </h2>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-stone">
-              Noble is not a full-service agency. Capacity stays small on
+              NOBLE is not a full-service agency. Capacity stays small on
               purpose. Strategy, diagnosis, and client communication stay with
               the founder. That is how the work stays tied to proof instead of
               an account layer.
@@ -319,7 +319,7 @@ export default function HomePage() {
             </p>
             <div className="mt-6">
               <Button href={paths.about} variant="secondary">
-                About Noble
+                About NOBLE
               </Button>
             </div>
           </aside>

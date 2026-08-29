@@ -14,14 +14,14 @@ import { notFound } from "next/navigation";
 
 const faqs = [
   {
-    question: "Does Noble have a Fort Worth office?",
+    question: "Does NOBLE have a Fort Worth office?",
     answer:
       "No. We do not claim a physical Fort Worth office, a virtual office, or a residential address used to manufacture Maps presence. The founder works remotely and serves Fort Worth businesses as part of DFW coverage.",
   },
   {
     question: "Do you need a Fort Worth office to do this work?",
     answer:
-      "No. Local SEO does not require a storefront if the work is honest. We help Fort Worth businesses get found. We do not pretend to be a local pack listing for Noble itself with a fake pin.",
+      "No. Local SEO does not require a storefront if the work is honest. We help Fort Worth businesses get found. We do not pretend to be a local pack listing for NOBLE itself with a fake pin.",
   },
   {
     question: "Do you only take Fort Worth clients?",
@@ -101,7 +101,7 @@ export default function FortWorthSeoPage() {
         <div className="mx-auto max-w-site px-6">
           <article className="max-w-3xl">
             <h2 className="font-serif text-3xl tracking-tight">
-              What Noble does in Fort Worth
+              What NOBLE does in Fort Worth
             </h2>
             <p className="mt-4 text-stone">
               The product is local SEO. Google Business Profile, Maps

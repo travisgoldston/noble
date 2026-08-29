@@ -4,7 +4,7 @@ import { cta, paths } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Audit received",
-  description: "Your SEO audit request was received. Noble will follow up within one business day.",
+  description: "Your SEO audit request was received. NOBLE will follow up within one business day.",
   robots: { index: false, follow: false },
 };
 
