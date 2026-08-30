@@ -4,10 +4,12 @@ export function FinalCta({
   eyebrow = "Next step",
   title = "See how the business shows up in Google today.",
   body = "A free SEO audit. Plain English. No obligation.",
+  buttonLabel = "Get Your Free SEO Audit",
 }: {
   eyebrow?: string;
   title?: string;
   body?: string;
+  buttonLabel?: string;
 }) {
   return (
     <section className="pb-20 md:pb-24">
@@ -23,7 +25,7 @@ export function FinalCta({
             {body ? <p className="mt-4 max-w-xl text-white/70">{body}</p> : null}
           </div>
           <Button href="/contact" variant="light">
-            Get Your Free SEO Audit
+            {buttonLabel}
           </Button>
         </div>
       </div>

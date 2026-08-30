@@ -67,10 +67,10 @@ export default function LocalSeoPage() {
             Get found when nearby customers are ready to hire.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-stone">
-            Local SEO is how a DFW HVAC company, plumber, or roofer shows
-            up in Google Search and Maps instead of losing the job to a clearer
-            competitor. The work is practical: relevance, distance, prominence,
-            and a website that can convert the click.
+            Local SEO is how a DFW HVAC company, dentist, or optometrist
+            shows up in Google Search and Maps instead of losing the job to a
+            clearer competitor. The work is practical: relevance, distance,
+            prominence, and a website that can convert the click.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Button href={paths.contact}>{cta.primary}</Button>
@@ -95,10 +95,12 @@ export default function LocalSeoPage() {
               Who this is for
             </h2>
             <p className="mt-4 text-stone">
-              Owner-operated local service businesses across Dallas–Fort Worth.
-              If a new customer has meaningful economic value,
-              local SEO is usually a better investment than a cheap package or
-              another round of ads that stop when you stop paying.
+              Owner-operated local businesses across Dallas–Fort Worth —
+              home services, dental and optometry practices, and other firms
+              where a new customer is worth real money. If that customer has
+              meaningful economic value, local SEO is usually a better
+              investment than a cheap package or another round of ads that
+              stop when you stop paying.
             </p>
             <h2 className="font-serif mt-12 text-3xl tracking-tight">
               What it is not
@@ -113,6 +115,12 @@ export default function LocalSeoPage() {
             items={[
               { href: paths.gbp, label: "Google Business Profile" },
               { href: paths.technical, label: "Technical SEO" },
+              { href: paths.fortWorth, label: "Fort Worth SEO" },
+              { href: paths.industries, label: "Industries" },
+              { href: "/industries/hvac-seo", label: "HVAC SEO" },
+              { href: "/industries/dental-seo", label: "Dental SEO" },
+              { href: "/industries/optometry-seo", label: "Optometry SEO" },
+              { href: paths.resources, label: "Resources" },
               { href: paths.areas, label: "DFW areas" },
             ]}
           />

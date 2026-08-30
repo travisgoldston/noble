@@ -36,11 +36,11 @@ export const caseStudies: CaseStudy[] = [
     kicker: "Case study. Organic SEO",
     headline: "Budgetocity: from page 3 to page 1 with organic SEO",
     subhead:
-      "How we transformed their web content and search foundation without spending a dime on ads.",
+      "How we rebuilt their search foundation and the pages people already type — without paid ads.",
     metric:
       "Avg. position 31.2 to 6.2. +28% clicks year over year. Content engine built without paid ads",
     summary:
-      "We rebuilt their organic presence, structure, on-page SEO, and content that ranks, so people searching for paycheck budgeting could find the product without a dollar of ad spend.",
+      "We rebuilt structure, on-page SEO, and the pages people search for paycheck budgeting, so the product could get found without ad spend.",
     startingSituation:
       "Budgetocity is a paycheck budgeting app for people living paycheck to paycheck. The product was real. Search demand was real. The site was averaging position 31.2 in Google — page three, effectively invisible — with no content engine and no durable organic presence.",
     problem:
@@ -49,7 +49,7 @@ export const caseStudies: CaseStudy[] = [
       "Fix the search foundation first, then publish pages that answer the questions people already type. Measure in Search Console. Keep what earns attention. Do not buy the result with ads.",
     workPerformed: [
       "SEO foundation: structural and on-page issues that kept the site buried, built around queries people actually type.",
-      "Content that ranks: topics chosen from search intent, written to answer the question and earn the click — not filler.",
+      "Pages for the questions people already type, written to answer the search — not filler.",
       "Steady shipping: publish, measure in Search Console, iterate. No tricks.",
     ],
     timeline: "Ongoing organic program. Results reported year over year.",

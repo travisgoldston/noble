@@ -3,6 +3,7 @@ import { notFound, redirect } from "next/navigation";
 import { Button } from "@/components/Button";
 import { RelatedLinks } from "@/components/RelatedLinks";
 import { capabilities, locations, searchSurfaces } from "@/lib/content";
+import { industryLinksForCity } from "@/lib/industries";
 import { cityPath, cta, paths } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -117,6 +118,13 @@ export default async function LocationCityPage({ params }: Props) {
               href: item.href,
               label: item.title,
             }))}
+          />
+          <RelatedLinks
+            title={`${city.name} industries`}
+            items={[
+              { href: paths.industries, label: "All industries" },
+              ...industryLinksForCity(city.slug),
+            ]}
           />
           <RelatedLinks
             title="Nearby DFW cities"

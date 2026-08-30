@@ -1,3 +1,5 @@
+import { industryPath } from "./site";
+
 export const searchSurfaces = [
   {
     slug: "google-search",
@@ -27,13 +29,13 @@ export const searchSurfaces = [
     slug: "ai-powered-search",
     title: "AI powered search",
     href: "/ai-powered-search",
-    body: "Answer systems assemble information from crawlable, authoritative sources. Ambiguity is expensive.",
+    body: "Answer systems pull from pages they can crawl and trust. If the business is vague on the site, it stays vague there too.",
   },
   {
     slug: "reviews-and-entities",
     title: "Reviews and entities",
     href: "/reviews-and-entities",
-    body: "Consistent facts and first hand experiences help search systems understand and trust the business.",
+    body: "Consistent facts and first-hand reviews help people — and search systems — understand the business.",
   },
 ];
 
@@ -94,21 +96,23 @@ export const processSteps = [
 ];
 
 export const whoWeHelp = [
-  "HVAC",
-  "Plumbing",
-  "Roofing",
-  "Electrical",
-  "Landscaping",
-  "Foundation repair",
-  "Remodeling",
-  "Garage doors",
-  "Concrete",
-  "Fencing",
-  "Other high-value local service businesses",
+  { label: "HVAC", href: industryPath("hvac-seo") },
+  { label: "Plumbing", href: industryPath("plumbing-seo") },
+  { label: "Roofing", href: industryPath("roofing-seo") },
+  { label: "Electrical", href: industryPath("electrical-seo") },
+  { label: "Dental", href: industryPath("dental-seo") },
+  { label: "Optometry", href: industryPath("optometry-seo") },
+  { label: "Landscaping" },
+  { label: "Foundation repair" },
+  { label: "Remodeling" },
+  { label: "Garage doors" },
+  { label: "Concrete" },
+  { label: "Fencing" },
+  { label: "Other high-value local businesses" },
 ];
 
 export const supportingTactics = [
-  "Google Business Profile optimization",
+  "Google Business Profile",
   "Google Maps visibility",
   "On-page SEO",
   "Technical SEO",
@@ -128,7 +132,7 @@ export const homeFaqs = [
   {
     question: "Who is this for?",
     answer:
-      "Owner-operated local service businesses — HVAC, plumbing, roofing, electrical, landscaping, and similar trades — where a new customer is worth real money. If a single booked job pays for the work, local SEO can make sense.",
+      "Owner-operated local businesses — HVAC, plumbing, roofing, dental, optometry, and similar firms — where a new customer is worth real money. If a booked job or a new patient pays for the work, local SEO can make sense.",
   },
   {
     question: "Where do you work?",
@@ -437,10 +441,10 @@ export const budgetocity = {
   metric:
     "Avg. position 31.2 to 6.2. +28% clicks year over year. Content engine built without paid ads",
   summary:
-    "We rebuilt their organic presence, structure, on-page SEO, and content that ranks, so people searching for paycheck budgeting could find the product without a dollar of ad spend.",
+    "We rebuilt structure, on-page SEO, and the pages people search for paycheck budgeting, so the product could get found without ad spend.",
   headline: "Budgetocity: from page 3 to page 1 with organic SEO",
-  subhead:
-    "How we transformed their web content and search foundation without spending a dime on ads.",
+    subhead:
+      "How we rebuilt their search foundation and the pages people already type — without paid ads.",
   stats: [
     { value: "31.2 to 6.2", label: "Average Google search position" },
     { value: "+28%", label: "Clicks, year over year" },

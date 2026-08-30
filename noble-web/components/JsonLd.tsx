@@ -89,3 +89,41 @@ export function offerCatalogSchema(
     })),
   };
 }
+
+export function articleSchema({
+  headline,
+  description,
+  url,
+  datePublished,
+  dateModified,
+  section,
+}: {
+  headline: string;
+  description: string;
+  url: string;
+  datePublished: string;
+  dateModified: string;
+  section: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline,
+    description,
+    inLanguage: "en-US",
+    datePublished,
+    dateModified,
+    articleSection: section,
+    mainEntityOfPage: `https://nobleseo.co${url}`,
+    author: {
+      "@type": "Organization",
+      name: "NOBLE",
+      url: "https://nobleseo.co/about",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "NOBLE SEO",
+      url: "https://nobleseo.co",
+    },
+  };
+}

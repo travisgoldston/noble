@@ -301,7 +301,7 @@ export const guides: Guide[] = [
     description:
       "Reviews and entities are how Google and customers decide you are a real business that does what you say.",
     intro:
-      "An entity is just the idea of your business as a specific thing: a name, a place, a set of services. Reviews are first hand proof. Together they help people and search systems trust you.",
+      "An entity is just the idea of your business as a specific thing: a name, a place, a set of services. Reviews are first-hand proof. Together they help people and search systems trust you.",
     sections: [
       {
         heading: "What it is",

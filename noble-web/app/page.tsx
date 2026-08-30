@@ -158,7 +158,7 @@ export default function HomePage() {
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-stone">{item.body}</p>
                 <div className="mt-5">
                   <Button href={item.href} variant="secondary">
-                    Learn more
+                    {item.title}
                   </Button>
                 </div>
               </article>
@@ -173,7 +173,7 @@ export default function HomePage() {
             Who this is for
           </p>
           <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
-            Owner-led local service businesses.
+            Owner-led local businesses.
           </h2>
           <p className="mt-5 max-w-2xl text-stone">
             NOBLE is built for companies where a new customer is worth real
@@ -182,11 +182,25 @@ export default function HomePage() {
           </p>
           <ul className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {whoWeHelp.map((item) => (
-              <li key={item} className="rounded-xl border border-mist bg-cream px-5 py-4 text-sm">
-                {item}
+              <li key={item.label} className="rounded-xl border border-mist bg-cream px-5 py-4 text-sm">
+                {item.href ? (
+                  <Link href={item.href} className="hover:text-forest">
+                    {item.label}
+                  </Link>
+                ) : (
+                  item.label
+                )}
               </li>
             ))}
           </ul>
+          <p className="mt-6 text-sm text-stone">
+            Industry-specific pages live deeper in the site — not as a homepage
+            keyword list.{" "}
+            <Link href={paths.industries} className="text-forest hover:text-forest-deep">
+              See industries
+            </Link>
+            .
+          </p>
         </div>
       </section>
 
@@ -210,7 +224,7 @@ export default function HomePage() {
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-stone">{item.body}</p>
                 <div className="mt-5">
                   <Button href={item.href} variant="secondary">
-                    Learn more
+                    {item.title}
                   </Button>
                 </div>
               </article>

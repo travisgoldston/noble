@@ -51,6 +51,16 @@ export default function AreasPage() {
               </Link>
             ))}
           </div>
+          <p className="mt-10 max-w-2xl text-sm text-stone">
+            Some cities also have industry-specific pages where the local story
+            is different enough to deserve a URL — HVAC, dental, and optometry
+            in Fort Worth, plus Dallas counterparts where the copy is locally
+            true.{" "}
+            <Link href={paths.industries} className="text-forest hover:text-forest-deep">
+              See industries
+            </Link>
+            .
+          </p>
         </div>
       </section>
       <FinalCta title="Not on this list? The work still starts with an audit." />

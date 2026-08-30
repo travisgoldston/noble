@@ -82,7 +82,9 @@ export default function ServicesPage() {
           <RelatedLinks
             title="Start with the market"
             items={[
+              { href: paths.fortWorth, label: "Fort Worth SEO" },
               { href: paths.areas, label: "DFW areas" },
+              { href: paths.industries, label: "Industries" },
               { href: paths.pricing, label: "Pricing" },
               { href: paths.caseStudies, label: "Case studies" },
             ]}

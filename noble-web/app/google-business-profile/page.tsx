@@ -106,6 +106,12 @@ export default function GbpPage() {
               { href: paths.localSeo, label: "Local SEO" },
               { href: paths.technical, label: "Technical SEO" },
               { href: "/google-maps", label: "Google Maps, in plain English" },
+              { href: paths.fortWorth, label: "Fort Worth SEO" },
+              { href: paths.industries, label: "Industries" },
+              { href: "/industries/hvac-seo", label: "HVAC SEO" },
+              { href: "/industries/dental-seo", label: "Dental SEO" },
+              { href: "/industries/optometry-seo", label: "Optometry SEO" },
+              { href: paths.resources, label: "Resources" },
             ]}
           />
         </div>

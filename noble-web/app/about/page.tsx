@@ -127,6 +127,9 @@ export default function AboutPage() {
           <RelatedLinks
             title="Where this work happens"
             items={[
+              { href: paths.localSeo, label: "Local SEO" },
+              { href: paths.industries, label: "Industries" },
+              { href: paths.fortWorth, label: "Fort Worth SEO" },
               { href: paths.areas, label: "DFW areas" },
               { href: paths.pricing, label: "Pricing" },
               { href: paths.caseStudies, label: "Case studies" },

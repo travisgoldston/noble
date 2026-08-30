@@ -98,6 +98,15 @@ export function GuidePage({ guide }: { guide: Guide }) {
             }))}
           />
           <RelatedLinks
+            title="Industries"
+            items={[
+              { href: paths.industries, label: "All industries" },
+              { href: "/industries/hvac-seo", label: "HVAC SEO" },
+              { href: "/industries/dental-seo", label: "Dental SEO" },
+              { href: "/industries/optometry-seo", label: "Optometry SEO" },
+            ]}
+          />
+          <RelatedLinks
             title="DFW areas"
             items={[
               { href: paths.areas, label: "All DFW areas" },

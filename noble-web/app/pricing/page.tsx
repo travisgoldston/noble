@@ -291,6 +291,9 @@ export default function PricingPage() {
           title="Related"
           items={[
             { href: paths.localSeo, label: "Local SEO" },
+            { href: paths.gbp, label: "Google Business Profile" },
+            { href: paths.fortWorth, label: "Fort Worth SEO" },
+            { href: paths.industries, label: "Industries" },
             { href: paths.caseStudies, label: "Case studies" },
             { href: paths.contact, label: "Free SEO audit" },
           ]}

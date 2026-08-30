@@ -5,6 +5,7 @@ import { useState, type ReactNode } from "react";
 import { BrandMark } from "@/components/BrandMark";
 import { Button } from "@/components/Button";
 import { capabilities, locations, searchSurfaces } from "@/lib/content";
+import { industries, industryHref } from "@/lib/industries";
 import { cityPath, cta, paths } from "@/lib/site";
 
 function Dropdown({
@@ -80,6 +81,22 @@ export function SiteHeader() {
           <Link href={paths.caseStudies} className="transition-colors hover:text-ink">
             Proof
           </Link>
+          <Dropdown label="Industries" href={paths.industries}>
+            <div className="min-w-56 rounded-xl border border-mist bg-white py-2 shadow-card">
+              <Link href={paths.industries} className="block px-4 py-2 text-ink hover:bg-cream">
+                All industries
+              </Link>
+              {industries.map((item) => (
+                <Link
+                  key={item.slug}
+                  href={industryHref(item)}
+                  className="block px-4 py-2 text-stone hover:bg-cream hover:text-ink"
+                >
+                  {item.navLabel}
+                </Link>
+              ))}
+            </div>
+          </Dropdown>
           <Link href={paths.pricing} className="transition-colors hover:text-ink">
             Pricing
           </Link>
@@ -147,6 +164,22 @@ export function SiteHeader() {
             <Link href={paths.caseStudies} className="mt-3 text-ink" onClick={() => setOpen(false)}>
               Proof
             </Link>
+            <p className="mt-3 text-xs font-medium tracking-[0.14em] text-stone uppercase">
+              Industries
+            </p>
+            <Link href={paths.industries} className="text-ink" onClick={() => setOpen(false)}>
+              All industries
+            </Link>
+            {industries.map((item) => (
+              <Link
+                key={item.slug}
+                href={industryHref(item)}
+                className="text-ink"
+                onClick={() => setOpen(false)}
+              >
+                {item.navLabel}
+              </Link>
+            ))}
             <Link href={paths.pricing} className="text-ink" onClick={() => setOpen(false)}>
               Pricing
             </Link>

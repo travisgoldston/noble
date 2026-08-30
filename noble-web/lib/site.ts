@@ -22,7 +22,20 @@ export const paths = {
   thanks: "/contact/thanks",
   resources: "/resources",
   pricing: "/pricing",
+  industries: "/industries",
 } as const;
+
+export function industryPath(slug: string) {
+  return `${paths.industries}/${slug}`;
+}
+
+export function industryCityPath(industrySlug: string, citySlug: string) {
+  return `${paths.industries}/${industrySlug}/${citySlug}`;
+}
+
+export function articlePath(slug: string) {
+  return `${paths.resources}/${slug}`;
+}
 
 export function cityPath(slug: string) {
   if (slug === "fort-worth") return paths.fortWorth;
@@ -33,6 +46,9 @@ export const cta = {
   primary: "Get Your Free SEO Audit",
   form: "Get My Free SEO Audit",
   proof: "See the Proof",
+  auditTitle: "Want to know where your business stands?",
+  auditBody:
+    "We'll look at how your business appears in Search, Maps, and your website and tell you what's actually holding you back.",
 };
 
 export { pricing } from "./pricing";

@@ -26,6 +26,18 @@ export function SiteFooter() {
               {item.title}
             </Link>
           ))}
+          <Link href={paths.industries} className="mt-3 hover:text-white">
+            Industries
+          </Link>
+          <Link href="/industries/hvac-seo" className="hover:text-white">
+            HVAC SEO
+          </Link>
+          <Link href="/industries/dental-seo" className="hover:text-white">
+            Dental SEO
+          </Link>
+          <Link href="/industries/optometry-seo" className="hover:text-white">
+            Optometry SEO
+          </Link>
           <Link href={paths.contact} className="mt-3 hover:text-white">
             {cta.primary}
           </Link>
