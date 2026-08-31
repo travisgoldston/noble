@@ -1,28 +1,25 @@
 import type { Metadata } from "next";
 import { Button } from "@/components/Button";
-import { cta, paths } from "@/lib/site";
+import { paths } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Audit received",
-  description: "Your SEO audit request was received. NOBLE will follow up within one business day.",
+  description: "Your local search audit request was received.",
   robots: { index: false, follow: false },
 };
 
 export default function ThanksPage() {
-  const calendar = process.env.NEXT_PUBLIC_CALENDLY_URL;
-
   return (
     <section className="mx-auto max-w-site px-6 py-28">
       <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
         Request received
       </p>
       <h1 className="font-serif mt-4 max-w-[14ch] text-5xl tracking-tightest">
-        We have the audit request.
+        Your audit request is in.
       </h1>
       <p className="mt-5 max-w-xl text-lg text-stone">
-        Typical response time is one business day. We will look at Google Search
-        and Maps, then tell you what is in the way and whether it makes sense
-        to talk.
+        We will review your business and send the findings to the email you
+        provided.
       </p>
       <p className="mt-4 max-w-xl text-stone">
         If you do not see a reply, check spam or email{" "}
@@ -32,13 +29,9 @@ export default function ThanksPage() {
         .
       </p>
       <div className="mt-8 flex flex-wrap gap-4">
-        {calendar ? (
-          <Button href={calendar}>Book a time</Button>
-        ) : (
-          <Button href={paths.caseStudies}>{cta.proof}</Button>
-        )}
-        <Button href={paths.areas} variant="secondary">
-          DFW areas
+        <Button href={paths.pricing}>Explore NOBLE Pricing →</Button>
+        <Button href={paths.caseStudies} variant="secondary">
+          See the Proof
         </Button>
       </div>
     </section>

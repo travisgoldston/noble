@@ -5,11 +5,13 @@ export function FinalCta({
   title = "See how the business shows up in Google today.",
   body = "A free SEO audit. Plain English. No obligation.",
   buttonLabel = "Get Your Free SEO Audit",
+  href = "/contact",
 }: {
   eyebrow?: string;
   title?: string;
   body?: string;
   buttonLabel?: string;
+  href?: string;
 }) {
   return (
     <section className="pb-20 md:pb-24">
@@ -24,7 +26,7 @@ export function FinalCta({
             </h2>
             {body ? <p className="mt-4 max-w-xl text-white/70">{body}</p> : null}
           </div>
-          <Button href="/contact" variant="light">
+          <Button href={href} variant="light">
             {buttonLabel}
           </Button>
         </div>
