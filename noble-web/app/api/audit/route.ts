@@ -17,6 +17,19 @@ function isEmail(value: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
 
+const gbpStatusMap: Record<string, string> = {
+  has: "has",
+  none: "none",
+  unsure: "unsure",
+  verified: "verified",
+  needs_setup: "needs_setup",
+};
+
+function mapGbpStatus(value: string) {
+  if (!value) return "";
+  return gbpStatusMap[value] || value;
+}
+
 export async function POST(request: Request) {
   let body: AuditPayload;
   try {
@@ -42,7 +55,7 @@ export async function POST(request: Request) {
     noWebsiteRaw === "true" ||
     noWebsiteRaw === "on" ||
     noWebsiteRaw === "1";
-  const gbpStatus = String(body.gbpStatus || "").trim();
+  const gbpStatus = mapGbpStatus(String(body.gbpStatus || "").trim());
 
   const payload = {
     name,

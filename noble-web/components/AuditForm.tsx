@@ -29,12 +29,25 @@ const services = [
   "Other",
 ];
 
+const contactGbpOptions = [
+  { value: "verified", label: "Yes, and it's verified" },
+  { value: "needs_setup", label: "Yes, but I'm not sure it's set up correctly" },
+  { value: "none", label: "No / I'm not sure" },
+] as const;
+
+const gbpNotPresentValues = new Set(["none", "unsure"]);
+
+type Variant = "compact" | "contact";
+
 type Props = {
   compact?: boolean;
+  variant?: Variant;
 };
 
-export function AuditForm({ compact = false }: Props) {
-  const prefix = compact ? "compact-" : "";
+export function AuditForm({ compact = false, variant }: Props) {
+  const isCompact = variant === "compact" || compact;
+  const prefix = isCompact ? "compact-" : "";
+  const gbpChoices = isCompact ? gbpOptions : contactGbpOptions;
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">(
     "idle",
   );
@@ -69,7 +82,7 @@ export function AuditForm({ compact = false }: Props) {
 
   function onGbpChange(value: string) {
     markStarted();
-    if (value === "none" && !gbpTracked.current) {
+    if (gbpNotPresentValues.has(value) && !gbpTracked.current) {
       gbpTracked.current = true;
       trackAuditEvent("audit_gbp_not_present");
     }
@@ -111,7 +124,7 @@ export function AuditForm({ compact = false }: Props) {
       }
       trackLead();
       trackAuditEvent("audit_form_submitted");
-      if (compact) {
+      if (isCompact) {
         window.location.href = "/contact/thanks";
         return;
       }
@@ -126,7 +139,7 @@ export function AuditForm({ compact = false }: Props) {
     }
   }
 
-  if (!compact && status === "success") {
+  if (!isCompact && status === "success") {
     return (
       <div className="rounded-xl border border-mist bg-white p-6 md:p-8">
         <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
@@ -136,11 +149,13 @@ export function AuditForm({ compact = false }: Props) {
           Your game plan request is in.
         </h3>
         <p className="mt-4 max-w-xl text-stone">
-          I will review your business and local market, then email you a written
-          game plan. No calendar invite. No required sales call.
+          I&apos;ll review your online presence and email your game plan within one
+          business day.
         </p>
         <div className="mt-8">
-          <Button href={paths.pricing}>Explore NOBLE Pricing →</Button>
+          <Button href={paths.pricing} variant="secondary">
+            View Pricing
+          </Button>
         </div>
       </div>
     );
@@ -151,24 +166,18 @@ export function AuditForm({ compact = false }: Props) {
       onSubmit={onSubmit}
       onInput={markStarted}
       className={
-        compact
+        isCompact
           ? "grid gap-3"
           : "grid gap-5 rounded-xl border border-mist bg-white p-6 md:p-8"
       }
     >
-      <div>
-        <p className="font-medium text-ink">{gamePlan.introTitle}</p>
-        <p className={`${compact ? "mt-1" : "mt-2"} text-sm leading-relaxed text-stone`}>
-          {gamePlan.introBody}
-        </p>
-        <p className={`${compact ? "mt-1" : "mt-2"} text-sm text-stone`}>{gamePlan.introMeta}</p>
-      </div>
-      {compact ? null : (
-        <p className="text-sm text-stone">
-          Required fields are marked with{" "}
-          <span className="font-medium text-ink">*</span>.
-        </p>
-      )}
+      {isCompact ? (
+        <div>
+          <p className="font-medium text-ink">{gamePlan.introTitle}</p>
+          <p className="mt-1 text-sm leading-relaxed text-stone">{gamePlan.introBody}</p>
+          <p className="mt-1 text-sm text-stone">{gamePlan.introMeta}</p>
+        </div>
+      ) : null}
       <div className="grid gap-3 sm:grid-cols-2">
         <Field
           id={`${prefix}name`}
@@ -232,25 +241,20 @@ export function AuditForm({ compact = false }: Props) {
         />
         <span className="text-sm font-medium">I don&apos;t have a website yet</span>
       </label>
-      <fieldset className={compact ? "grid gap-2" : "grid gap-3"}>
+      <fieldset className={isCompact ? "grid gap-2" : "grid gap-3"}>
         <legend className="text-sm font-medium">
           Google Business Profile <span className="text-forest">*</span>
         </legend>
-        {compact ? (
+        {isCompact ? (
           <p className="text-xs text-stone">
             The Google listing with hours, reviews, and a map pin.
           </p>
-        ) : (
-          <p className="text-sm text-stone">
-            The Google listing with your hours, reviews, and map pin. If you&apos;re
-            not sure, that&apos;s fine.
-          </p>
-        )}
-        <div className={`grid gap-2 ${compact ? "sm:grid-cols-3" : ""}`}>
-          {gbpOptions.map((option) => (
+        ) : null}
+        <div className={`grid gap-2 ${isCompact ? "sm:grid-cols-3" : ""}`}>
+          {gbpChoices.map((option) => (
             <label
               key={option.value}
-              className="flex min-h-11 cursor-pointer items-center gap-3 rounded-xl border border-mist px-3 py-2.5"
+              className="flex min-h-12 cursor-pointer items-center gap-3 rounded-xl border border-mist px-3 py-2.5"
             >
               <input
                 type="radio"
@@ -265,7 +269,7 @@ export function AuditForm({ compact = false }: Props) {
           ))}
         </div>
       </fieldset>
-      {compact ? (
+      {isCompact ? (
         <div className="grid gap-3 sm:grid-cols-2">
           <Field id={`${prefix}city`} name="city" label="City" placeholder="Fort Worth" />
           <div className="grid gap-2">
@@ -290,46 +294,20 @@ export function AuditForm({ compact = false }: Props) {
           </div>
         </div>
       ) : (
-        <>
-          <div className="grid gap-5 sm:grid-cols-2">
-            <Field
-              id={`${prefix}phone`}
-              name="phone"
-              label="Phone"
-              type="tel"
-              autoComplete="tel"
-              inputMode="tel"
-            />
-            <Field
-              id={`${prefix}city`}
-              name="city"
-              label="City"
-              placeholder="Fort Worth"
-              autoComplete="address-level2"
-            />
-          </div>
-          <div className="grid gap-2">
-            <label htmlFor={`${prefix}improve`} className="text-sm font-medium">
-              What would you like to improve?{" "}
-              <span className="font-normal text-stone">(optional)</span>
-            </label>
-            <textarea
-              id={`${prefix}improve`}
-              name="improve"
-              rows={3}
-              className={`min-h-24 resize-y ${fieldClass}`}
-            />
-          </div>
-        </>
+        <Field
+          id={`${prefix}city`}
+          name="city"
+          label="City"
+          placeholder="Fort Worth"
+          required
+          autoComplete="address-level2"
+        />
       )}
-      {compact ? (
+      {isCompact ? (
         <p className="text-sm text-stone">
-          Written game plan by email. No calendar invite. No required sales
-          call.
+          Written game plan by email. No calendar invite. No required sales call.
         </p>
-      ) : (
-        <WhatHappensNext />
-      )}
+      ) : null}
       <button
         type="submit"
         disabled={status === "submitting"}
@@ -337,28 +315,18 @@ export function AuditForm({ compact = false }: Props) {
       >
         {status === "submitting" ? "Sending…" : `${cta.form} →`}
       </button>
+      {isCompact ? null : (
+        <p className="-mt-2 text-sm leading-relaxed text-stone">
+          I&apos;ll review your online presence and email your game plan within one
+          business day.
+        </p>
+      )}
       {message ? (
         <p className="rounded-xl bg-forest-mist px-4 py-3 text-sm text-forest-deep" role="alert">
           {message}
         </p>
       ) : null}
     </form>
-  );
-}
-
-function WhatHappensNext() {
-  return (
-    <div>
-      <p className="text-sm font-medium">What happens next</p>
-      <ol className="mt-3 grid gap-2">
-        {gamePlan.next.map((item, index) => (
-          <li key={item} className="flex gap-3 text-sm leading-relaxed text-stone">
-            <span className="font-serif text-forest">{index + 1}.</span>
-            <span>{item}</span>
-          </li>
-        ))}
-      </ol>
-    </div>
   );
 }
 

@@ -18,8 +18,8 @@ export default function ThanksPage() {
         Your game plan request is in.
       </h1>
       <p className="mt-5 max-w-xl text-lg text-stone">
-        I will review your business and local market, then email you a written
-        game plan. No calendar invite. No required sales call.
+        I&apos;ll review your online presence and email your game plan within one
+        business day.
       </p>
       <p className="mt-4 max-w-xl text-stone">
         If you do not see a reply, check spam or email{" "}
