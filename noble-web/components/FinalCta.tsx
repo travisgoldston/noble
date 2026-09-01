@@ -3,8 +3,8 @@ import { Button } from "@/components/Button";
 export function FinalCta({
   eyebrow = "Next step",
   title = "See how the business shows up in Google today.",
-  body = "A free SEO audit. Plain English. No obligation.",
-  buttonLabel = "Get Your Free SEO Audit",
+  body = "A free local SEO game plan. Written. No sales call required.",
+  buttonLabel = "Get My Free SEO Game Plan",
   href = "/contact",
 }: {
   eyebrow?: string;

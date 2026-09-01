@@ -124,7 +124,7 @@ export function SiteHeader() {
           </Link>
         </nav>
         <div className="ml-auto hidden lg:block lg:ml-0">
-          <Button href={paths.contact}>{cta.primary}</Button>
+          <Button href={paths.contact}>{cta.nav}</Button>
         </div>
         <button
           type="button"
@@ -203,7 +203,7 @@ export function SiteHeader() {
             <Link href={paths.resources} className="text-ink" onClick={() => setOpen(false)}>
               Resources
             </Link>
-            <Button href={paths.contact}>{cta.primary}</Button>
+            <Button href={paths.contact}>{cta.nav}</Button>
           </div>
         </nav>
       ) : null}

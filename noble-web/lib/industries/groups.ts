@@ -11,7 +11,7 @@ export const industryGroups: IndustryGroup[] = [
     lede: "A booked job is worth real money. The search happens on a phone, often the same afternoon. Local SEO is how the right company shows up for that search instead of a clearer competitor.",
     body: [
       "Home service search is practical. People type the problem, the trade, and often a city or “near me.” Google Business Profile and Maps usually decide the first three names they see. The website has to convert the click that follows.",
-      "NOBLE is not a generalist agency for every contractor in America. The product is local SEO for high-value local businesses that depend on Search and Maps. HVAC is the beachhead. Plumbing, roofing, and electrical use the same system with different search behavior.",
+      "The product is local SEO for local businesses that depend on Search and Maps. HVAC, plumbing, roofing, and electrical are published examples — the same system, different search behavior. Other home service trades are a fit conversation, not a closed door.",
       "Service-area businesses are the usual setup. Fake storefront pins are not. Distance is real. Confusion about categories, cities, and services is optional.",
     ],
   },

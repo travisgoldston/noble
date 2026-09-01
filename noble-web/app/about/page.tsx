@@ -67,9 +67,9 @@ export default function AboutPage() {
               Plain language. Clear fit. No runaround.
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-stone">
-              The first step is a free SEO audit, not a 15-field interrogation.
-              If the work is not a fit, you will hear that. If it is, you will
-              know what the work costs and what it is for.
+              The first step is a free local SEO game plan, not a 15-field
+              interrogation. If the work is not a fit, you will hear that. If
+              it is, you will know what the work costs and what it is for.
             </p>
           </article>
           <article className="rounded-xl border border-mist bg-white p-8">

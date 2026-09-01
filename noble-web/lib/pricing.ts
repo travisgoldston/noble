@@ -86,7 +86,7 @@ export const pricingPlan = [
   {
     n: "01",
     title: "See the problem",
-    body: "A free audit of Search, Maps, and the site. You get a plain-English read on what is costing calls — and whether NOBLE is a fit. You can walk away.",
+    body: "A free local SEO game plan. Search, Maps, the site if you have one, and what to set up first if you don't. You get a plain-English read on what is costing calls — and whether NOBLE is a fit. You can walk away.",
   },
   {
     n: "02",
@@ -145,7 +145,7 @@ export const pricingComparisons = [
       "Proof published with numbers, caveats, and permission",
       "No ranking guarantees. Anyone selling those is selling something Google does not sell",
       "DFW-specific. Remote. No fake office pin",
-      "Free audit first. If it is not a fit, we say so",
+      "Free game plan first. If it is not a fit, we say so",
       "Plans named for the work, not Bronze / Silver / Gold",
     ],
   },
@@ -207,12 +207,12 @@ export const pricingFaqs = [
   {
     question: "I already have an SEO company. Should I stay?",
     answer:
-      "Only if you can explain last month’s invoice in a sentence tied to Search, Maps, or the site. If the relationship is a report you do not read and a junior team you have never met, get the free audit anyway. You can keep them, fire them, or do nothing. The first look is information.",
+      "Only if you can explain last month’s invoice in a sentence tied to Search, Maps, or the site. If the relationship is a report you do not read and a junior team you have never met, get the free game plan anyway. You can keep them, fire them, or do nothing. The first look is information.",
   },
   {
     question: "Do I have to sign a 12-month contract?",
     answer:
-      "The audit is free and has no obligation. Paid work is scoped in writing around a plan, not hidden behind a discovery call. We do not use a year-long lock-in to make a thin package look like a relationship. If the fit is wrong, it is better to find that out in the audit.",
+      "The game plan is free and has no obligation. Paid work is scoped in writing around a plan, not hidden behind a discovery call. We do not use a year-long lock-in to make a thin package look like a relationship. If the fit is wrong, it is better to find that out in the game plan.",
   },
   {
     question: "What if it does not work?",
@@ -242,7 +242,7 @@ export const pricingFaqs = [
   {
     question: "Which plan should I pick?",
     answer:
-      "If the listing is the obvious leak and the site is already usable, start with Maps — it still includes on-page SEO on the pages you have. Most owner-led service businesses belong on Local. Competitive is for crowded categories and businesses that need a real page and authority system, not only a complete profile. The audit will recommend one — including “not yet” if the budget or the market is wrong.",
+      "If the listing is the obvious leak and the site is already usable, start with Maps — it still includes on-page SEO on the pages you have. Most owner-led service businesses belong on Local. Competitive is for crowded categories and businesses that need a real page and authority system, not only a complete profile. The game plan will recommend one — including “not yet” if the budget or the market is wrong.",
   },
   {
     question: "Didn’t you say you don’t sell packages?",

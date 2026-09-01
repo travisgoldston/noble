@@ -3,8 +3,8 @@ import { Button } from "@/components/Button";
 import { paths } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Audit received",
-  description: "Your local search audit request was received.",
+  title: "Game plan request received",
+  description: "Your local SEO game plan request was received.",
   robots: { index: false, follow: false },
 };
 
@@ -15,11 +15,11 @@ export default function ThanksPage() {
         Request received
       </p>
       <h1 className="font-serif mt-4 max-w-[14ch] text-5xl tracking-tightest">
-        Your audit request is in.
+        Your game plan request is in.
       </h1>
       <p className="mt-5 max-w-xl text-lg text-stone">
-        We will review your business and send the findings to the email you
-        provided.
+        I will review your business and local market, then email you a written
+        game plan. No calendar invite. No required sales call.
       </p>
       <p className="mt-4 max-w-xl text-stone">
         If you do not see a reply, check spam or email{" "}

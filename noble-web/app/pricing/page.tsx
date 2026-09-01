@@ -65,7 +65,7 @@ export default function PricingPage() {
           </p>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-stone">
             If they cannot find you, they hire the company that looks clearer.
-            That is the problem. The plan is a free audit, a public monthly
+            That is the problem. The plan is a free game plan, a public monthly
             number, and local SEO done by the person you talk to — not a
             stacked agency retainer.
           </p>
@@ -145,7 +145,7 @@ export default function PricingPage() {
             Three steps. Then you decide.
           </h2>
           <p className="mt-5 max-w-2xl text-white/65">
-            No pitch deck. No obligation on the audit. If the budget, the
+            No pitch deck. No obligation on the game plan. If the budget, the
             market, or the site cannot support the work, we would rather say
             no than sell you a plan that cannot pay for itself.
           </p>
@@ -209,7 +209,7 @@ export default function PricingPage() {
                   </ul>
                   <div className="mt-8">
                     <Button href={paths.contact}>
-                      {featured ? cta.primary : "Start with an audit"}
+                      {featured ? cta.primary : "Start with a game plan"}
                     </Button>
                   </div>
                 </article>
@@ -295,14 +295,14 @@ export default function PricingPage() {
             { href: paths.fortWorth, label: "Fort Worth SEO" },
             { href: paths.industries, label: "Industries" },
             { href: paths.caseStudies, label: "Case studies" },
-            { href: paths.contact, label: "Free SEO audit" },
+            { href: paths.contact, label: "Free SEO game plan" },
           ]}
         />
       </div>
 
       <FinalCta
         title="Find out which plan, if any, is worth it."
-        body="A free audit of Search, Maps, and the site. Then a clear yes, no, or not yet — including which monthly plan fits."
+        body="A free local SEO game plan. Then a clear yes, no, or not yet — including which monthly plan fits."
       />
     </div>
   );

@@ -4,46 +4,49 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/Button";
 import { FinalCta } from "@/components/FinalCta";
 import { JsonLd, breadcrumbSchema, serviceSchema } from "@/components/JsonLd";
-import { paths } from "@/lib/site";
+import { cta, gamePlan, paths } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Free Local SEO Audit",
+  title: "Free Local SEO Game Plan",
   description:
-    "Get a free local SEO audit from NOBLE. We'll review your Google Maps visibility, Google Business Profile, website, reviews, and local competition.",
+    "Get a free local SEO game plan from NOBLE. Already have a website? We'll show you what's holding it back. Starting from zero? We'll tell you what to build first. Written response. No sales call required.",
   alternates: { canonical: "/contact" },
   openGraph: {
-    title: "Free Local SEO Audit | NOBLE SEO",
+    title: "Free Local SEO Game Plan | NOBLE SEO",
     description:
-      "Get a free local SEO audit from NOBLE. We'll review your Google Maps visibility, Google Business Profile, website, reviews, and local competition.",
+      "Get a free local SEO game plan from NOBLE. Already have a website? We'll show you what's holding it back. Starting from zero? We'll tell you what to build first. Written response. No sales call required.",
     url: "/contact",
   },
 };
 
-const lookAt = [
+const questions = [
   {
-    n: "01",
-    title: "Google Maps",
-    body: "How your business appears when nearby customers search for your services.",
+    q: "Is NOBLE for a business like mine?",
+    a: "Yes — if you are an owner-led local business in Dallas–Fort Worth and a new customer is worth real money. Roofing, HVAC, dental, and similar. A full website is not required.",
   },
   {
-    n: "02",
-    title: "Google Business Profile",
-    body: "Categories, services, reviews, photos, and what is missing from the listing.",
+    q: "What if I don't have a website?",
+    a: "That's okay. Request the game plan anyway. I'll tell you what to set up first, what can wait, and whether SEO even makes sense right now.",
   },
   {
-    n: "03",
-    title: "Your website",
-    body: "The pages, content, and technical issues affecting local visibility.",
+    q: "What exactly am I getting?",
+    a: "A written local SEO game plan by email: what customers can find today, website and Google listing opportunities, what I'd fix first, and whether SEO is worth it for you now.",
   },
   {
-    n: "04",
-    title: "Your competition",
-    body: "What businesses outranking you are doing differently.",
+    q: "Is this actually free?",
+    a: "Yes. The game plan is free. It is not a cheap version of the monthly work. Paid local SEO is $1,250, $1,850, or $2,500 a month — only if we both want to continue.",
   },
   {
-    n: "05",
-    title: "Your next 3 moves",
-    body: "The three highest-priority improvements we would make first.",
+    q: "What happens after I submit?",
+    a: "I review your business and local market, then email you the written plan. Typical response is one business day.",
+  },
+  {
+    q: "Am I going to get a sales call?",
+    a: "No. No calendar invite. No required sales call. No pressure. If you want to talk after you read the plan, you can.",
+  },
+  {
+    q: "Can I submit the form quickly?",
+    a: "Yes. Name, business, email, and a couple of taps. About 30 seconds. You do not need SEO vocabulary.",
   },
 ];
 
@@ -68,10 +71,10 @@ export default function ContactPage() {
         data={[
           breadcrumbSchema([
             { name: "Home", href: "/" },
-            { name: "Free Local Search Audit", href: "/contact" },
+            { name: "Free Local SEO Game Plan", href: "/contact" },
           ]),
           serviceSchema({
-            name: "Free Local Search Audit",
+            name: "Free Local SEO Game Plan",
             description: metadata.description as string,
             url: "/contact",
           }),
@@ -79,25 +82,22 @@ export default function ContactPage() {
       />
 
       <section className="bg-cream">
-        <div className="mx-auto max-w-site px-6 py-20">
+        <div className="mx-auto max-w-site px-6 py-12 md:py-20">
           <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Contact" }]} />
           <p className="mt-8 text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-            Free local search audit
+            Free local SEO game plan
           </p>
           <h1 className="font-serif mt-4 max-w-[16ch] text-5xl tracking-tightest md:text-6xl">
-            Get Your Free NOBLE Local Search Audit
+            Get your free local SEO game plan
           </h1>
           <p className="mt-6 max-w-2xl text-lg font-medium text-ink">
-            Find out what is keeping your business from getting more customers
-            from Google Search and Maps.
+            {gamePlan.alreadyHave}
           </p>
-          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-stone">
-            We will review your Google Business Profile, Maps visibility,
-            website, reviews, and local competition — then show you the 3
-            things we would fix first.
+          <p className="mt-3 max-w-2xl text-lg leading-relaxed text-stone">
+            {gamePlan.startingZero} {gamePlan.thatsOkay}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="#audit-form">Get My Free Audit →</Button>
+            <Button href="#audit-form">{cta.primary} →</Button>
             <Button href={paths.pricing} variant="secondary">
               See pricing
             </Button>
@@ -105,30 +105,64 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-24">
-        <div className="mx-auto max-w-site px-6">
-          <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-            The audit
-          </p>
-          <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
-            What we will look at
-          </h2>
-          <p className="mt-5 max-w-2xl text-stone">
-            The question is simple: what is keeping you from getting more
-            customers from Google? The audit is the diagnosis. It is not the
-            product.
-          </p>
-          <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {lookAt.map((item) => (
-              <article
-                key={item.n}
-                className="rounded-xl border border-mist bg-white p-7"
-              >
-                <p className="font-serif text-3xl text-forest/35">{item.n}</p>
-                <h3 className="mt-4 text-lg font-medium">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-stone">{item.body}</p>
-              </article>
-            ))}
+      <section id="audit-form" className="scroll-mt-28 py-12 md:py-16">
+        <div className="mx-auto grid max-w-site gap-10 px-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-start lg:gap-16">
+          <div className="order-2 lg:order-1">
+            <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
+              Straight answers
+            </p>
+            <h2 className="font-serif mt-4 max-w-[16ch] text-3xl tracking-tightest md:text-4xl">
+              Before you send the form
+            </h2>
+            <dl className="mt-8 grid gap-5">
+              {questions.map((item) => (
+                <div key={item.q}>
+                  <dt className="font-medium text-ink">{item.q}</dt>
+                  <dd className="mt-1.5 text-sm leading-relaxed text-stone">{item.a}</dd>
+                </div>
+              ))}
+            </dl>
+            <div className="mt-10">
+              <h3 className="font-serif text-2xl tracking-tight">What you&apos;ll get</h3>
+              <ul className="mt-4 grid gap-2">
+                {gamePlan.youGet.map((item) => (
+                  <li key={item} className="flex gap-3 text-sm leading-relaxed text-stone">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-forest" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="mt-10 rounded-xl border border-mist bg-cream p-6">
+              <h3 className="font-serif text-2xl tracking-tight">{gamePlan.noWebsiteTitle}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-stone">{gamePlan.noWebsiteBody}</p>
+              <p className="mt-3 text-sm leading-relaxed text-stone">{gamePlan.noWebsiteNext}</p>
+            </div>
+          </div>
+          <div className="order-1 lg:sticky lg:top-28 lg:order-2">
+            <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
+              Request
+            </p>
+            <h2 className="font-serif mt-4 max-w-[16ch] text-3xl tracking-tightest md:text-4xl">
+              Request your free game plan
+            </h2>
+            <ul className="mt-5 grid gap-2">
+              {gamePlan.youGet.slice(0, 3).map((item) => (
+                <li key={item} className="flex gap-3 text-sm leading-relaxed text-stone">
+                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-forest" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="mt-8">
+              <AuditForm />
+            </div>
+            <p className="mt-6 text-sm text-stone">
+              Prefer to write directly?{" "}
+              <a className="text-forest hover:text-forest-deep" href="mailto:hello@nobleseo.co">
+                hello@nobleseo.co
+              </a>
+            </p>
           </div>
         </div>
       </section>
@@ -139,16 +173,17 @@ export default function ContactPage() {
             Example only
           </p>
           <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
-            Here is what your audit looks like
+            Here is what a game plan can look like
           </h2>
           <p className="mt-5 max-w-2xl text-stone">
-            This is a sample. It is not a real client, and the scores are not
-            from live data. It is here so you can see the shape of the
-            deliverable before you send the form.
+            Sample audit — representative of what you&apos;ll receive. This is
+            not a real client, and the scores are not from live data. If you
+            don&apos;t have a website or Google listing yet, the plan focuses on
+            what to set up first rather than scores like these.
           </p>
           <article className="mt-12 rounded-xl border border-mist bg-white p-7 md:p-10">
             <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-              Sample audit — example business
+              Sample audit — representative of what you&apos;ll receive
             </p>
             <div className="mt-8 grid gap-5">
               {sampleScores.map((item) => (
@@ -186,72 +221,35 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="bg-ink py-20 text-white md:py-24">
+      <section className="border-b border-mist bg-ink py-20 text-white md:py-24">
         <div className="mx-auto max-w-site px-6">
           <p className="text-[0.72rem] font-medium tracking-[0.22em] text-white/50 uppercase">
-            No obligation
-          </p>
-          <h2 className="font-serif mt-4 max-w-[14ch] text-4xl tracking-tightest md:text-5xl">
-            No pitch. Just the audit.
-          </h2>
-          <p className="mt-5 max-w-2xl text-lg text-white/70">
-            You do not need to sign a contract, book a sales call, or hand over
-            a marketing budget.
-          </p>
-          <p className="mt-4 max-w-2xl text-lg text-white/70">
-            We will show you what we see. What you do with it is up to you.
-          </p>
-        </div>
-      </section>
-
-      <section id="audit-form" className="scroll-mt-28 py-20 md:py-24">
-        <div className="mx-auto max-w-site px-6">
-          <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-            Request
-          </p>
-          <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
-            Request your free audit
-          </h2>
-          <p className="mt-5 max-w-2xl text-stone">
-            Give us a few details and we will take a look. Name, business,
-            website, and email. About thirty seconds.
-          </p>
-          <div className="mt-10 max-w-3xl">
-            <AuditForm />
-          </div>
-          <p className="mt-6 text-sm text-stone">
-            Prefer to write directly?{" "}
-            <a className="text-forest hover:text-forest-deep" href="mailto:hello@nobleseo.co">
-              hello@nobleseo.co
-            </a>
-          </p>
-        </div>
-      </section>
-
-      <section className="border-y border-mist bg-cream py-20 md:py-24">
-        <div className="mx-auto max-w-site px-6">
-          <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
             After the diagnosis
           </p>
           <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
             Want to know what implementation costs?
           </h2>
-          <p className="mt-5 max-w-2xl text-stone">
+          <p className="mt-5 max-w-2xl text-white/70">
             NOBLE pricing is on the page: $1,250, $1,850, or $2,500 a month.
-            No “book a call to learn more.”
+            No “book a call to learn more.” The game plan is free. The monthly
+            work is not.
           </p>
           <div className="mt-8">
-            <Button href={paths.pricing}>See NOBLE Pricing →</Button>
+            <Button href={paths.pricing} variant="light">
+              See NOBLE Pricing →
+            </Button>
           </div>
         </div>
       </section>
 
-      <FinalCta
-        title="Wondering what Google sees?"
-        body="Let’s find out. The audit is free. There is no obligation."
-        buttonLabel="Get Your Free Local Search Audit →"
-        href="#audit-form"
-      />
+      <div className="pt-20 md:pt-24">
+        <FinalCta
+          title="Wondering what Google sees — or what should exist first?"
+          body="Request the free game plan. I'll write it up and email it. No calendar invite. No required sales call."
+          buttonLabel="Get My Free SEO Game Plan →"
+          href="#audit-form"
+        />
+      </div>
     </div>
   );
 }

@@ -9,6 +9,8 @@ type AuditPayload = {
   city?: string;
   service?: string;
   improve?: string;
+  noWebsite?: string | boolean;
+  gbpStatus?: string;
 };
 
 function isEmail(value: string) {
@@ -34,10 +36,20 @@ export async function POST(request: Request) {
     );
   }
 
+  const noWebsiteRaw = body.noWebsite;
+  const noWebsite =
+    noWebsiteRaw === true ||
+    noWebsiteRaw === "true" ||
+    noWebsiteRaw === "on" ||
+    noWebsiteRaw === "1";
+  const gbpStatus = String(body.gbpStatus || "").trim();
+
   const payload = {
     name,
     business,
-    website: String(body.website || "").trim(),
+    website: noWebsite ? "" : String(body.website || "").trim(),
+    noWebsite,
+    gbpStatus,
     email,
     phone: String(body.phone || "").trim(),
     city: String(body.city || "").trim(),

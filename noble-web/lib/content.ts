@@ -99,16 +99,11 @@ export const whoWeHelp = [
   { label: "HVAC", href: industryPath("hvac-seo") },
   { label: "Plumbing", href: industryPath("plumbing-seo") },
   { label: "Roofing", href: industryPath("roofing-seo") },
-  { label: "Electrical", href: industryPath("electrical-seo") },
   { label: "Dental", href: industryPath("dental-seo") },
+  { label: "Home Services", href: industryPath("home-services") },
+  { label: "Professional Services", href: industryPath("professional-services") },
+  { label: "Electrical", href: industryPath("electrical-seo") },
   { label: "Optometry", href: industryPath("optometry-seo") },
-  { label: "Landscaping" },
-  { label: "Foundation repair" },
-  { label: "Remodeling" },
-  { label: "Garage doors" },
-  { label: "Concrete" },
-  { label: "Fencing" },
-  { label: "Other high-value local businesses" },
 ];
 
 export const supportingTactics = [
@@ -132,7 +127,7 @@ export const homeFaqs = [
   {
     question: "Who is this for?",
     answer:
-      "Owner-operated local businesses — HVAC, plumbing, roofing, dental, optometry, and similar firms — where a new customer is worth real money. If a booked job or a new patient pays for the work, local SEO can make sense.",
+      "Local businesses that depend on being found when customers are ready to buy — HVAC, plumbing, roofing, dental, and other owner-operated firms. If a booked job or a new patient pays for the work, local SEO can make sense. You do not need a website to request the free game plan.",
   },
   {
     question: "Where do you work?",
@@ -145,9 +140,14 @@ export const homeFaqs = [
       "Maps is $1,250/month, Local is $1,850/month, and Competitive is $2,500/month. The plans are different intensities of the same product — not Bronze/Silver/Gold filler. Details are on the pricing page.",
   },
   {
-    question: "What happens after I request an audit?",
+    question: "Do I need a website or a Google listing first?",
     answer:
-      "We review how the business shows up in Google Search and Maps, then reply with a plain-English read on what is in the way and whether it makes sense to work together. Typical response time is one business day. There is no obligation.",
+      "No. Don't have a website or Google Business Profile yet? That's okay. Request the free game plan anyway. We'll tell you what to set up first, what can wait, and whether SEO even makes sense for your business right now.",
+  },
+  {
+    question: "What happens after I request a game plan?",
+    answer:
+      "You submit a 30-second form. I review your business and local market. You receive a written game plan by email. No calendar invite. No required sales call. No pressure. Typical response time is one business day.",
   },
   {
     question: "Can you guarantee rankings?",

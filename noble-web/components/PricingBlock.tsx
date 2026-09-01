@@ -1,6 +1,6 @@
 import { pricing, pricingTiers } from "@/lib/pricing";
 import { Button } from "@/components/Button";
-import { paths } from "@/lib/site";
+import { cta, paths } from "@/lib/site";
 
 export function PricingBlock({ id = "pricing" }: { id?: string }) {
   return (
@@ -39,7 +39,7 @@ export function PricingBlock({ id = "pricing" }: { id?: string }) {
         <div className="mt-8 flex flex-wrap gap-4">
           <Button href={paths.pricing}>See pricing</Button>
           <Button href={paths.contact} variant="secondary">
-            Get Your Free SEO Audit
+            {cta.primary}
           </Button>
         </div>
       </div>

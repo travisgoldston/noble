@@ -14,7 +14,7 @@ import {
   searchSurfaces,
   whoWeHelp,
 } from "@/lib/content";
-import { cityPath, cta, paths } from "@/lib/site";
+import { cityPath, cta, gamePlan, paths } from "@/lib/site";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -34,7 +34,7 @@ export default function HomePage() {
     <>
       <JsonLd data={faqSchema(homeFaqs)} />
       <section className="relative overflow-hidden bg-[radial-gradient(circle_at_88%_0%,rgba(91,184,255,0.28),transparent_40%),radial-gradient(circle_at_12%_100%,rgba(58,86,228,0.10),transparent_42%),linear-gradient(180deg,#f8f9fa_0%,#ffffff_72%)]">
-        <div className="mx-auto grid max-w-site items-start gap-12 px-6 py-16 md:py-24 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+        <div className="mx-auto grid max-w-site items-start gap-12 px-6 py-12 md:py-16 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
             <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
               NOBLE SEO
@@ -57,39 +57,95 @@ export default function HomePage() {
               visibility into more qualified calls, leads, and customers —
               without bloated agency retainers or black-box reporting.
             </p>
-            <div className="mt-10 flex flex-wrap items-center gap-4">
+            <p className="mt-4 max-w-xl text-lg leading-relaxed text-stone">
+              {gamePlan.alreadyHave}
+            </p>
+            <p className="mt-3 max-w-xl text-sm leading-relaxed text-stone">
+              <span className="font-medium text-ink">{gamePlan.zeroTitle}</span>{" "}
+              {gamePlan.zeroBody}
+            </p>
+            <div className="mt-8 flex flex-wrap items-center gap-4">
               <Button href={paths.contact}>{cta.primary}</Button>
               <Button href={paths.caseStudies} variant="secondary">
                 {cta.proof}
               </Button>
             </div>
           </div>
-          <div className="rounded-xl border border-mist bg-white p-6 shadow-card md:p-7">
+          <div
+            id="home-form"
+            className="scroll-mt-28 rounded-xl border border-mist bg-white p-6 shadow-card md:p-7"
+          >
             <p className="text-[0.72rem] font-medium tracking-[0.18em] text-forest uppercase">
               No big deal
             </p>
             <h2 className="font-serif mt-2 text-2xl tracking-tight">
               A 30 second look. You can walk away after.
             </h2>
-            <p className="mt-2 text-sm text-stone">
-              Tell us a little. We will look at how the business shows up in
-              Search and Maps. No pitch deck. No obligation.
-            </p>
-            <div className="mt-6">
+            <div className="mt-4">
               <AuditForm compact />
             </div>
-            <p className="mt-5 text-xs leading-relaxed text-stone">
+            <p className="mt-4 text-xs leading-relaxed text-stone">
               This first look is just information for you. You can choose to do
               nothing with it.
             </p>
           </div>
         </div>
+        <div className="mx-auto max-w-site px-6 pb-12 md:pb-16">
+          <p className="text-sm font-medium">What happens next</p>
+          <ol className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {gamePlan.next.map((item, index) => (
+              <li key={item} className="flex gap-2 text-sm leading-snug text-stone">
+                <span className="font-serif text-forest">{index + 1}.</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ol>
+        </div>
       </section>
 
-      <section className="border-y border-mist py-12">
+      <section className="border-y border-mist bg-cream py-16 md:py-20">
+        <div className="mx-auto grid max-w-site gap-10 px-6 lg:grid-cols-2 lg:gap-16">
+          <div>
+            <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
+              What you&apos;ll get
+            </p>
+            <h2 className="font-serif mt-4 max-w-[16ch] text-3xl tracking-tightest md:text-4xl">
+              A written local SEO game plan.
+            </h2>
+            <p className="mt-4 text-stone">
+              Not a sales deck. A plain-English read on what I would do first
+              if this were my business.
+            </p>
+            <ul className="mt-8 grid gap-3">
+              {gamePlan.youGet.map((item) => (
+                <li key={item} className="flex gap-3 text-sm leading-relaxed text-stone">
+                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-forest" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
+              Before SEO
+            </p>
+            <h2 className="font-serif mt-4 max-w-[16ch] text-3xl tracking-tightest md:text-4xl">
+              {gamePlan.noWebsiteTitle}
+            </h2>
+            <p className="mt-4 text-stone">{gamePlan.noWebsiteBody}</p>
+            <p className="mt-4 text-stone">{gamePlan.noWebsiteNext}</p>
+            <p className="mt-4 text-stone">
+              {gamePlan.alreadyHave} Weak Google listing? Same idea — I will
+              tell you what to fix before you spend on SEO.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-mist py-12">
         <div className="mx-auto max-w-site px-6">
           <p className="text-center text-[0.72rem] font-medium tracking-[0.22em] text-stone uppercase">
-            Trusted by
+            Published proof
           </p>
           <div className="mt-6 flex items-center justify-center gap-8">
             <span className="hidden h-px w-24 bg-mist sm:block" aria-hidden="true" />
@@ -129,8 +185,10 @@ export default function HomePage() {
             <Link href={paths.budgetocity} className="text-forest hover:text-forest-deep">
               Budgetocity organic SEO case study
             </Link>
-            . Local service results are published the same way: with numbers,
-            caveats, and permission.
+            . That is software search, not a Fort Worth trades campaign. It is
+            the one published case study. Local service results will be
+            published the same way: with numbers, caveats, and permission — not
+            borrowed.
           </p>
         </div>
       </section>
@@ -170,15 +228,15 @@ export default function HomePage() {
       <section className="py-20 md:py-24">
         <div className="mx-auto max-w-site px-6">
           <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-            Who this is for
+            Who we help
           </p>
           <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
-            Owner-led local businesses.
+            Local Businesses We Help
           </h2>
           <p className="mt-5 max-w-2xl text-stone">
-            NOBLE is built for companies where a new customer is worth real
-            money. If a booked job, a new patient, or a signed project pays for
-            the work, local SEO can make sense.
+            NOBLE is built for local businesses that depend on being found when
+            customers are ready to buy. These are some of the types we commonly
+            help — not a closed list.
           </p>
           <ul className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {whoWeHelp.map((item) => (
@@ -193,14 +251,18 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
-          <p className="mt-6 text-sm text-stone">
-            Industry-specific pages live deeper in the site — not as a homepage
-            keyword list.{" "}
-            <Link href={paths.industries} className="text-forest hover:text-forest-deep">
-              See industries
-            </Link>
-            .
-          </p>
+          <div className="mt-8 max-w-2xl">
+            <p className="font-medium text-ink">
+              Don&apos;t see your business? That&apos;s okay.
+            </p>
+            <p className="mt-2 text-sm leading-relaxed text-stone">
+              We work with other local businesses too.{" "}
+              <Link href={paths.contact} className="text-forest hover:text-forest-deep">
+                Request a free game plan
+              </Link>{" "}
+              and we&apos;ll tell you whether NOBLE is a fit.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -369,7 +431,7 @@ export default function HomePage() {
       <FaqList items={homeFaqs} />
       <FinalCta
         title="Find out whether the Google presence is costing you jobs."
-        body="A free SEO audit of Search, Maps, and the site. Then a clear yes, no, or not yet."
+        body="A free local SEO game plan. Written. No sales call required. Then a clear yes, no, or not yet."
       />
     </>
   );

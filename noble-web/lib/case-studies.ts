@@ -71,7 +71,7 @@ export const caseStudies: CaseStudy[] = [
       "Paid ads can hide a weak organic presence. Removing that crutch makes the work honest.",
     ],
     ctaNote:
-      "If you want the same kind of look at your search presence, the next step is a free SEO audit — then a clear yes, no, or not yet.",
+      "If you want the same kind of look at your search presence, the next step is a free local SEO game plan — then a clear yes, no, or not yet.",
   },
 ];
 

@@ -39,10 +39,9 @@ export default function IndustriesPage() {
             High-value local businesses that depend on Search and Maps.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-stone">
-            NOBLE is not an SEO agency for everyone. The product is local SEO.
-            Industry pages exist so an HVAC owner, a dentist, or an optometrist
-            can see that the work is specific — without turning the homepage into
-            a keyword list.
+            NOBLE is built for local businesses that depend on being found when
+            customers are ready to buy. These pages show how the work gets
+            specific. They are examples — not a closed list of who we help.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Button href={paths.contact}>{cta.form}</Button>
@@ -84,11 +83,16 @@ export default function IndustriesPage() {
             </div>
           ))}
           <div className="rounded-xl border border-mist bg-cream p-8">
-            <h2 className="font-serif text-2xl tracking-tight">Not on this list yet</h2>
+            <h2 className="font-serif text-2xl tracking-tight">
+              Don&apos;t see your business? That&apos;s okay.
+            </h2>
             <p className="mt-3 max-w-2xl text-sm leading-relaxed text-stone">
-              Architecture is ready for more verticals. We will not mass-produce
-              thin industry pages. If a new customer is worth real money, the
-              audit is still the right first step.
+              We work with other local businesses too.{" "}
+              <Link href={paths.contact} className="text-forest hover:text-forest-deep">
+                Request a free game plan
+              </Link>{" "}
+              and we&apos;ll tell you whether NOBLE is a fit. We will not
+              mass-produce thin industry pages just to look bigger.
             </p>
             <ul className="mt-6 flex flex-wrap gap-2 text-sm">
               {tier2Backlog.map((item) => (
