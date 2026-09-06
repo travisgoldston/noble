@@ -39,7 +39,7 @@ export default function HomePage() {
             <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
               NOBLE SEO
             </p>
-            <h1 className="font-serif mt-5 max-w-[14ch] text-5xl leading-[1.05] tracking-tightest text-ink md:text-6xl">
+            <h1 className="font-serif mt-5 max-w-[14ch] text-[clamp(3.5rem,2vw+3.1rem,4.5rem)] font-bold leading-[1.05] tracking-tightest text-ink">
               SEO built on{" "}
               <Link
                 href={paths.caseStudies}
