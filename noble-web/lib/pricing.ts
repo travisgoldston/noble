@@ -96,7 +96,7 @@ export const pricingPlan = [
   {
     n: "03",
     title: "Fix what is in the way",
-    body: "Diagnose. Prioritize. Fix. Monitor. You work with the person doing the work. Proof lives in what changed, not in a dashboard full of activity.",
+    body: "Diagnose. Prioritize. Fix. Monitor. You work with the people doing the work. Proof lives in what changed, not in a dashboard full of activity.",
   },
 ];
 
@@ -119,7 +119,7 @@ export const pricingGuide = {
   empathy:
     "If the trucks are busy and Google still sends the next job to someone else, that is not a branding problem. It is a findability problem. Owners feel it as a quieter phone and a thicker stack of invoices they cannot defend.",
   authority:
-    "NOBLE is a founder-led local SEO practice, not a full-service agency. Capacity stays small on purpose. The work is Google Search, Maps, on-page, and technical SEO for Dallas–Fort Worth businesses. We publish proof with numbers and caveats. We do not fabricate case studies, guarantee rankings, or claim a storefront we do not occupy.",
+    "NOBLE is a small-team local SEO practice, not a full-service agency. We take on a handful of clients at a time, and we plan to keep it that way. You will not get handed off to a VA, intern, or account manager. The work is Google Search, Maps, on-page, and technical SEO for Dallas–Fort Worth businesses. We publish proof with numbers and caveats. We do not fabricate case studies, guarantee rankings, or claim a storefront we do not occupy.",
 };
 
 export const pricingSuccess = {
@@ -136,10 +136,10 @@ export const pricingComparisons = [
   {
     id: "noble",
     name: "NOBLE SEO",
-    kicker: "Founder-led local SEO",
+    kicker: "Small-team local SEO",
     highlight: true,
     points: [
-      "You work with the person doing the work",
+      "Handful of clients. You work with us — no VA, intern, or account-manager handoff",
       "Local SEO is the product — not a bundled retainer",
       "Prices on the page: $1,250, $1,850, $2,500/month",
       "Proof published with numbers, caveats, and permission",
@@ -192,7 +192,7 @@ export const pricingFaqs = [
   {
     question: "Why not a bigger SEO agency?",
     answer:
-      "A larger agency can be the right fit if you want a full marketing department. You will usually pay for account layers, a stacked retainer, and a process built to scale their bench — not to diagnose your Maps listing on a Tuesday. NOBLE stays small so strategy, diagnosis, and the work stay with the founder. If you need PPC, social, and branding under one roof, we are not the right firm.",
+      "A larger agency can be the right fit if you want a full marketing department. You will usually pay for account layers, a stacked retainer, and a process built to scale their bench — not to diagnose your Maps listing on a Tuesday. We take on a handful of clients at a time so you work with us, not a VA, intern, or account manager. If you need PPC, social, and branding under one roof, we are not the right firm.",
   },
   {
     question: "Can you guarantee rankings or a number of leads?",

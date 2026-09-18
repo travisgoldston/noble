@@ -110,7 +110,7 @@ export const optometrySeo: Article = {
     newsletter:
       "Subject: Why optometrists rank for their name and lose the exam. CTA: audit.",
     outreach:
-      "I specialize in helping optometry practices get found for eye exams, contacts, and specialty searches in Google Search and Maps — in the city the office actually sits in.",
+      "We specialize in helping optometry practices get found for eye exams, contacts, and specialty searches in Google Search and Maps — in the city the office actually sits in.",
   },
 };
 
@@ -210,7 +210,7 @@ export const howOptometristsRankMaps: Article = {
     newsletter:
       "Subject: How optometrists rank on Google Maps. CTA: audit.",
     outreach:
-      "I help optometrists show up in Google Maps for eye exam searches by making the listing and the site match the chair — not by buying ads.",
+      "We help optometrists show up in Google Maps for eye exam searches by making the listing and the site match the chair — not by buying ads.",
   },
 };
 
@@ -310,7 +310,7 @@ export const optometrySeoFortWorth: Article = {
     newsletter:
       "Subject: Why Fort Worth optometrists rank for their name and lose the exam. CTA: audit.",
     outreach:
-      "I help Fort Worth optometry practices get found for eye exams and specialty searches in Google Search and Maps — in the city the office actually sits in.",
+      "We help Fort Worth optometry practices get found for eye exams and specialty searches in Google Search and Maps — in the city the office actually sits in.",
   },
 };
 
@@ -410,6 +410,6 @@ export const gbpForOptometrists: Article = {
     newsletter:
       "Subject: The optometry Google Business Profile checklist. CTA: audit.",
     outreach:
-      "I help optometrists clean up Google Business Profile so Maps can tell they do eye exams in the city the office actually sits in.",
+      "We help optometrists clean up Google Business Profile so Maps can tell they do eye exams in the city the office actually sits in.",
   },
 };

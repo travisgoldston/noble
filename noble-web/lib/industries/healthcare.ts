@@ -114,7 +114,7 @@ export const dental: Industry = {
   proof:
     "NOBLE’s published case study is Budgetocity (software SEO), not a dental practice. We will not present those numbers as new-patient results. Dental work is diagnosed from Search, Maps, and the site. When we can publish a dental engagement, it will be labeled as one.",
   outreachLine:
-    "I specialize in helping dental practices improve visibility in Google Search and Maps for new-patient and treatment searches in their actual city — not a DFW slogan.",
+    "We specialize in helping dental practices improve visibility in Google Search and Maps for new-patient and treatment searches in their actual city — not a DFW slogan.",
   faqs: [
     {
       question: "How much does SEO cost for a dentist?",
@@ -255,7 +255,7 @@ export const optometry: Industry = {
   proof:
     "NOBLE has not published an optometry case study. Budgetocity is not a clinic. We will not imply otherwise. Optometry work is diagnosed from Search, Maps, and the website. Published proof will be added when it is real.",
   outreachLine:
-    "I specialize in helping optometry practices get found for eye exams, contacts, and specialty searches in Google Search and Maps — in the city the office actually sits in.",
+    "We specialize in helping optometry practices get found for eye exams, contacts, and specialty searches in Google Search and Maps — in the city the office actually sits in.",
   faqs: [
     {
       question: "Does Google Maps matter for optometrists?",
@@ -383,7 +383,7 @@ export const medSpa: Industry = {
   proof:
     "NOBLE has not published a med spa case study. We will not use Budgetocity as aesthetic proof. Med spa results will be added here when they are real and shareable.",
   outreachLine:
-    "I specialize in helping med spas get found in Google Search and Maps for the treatments they actually offer in their city — not a metro-wide spa slogan.",
+    "We specialize in helping med spas get found in Google Search and Maps for the treatments they actually offer in their city — not a metro-wide spa slogan.",
   faqs: [
     {
       question: "How much does SEO cost for a med spa?",
@@ -509,7 +509,7 @@ export const orthodontics: Industry = {
   proof:
     "NOBLE has not published an orthodontic case study. Budgetocity is not an ortho practice. We will not present it as one. Orthodontic results will be published here when we have them.",
   outreachLine:
-    "I specialize in helping orthodontic practices get found for braces, Invisalign, and orthodontist searches in Google Search and Maps in the city the office actually serves.",
+    "We specialize in helping orthodontic practices get found for braces, Invisalign, and orthodontist searches in Google Search and Maps in the city the office actually serves.",
   faqs: [
     {
       question: "Is orthodontic SEO the same as dental SEO?",

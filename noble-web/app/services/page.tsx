@@ -9,7 +9,7 @@ import { cta, paths } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Local SEO Services",
   description:
-    "Founder-led local SEO for Dallas–Fort Worth businesses: Google Business Profile, local rankings, and technical SEO without agency retainers.",
+    "Small-team local SEO for Dallas–Fort Worth businesses: Google Business Profile, local rankings, and technical SEO without agency retainers.",
   alternates: { canonical: "/services" },
 };
 

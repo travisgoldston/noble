@@ -149,7 +149,7 @@ export function AuditForm({ compact = false, variant }: Props) {
           Your game plan request is in.
         </h3>
         <p className="mt-4 max-w-xl text-stone">
-          I&apos;ll review your online presence and email your game plan within one
+          We&apos;ll review your online presence and email your game plan within one
           business day.
         </p>
         <div className="mt-8">
@@ -317,7 +317,7 @@ export function AuditForm({ compact = false, variant }: Props) {
       </button>
       {isCompact ? null : (
         <p className="-mt-2 text-sm leading-relaxed text-stone">
-          I&apos;ll review your online presence and email your game plan within one
+          We&apos;ll review your online presence and email your game plan within one
           business day.
         </p>
       )}

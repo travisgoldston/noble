@@ -122,7 +122,7 @@ export const howToRankHvacGoogleMaps: Article = {
     newsletter:
       "Subject: Why HVAC companies rank for their name and vanish on Maps. Body: Relevance, distance, prominence in plain English. Three checks. CTA: audit.",
     outreach:
-      "I help HVAC companies show up in Google Maps for AC repair and install searches in the neighborhoods they actually drive — not a metro slogan. If the pack does not include you for the job you sell, that is the conversation.",
+      "We help HVAC companies show up in Google Maps for AC repair and install searches in the neighborhoods they actually drive — not a metro slogan. If the pack does not include you for the job you sell, that is the conversation.",
   },
 };
 
@@ -225,7 +225,7 @@ export const hvacNotInMapPack: Article = {
     newsletter:
       "Subject: Why your HVAC company is not in the three-pack. Body: The check sequence. CTA: audit.",
     outreach:
-      "If an HVAC company is busy and still missing the Map pack for AC repair, I start with category, service area, and the neighborhood the owner actually wants — not a content mill.",
+      "If an HVAC company is busy and still missing the Map pack for AC repair, we start with category, service area, and the neighborhood the owner actually wants — not a content mill.",
   },
 };
 
@@ -331,7 +331,7 @@ export const gbpForHvac: Article = {
     newsletter:
       "Subject: The HVAC Google Business Profile checklist that is not a posting calendar. CTA: audit.",
     outreach:
-      "I help HVAC companies clean up Google Business Profile so Maps can tell they do AC repair in the cities they actually drive.",
+      "We help HVAC companies clean up Google Business Profile so Maps can tell they do AC repair in the cities they actually drive.",
   },
 };
 
@@ -431,6 +431,6 @@ export const hvacServiceAreaSeo: Article = {
     newsletter:
       "Subject: HVAC service areas that do not look like spam. CTA: audit.",
     outreach:
-      "I help HVAC companies set service areas that match the trucks — especially when Fort Worth distance or a Dallas neighborhood is the real leak.",
+      "We help HVAC companies set service areas that match the trucks — especially when Fort Worth distance or a Dallas neighborhood is the real leak.",
   },
 };

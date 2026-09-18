@@ -97,6 +97,6 @@ export const howPlumbersRankMaps: Article = {
     newsletter:
       "Subject: How plumbers actually rank on Google Maps. CTA: audit.",
     outreach:
-      "I help plumbing companies show up in Google Maps for emergency and water heater searches in the cities they actually run.",
+      "We help plumbing companies show up in Google Maps for emergency and water heater searches in the cities they actually run.",
   },
 };

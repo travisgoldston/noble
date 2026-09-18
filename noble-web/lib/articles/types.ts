@@ -48,7 +48,7 @@ export type Article = {
 
 export const articleAuthor = {
   name: "NOBLE",
-  jobTitle: "Founder-led local SEO practice",
+  jobTitle: "Small-team local SEO practice",
   url: "/about",
 };
 

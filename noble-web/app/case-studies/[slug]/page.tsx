@@ -161,10 +161,10 @@ export default async function CaseStudyPage({ params }: Props) {
           <aside className="rounded-xl border border-mist bg-white p-8">
             <p className="font-serif text-2xl tracking-tight">What you can expect</p>
             <ul className="mt-5 grid gap-3 text-sm text-stone">
-              <li>Direct work, not an account layer</li>
+              <li>Direct work, not a VA, intern, or account manager</li>
               <li>A review of the Google presence before any retainer talk</li>
               <li>No ranking guarantees</li>
-              <li>Capacity stays limited on purpose</li>
+              <li>A handful of clients at a time — on purpose</li>
             </ul>
             <div className="mt-8">
               <Button href={paths.contact}>{cta.primary}</Button>

@@ -18,11 +18,11 @@ export const metadata: Metadata = {
     template: "%s | NOBLE SEO",
   },
   description:
-    "Founder-led local SEO for Dallas–Fort Worth businesses. Google Business Profile, local rankings, and technical SEO — without bloated agency retainers.",
+    "Small-team local SEO for Dallas–Fort Worth businesses. Google Business Profile, local rankings, and technical SEO — without bloated agency retainers.",
   openGraph: {
     title: "NOBLE SEO | SEO built on proof",
     description:
-      "Founder-led local SEO for Dallas–Fort Worth businesses. We help local companies turn Google Search and Maps visibility into more qualified calls.",
+      "Small-team local SEO for Dallas–Fort Worth businesses. We help local companies turn Google Search and Maps visibility into more qualified calls.",
     url: "https://nobleseo.co",
     siteName: "NOBLE SEO",
     type: "website",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "NOBLE SEO | SEO built on proof",
     description:
-      "Founder-led local SEO for Dallas–Fort Worth businesses. SEO built on proof.",
+      "Small-team local SEO for Dallas–Fort Worth businesses. SEO built on proof.",
   },
   icons: {
     icon: "/favicon.svg",
@@ -51,7 +51,11 @@ const jsonLd = {
       url: "https://nobleseo.co",
       email: "hello@nobleseo.co",
       description:
-        "Founder-led local SEO practice serving Dallas-Fort Worth businesses remotely.",
+        "Small-team local SEO practice serving Dallas-Fort Worth businesses remotely.",
+      founder: [
+        { "@type": "Person", name: "Travis Goldston", jobTitle: "Co-Founder" },
+        { "@type": "Person", name: "Victoria Goldston", jobTitle: "Co-Founder" },
+      ],
       sameAs: socialLinks.map((item) => item.href),
       areaServed: [
         { "@type": "AdministrativeArea", name: "Dallas-Fort Worth" },
@@ -74,7 +78,7 @@ const jsonLd = {
       email: "hello@nobleseo.co",
       image: "https://nobleseo.co/favicon.svg",
       description:
-        "Founder-led local SEO for Dallas-Fort Worth businesses, including Google Business Profile, local search, and technical SEO.",
+        "Small-team local SEO for Dallas-Fort Worth businesses, including Google Business Profile, local search, and technical SEO.",
       areaServed: [
         { "@type": "AdministrativeArea", name: "Dallas-Fort Worth" },
         { "@type": "City", name: "Dallas" },

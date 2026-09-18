@@ -122,12 +122,17 @@ export const homeFaqs = [
   {
     question: "What does NOBLE actually do?",
     answer:
-      "NOBLE is a founder-led local SEO practice. The core work is local search visibility: Google Business Profile, Google Maps, on-page SEO, and the technical issues that keep a good business from showing up. We do not sell social media, PPC, or a pile of unrelated marketing services.",
+      "NOBLE is a small-team local SEO practice. The core work is local search visibility: Google Business Profile, Google Maps, on-page SEO, and the technical issues that keep a good business from showing up. We do not sell social media, PPC, or a pile of unrelated marketing services.",
   },
   {
     question: "Who is this for?",
     answer:
       "Local businesses that depend on being found when customers are ready to buy — HVAC, plumbing, roofing, dental, and other owner-operated firms. If a booked job or a new patient pays for the work, local SEO can make sense. You do not need a website to request the free game plan.",
+  },
+  {
+    question: "Will I actually work with you, or get handed off?",
+    answer:
+      "We take on a handful of clients at a time, and we plan to keep it that way. You will not get handed off to a VA, intern, or account manager. You work with us, and you have our phone numbers.",
   },
   {
     question: "Where do you work?",
@@ -147,7 +152,7 @@ export const homeFaqs = [
   {
     question: "What happens after I request a game plan?",
     answer:
-      "You submit a 30-second form. I review your business and local market. You receive a written game plan by email. No calendar invite. No required sales call. No pressure. Typical response time is one business day.",
+      "You submit a 30-second form. We review your business and local market. You receive a written game plan by email. No calendar invite. No required sales call. No pressure. Typical response time is one business day.",
   },
   {
     question: "Can you guarantee rankings?",

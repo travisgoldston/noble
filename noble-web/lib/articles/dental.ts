@@ -100,7 +100,7 @@ export const dentalSeoDallas: Article = {
     newsletter:
       "Subject: Why Dallas dentists rank for their name and lose new patients. CTA: audit.",
     outreach:
-      "I help Dallas dental practices get found for new-patient and treatment searches in Search and Maps — in the part of the city they actually serve, not a metro slogan.",
+      "We help Dallas dental practices get found for new-patient and treatment searches in Search and Maps — in the part of the city they actually serve, not a metro slogan.",
   },
 };
 
@@ -196,7 +196,7 @@ export const howDentistsRankMaps: Article = {
     newsletter:
       "Subject: How dentists actually rank on Google Maps. CTA: audit.",
     outreach:
-      "I help dental practices show up in Google Maps for new-patient searches — by fixing the listing and the booking path, not by promising the pack.",
+      "We help dental practices show up in Google Maps for new-patient searches — by fixing the listing and the booking path, not by promising the pack.",
   },
 };
 
@@ -295,7 +295,7 @@ export const dentalSeoFortWorth: Article = {
     newsletter:
       "Subject: Why Fort Worth dentists rank for their name and lose new patients. CTA: audit.",
     outreach:
-      "I help Fort Worth dental practices get found for new-patient and treatment searches in Search and Maps — in the city the office actually sits in.",
+      "We help Fort Worth dental practices get found for new-patient and treatment searches in Search and Maps — in the city the office actually sits in.",
   },
 };
 
@@ -395,6 +395,6 @@ export const gbpForDentists: Article = {
     newsletter:
       "Subject: The dental Google Business Profile checklist that is not a posting calendar. CTA: audit.",
     outreach:
-      "I help dental practices clean up Google Business Profile so Maps can tell they take new patients in the city the office actually sits in.",
+      "We help dental practices clean up Google Business Profile so Maps can tell they take new patients in the city the office actually sits in.",
   },
 };

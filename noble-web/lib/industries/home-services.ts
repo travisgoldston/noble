@@ -110,7 +110,7 @@ export const hvac: Industry = {
   proof:
     "NOBLE’s published case study is Budgetocity, an organic software SEO project — not an HVAC company. We will not imply it is a heating-and-cooling result. HVAC work is diagnosed the same way as the rest of the site: listing, Maps, pages, and technical issues. When an HVAC engagement produces numbers we can share, it will live on this page.",
   outreachLine:
-    "I specialize in helping HVAC companies improve visibility in Google Search and Maps — especially AC repair and install searches in the neighborhoods they actually drive.",
+    "We specialize in helping HVAC companies improve visibility in Google Search and Maps — especially AC repair and install searches in the neighborhoods they actually drive.",
   faqs: [
     {
       question: "Can SEO help an HVAC company generate more calls?",
@@ -243,7 +243,7 @@ export const plumbing: Industry = {
   proof:
     "NOBLE has not published a plumbing case study. Budgetocity is software SEO, not a plumber. We will not borrow those numbers. Plumbing work is diagnosed from the listing, Maps, and the site. Shared results will be labeled as plumbing when they exist.",
   outreachLine:
-    "I specialize in helping plumbing companies show up in Google Search and Maps for emergency and planned work in the cities they actually run — not a metro-wide slogan.",
+    "We specialize in helping plumbing companies show up in Google Search and Maps for emergency and planned work in the cities they actually run — not a metro-wide slogan.",
   faqs: [
     {
       question: "Does Google Maps matter for plumbers?",
@@ -365,7 +365,7 @@ export const roofing: Industry = {
   proof:
     "NOBLE has not published a roofing case study. We will not treat Budgetocity as a roofing result. Roofing engagements will be documented here when there are numbers we can stand behind.",
   outreachLine:
-    "I specialize in helping roofing companies stay findable in Google Search and Maps year-round — not only during hail week — in the cities they actually work.",
+    "We specialize in helping roofing companies stay findable in Google Search and Maps year-round — not only during hail week — in the cities they actually work.",
   faqs: [
     {
       question: "Does Google Maps matter for roofers?",
@@ -483,7 +483,7 @@ export const electrical: Industry = {
   proof:
     "NOBLE has not published an electrical case study. Budgetocity is not an electrician. Electrical work will be documented here when we have results we can share without borrowing another industry’s numbers.",
   outreachLine:
-    "I specialize in helping electrical contractors get found in Google Search and Maps for the work they actually want — repair, panel upgrades, and EV installs in the cities they drive.",
+    "We specialize in helping electrical contractors get found in Google Search and Maps for the work they actually want — repair, panel upgrades, and EV installs in the cities they drive.",
   faqs: [
     {
       question: "Does Google Maps matter for electricians?",

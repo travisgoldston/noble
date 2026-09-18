@@ -16,6 +16,8 @@ export const paths = {
   caseStudies: "/case-studies",
   budgetocity: "/case-studies/budgetocity",
   about: "/about",
+  privacy: "/privacy",
+  terms: "/terms",
   areas: "/areas",
   fortWorth: "/areas/fort-worth-seo",
   contact: "/contact",
@@ -68,10 +70,10 @@ export const gamePlan = {
   noWebsiteBody:
     "That's not a dealbreaker. In fact, it helps to know that before we start talking about SEO.",
   noWebsiteNext:
-    "I'll help you understand what needs to exist first — website, Google Business Profile, reviews, local visibility, or something else — so you're not paying for SEO before you're ready.",
+    "We'll help you understand what needs to exist first — website, Google Business Profile, reviews, local visibility, or something else — so you're not paying for SEO before you're ready.",
   next: [
     "You submit the 30-second form.",
-    "I review your business and local market.",
+    "We review your business and local market.",
     "You receive a written game plan by email.",
     "No calendar invite. No required sales call. No pressure.",
   ],
@@ -79,7 +81,7 @@ export const gamePlan = {
     "What customers searching locally can currently find",
     "Website and Google Business Profile opportunities — including what to set up if you don't have them yet",
     "The biggest visibility issues to fix first",
-    "What I'd prioritize if this were my business",
+    "What we'd prioritize if this were our business",
     "Whether SEO makes sense for you right now",
   ],
 };

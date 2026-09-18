@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     absolute: "NOBLE SEO | SEO built on proof",
   },
   description:
-    "Founder-led local SEO for Dallas–Fort Worth businesses. We help local companies turn Google Search and Maps visibility into more qualified calls.",
+    "Small-team local SEO for Dallas–Fort Worth businesses. We help local companies turn Google Search and Maps visibility into more qualified calls.",
   alternates: { canonical: "/" },
 };
 
@@ -50,7 +50,7 @@ export default function HomePage() {
               .
             </h1>
             <p className="mt-6 max-w-xl text-lg font-medium text-ink md:text-xl">
-              Founder-led local SEO for Dallas–Fort Worth businesses.
+              Small-team local SEO for Dallas–Fort Worth businesses.
             </p>
             <p className="mt-4 max-w-xl text-lg leading-relaxed text-stone">
               We help local businesses turn Google Search and Google Maps
@@ -113,8 +113,8 @@ export default function HomePage() {
               A written local SEO game plan.
             </h2>
             <p className="mt-4 text-stone">
-              Not a sales deck. A plain-English read on what I would do first
-              if this were my business.
+              Not a sales deck. A plain-English read on what we would do first
+              if this were our business.
             </p>
             <ul className="mt-8 grid gap-3">
               {gamePlan.youGet.map((item) => (
@@ -135,7 +135,7 @@ export default function HomePage() {
             <p className="mt-4 text-stone">{gamePlan.noWebsiteBody}</p>
             <p className="mt-4 text-stone">{gamePlan.noWebsiteNext}</p>
             <p className="mt-4 text-stone">
-              {gamePlan.alreadyHave} Weak Google listing? Same idea — I will
+              {gamePlan.alreadyHave} Weak Google listing? Same idea — we will
               tell you what to fix before you spend on SEO.
             </p>
           </div>
@@ -375,23 +375,24 @@ export default function HomePage() {
         <div className="mx-auto grid max-w-site gap-12 px-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
           <div>
             <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-              Why founder-led
+              Why a small team
             </p>
             <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
-              You work with the person doing the work.
+              You work with the people doing the work.
             </h2>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-stone">
-              NOBLE is not a full-service agency. Capacity stays small on
-              purpose. Strategy, diagnosis, and client communication stay with
-              the founder. That is how the work stays tied to proof instead of
-              an account layer.
+              We take on a handful of clients at a time, and we plan to keep it
+              that way. You will not get handed off to a VA, intern, or account
+              manager. Strategy, diagnosis, and client communication stay with
+              us — including our phone numbers.
             </p>
           </div>
           <aside className="rounded-xl border border-mist bg-cream p-7">
             <p className="font-serif text-2xl tracking-tight">No bloat. No layers.</p>
             <p className="mt-3 text-sm leading-relaxed text-stone">
-              If we work together, you work with us, not an account team
-              handing notes down a chain. The first conversation is about fit.
+              If we work together, you work with us. Not a VA. Not an intern.
+              Not an account manager handing notes down a chain. The first
+              conversation is about fit.
             </p>
             <div className="mt-6">
               <Button href={paths.about} variant="secondary">

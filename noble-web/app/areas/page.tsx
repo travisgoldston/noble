@@ -8,7 +8,7 @@ import { locations } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Service Areas",
   description:
-    "Founder-led local SEO for Dallas–Fort Worth businesses. We serve DFW remotely and do not claim a physical office.",
+    "Small-team local SEO for Dallas–Fort Worth businesses. We serve DFW remotely and do not claim a physical office.",
   alternates: { canonical: "/areas" },
 };
 

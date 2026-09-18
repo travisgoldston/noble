@@ -112,7 +112,7 @@ export const hvacSeoDallas: Article = {
     newsletter:
       "Subject: Why Dallas HVAC companies rank for their name and nothing else. Body: Walk through branded search vs AC repair + neighborhood, then three checks on the listing and the site. CTA: free audit.",
     outreach:
-      "I help HVAC companies in Dallas get found for AC repair and install searches in Search and Maps — not a metro slogan. If Lakewood or East Dallas jobs are leaking to a clearer listing, that is the conversation.",
+      "We help HVAC companies in Dallas get found for AC repair and install searches in Search and Maps — not a metro slogan. If Lakewood or East Dallas jobs are leaking to a clearer listing, that is the conversation.",
   },
 };
 
@@ -217,6 +217,6 @@ export const hvacSeoFortWorth: Article = {
     newsletter:
       "Subject: Why Fort Worth HVAC companies lose south-side Map pack jobs. Body: Distance, service area, listing completeness. CTA: audit.",
     outreach:
-      "I help Fort Worth HVAC companies show up for the searches that happen on a hot south-side afternoon, not only for the company name. Distance is real. An incomplete listing makes it worse.",
+      "We help Fort Worth HVAC companies show up for the searches that happen on a hot south-side afternoon, not only for the company name. Distance is real. An incomplete listing makes it worse.",
   },
 };

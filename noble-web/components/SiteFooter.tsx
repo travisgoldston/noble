@@ -11,7 +11,7 @@ export function SiteFooter() {
         <div>
           <BrandMark inverted />
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/60">
-            Founder-led local SEO for Dallas–Fort Worth businesses. SEO built
+            Small-team local SEO for Dallas–Fort Worth businesses. SEO built
             on proof.
           </p>
           <SocialIcons />
@@ -81,7 +81,17 @@ export function SiteFooter() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-site flex-col gap-2 px-6 py-5 text-xs text-white/45 sm:flex-row sm:justify-between">
           <p>© 2026 NOBLE SEO. All rights reserved.</p>
-          <p>nobleseo.co · hello@nobleseo.co</p>
+          <p className="flex flex-wrap gap-x-3 gap-y-1">
+            <Link href={paths.privacy} className="hover:text-white">
+              Privacy
+            </Link>
+            <Link href={paths.terms} className="hover:text-white">
+              Terms
+            </Link>
+            <a href="mailto:hello@nobleseo.co" className="hover:text-white">
+              hello@nobleseo.co
+            </a>
+          </p>
         </div>
       </div>
     </footer>

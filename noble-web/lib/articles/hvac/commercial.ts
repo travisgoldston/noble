@@ -98,7 +98,7 @@ export const hvacReviews: Article = {
     newsletter:
       "Subject: HVAC reviews that actually help Maps. CTA: audit.",
     outreach:
-      "I help HVAC companies treat reviews as Maps proof — recent, specific, asked after real jobs — not as a purchased star count.",
+      "We help HVAC companies treat reviews as Maps proof — recent, specific, asked after real jobs — not as a purchased star count.",
   },
 };
 
@@ -198,7 +198,7 @@ export const hvacLandingPages: Article = {
     newsletter:
       "Subject: When an HVAC city page is worth it. CTA: audit.",
     outreach:
-      "I do not mass-produce HVAC suburb pages. I help companies build the few local URLs that match where the trucks actually run.",
+      "We do not mass-produce HVAC suburb pages. We help companies build the few local URLs that match where the trucks actually run.",
   },
 };
 
@@ -297,7 +297,7 @@ export const hvacSeoCost: Article = {
     newsletter:
       "Subject: HVAC SEO pricing without the mystery package. CTA: pricing page + audit.",
     outreach:
-      "I price HVAC work as local SEO — Maps, Local, or Competitive — not as a discounted trade package. If the listing is the leak, we say so.",
+      "We price HVAC work as local SEO — Maps, Local, or Competitive — not as a discounted trade package. If the listing is the leak, we say so.",
   },
 };
 
@@ -397,7 +397,7 @@ export const seoVsAdsHvac: Article = {
     newsletter:
       "Subject: HVAC SEO vs Google Ads without the turf war. CTA: audit.",
     outreach:
-      "If an HVAC company is heavy on ads and invisible in the pack, I talk about the listing and the repair page — not about taking over the media budget.",
+      "If an HVAC company is heavy on ads and invisible in the pack, we talk about the listing and the repair page — not about taking over the media budget.",
   },
 };
 
@@ -510,6 +510,6 @@ export const hvacChecklist: Article = {
     newsletter:
       "Subject: The HVAC local SEO checklist we actually use. CTA: audit.",
     outreach:
-      "I walk HVAC owners through a short local SEO checklist — name search vs AC repair search — then talk about the listing and the site, not a content package.",
+      "We walk HVAC owners through a short local SEO checklist — name search vs AC repair search — then talk about the listing and the site, not a content package.",
   },
 };

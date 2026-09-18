@@ -18,7 +18,7 @@ const faqs = [
   {
     question: "Does NOBLE have a Fort Worth office?",
     answer:
-      "No. We do not claim a physical Fort Worth office, a virtual office, or a residential address used to manufacture Maps presence. The founder works remotely and serves Fort Worth businesses as part of DFW coverage.",
+      "No. We do not claim a physical Fort Worth office, a virtual office, or a residential address used to manufacture Maps presence. We work remotely and serve Fort Worth businesses as part of DFW coverage.",
   },
   {
     question: "How much does local SEO cost in Fort Worth?",
@@ -93,12 +93,12 @@ const fortWorthIndustryNav = [
 export const metadata: Metadata = {
   title: "Fort Worth SEO",
   description:
-    "Founder-led local SEO for Fort Worth businesses. Google Maps, Google Business Profile, and technical SEO — remote, honest, and built on proof. No fake Fort Worth office.",
+    "Small-team local SEO for Fort Worth businesses. Google Maps, Google Business Profile, and technical SEO — remote, honest, and built on proof. No fake Fort Worth office.",
   alternates: { canonical: "/areas/fort-worth-seo" },
   openGraph: {
     title: "Fort Worth SEO | NOBLE SEO",
     description:
-      "Founder-led local SEO for Fort Worth businesses. Maps, Google Business Profile, and a free audit — without a fake Fort Worth office.",
+      "Small-team local SEO for Fort Worth businesses. Maps, Google Business Profile, and a free audit — without a fake Fort Worth office.",
     url: "/areas/fort-worth-seo",
   },
 };
@@ -140,7 +140,7 @@ export default function FortWorthSeoPage() {
             Local SEO for Fort Worth businesses.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-stone">
-            Founder-led local SEO for companies that want more of the right
+            Small-team local SEO for companies that want more of the right
             Fort Worth customers finding them on Google Search and Maps. We
             work remotely. We do not invent a Fort Worth office to look local.
           </p>

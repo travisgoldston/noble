@@ -22,8 +22,8 @@ export const metadata: Metadata = {
 const youGet = [
   "What customers can find today",
   "What's hurting your visibility",
-  "The biggest opportunities I see",
-  "What I'd fix first",
+  "The biggest opportunities we see",
+  "What we'd fix first",
   "Whether SEO is actually worth investing in right now",
 ];
 
@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     question: "How long does it take?",
-    answer: "I'll review your business and email your game plan within one business day.",
+    answer: "We'll review your business and email your game plan within one business day.",
   },
   {
     question: "Do I need a website?",
@@ -43,7 +43,7 @@ const faqs = [
   {
     question: "What happens if SEO isn't right for me?",
     answer:
-      "I'll tell you. The goal is to identify what would help your business most — not force you into a service.",
+      "We'll tell you. The goal is to identify what would help your business most — not force you into a service.",
   },
 ];
 
@@ -90,7 +90,7 @@ export default function ContactPage() {
           </h1>
           <p className="mt-6 max-w-2xl text-lg font-medium text-ink">
             Find out what Google sees when customers search for your business — and
-            what I&apos;d fix first.
+            what we&apos;d fix first.
           </p>
           <p className="mt-3 max-w-2xl text-lg leading-relaxed text-stone">
             About 30 seconds. Written response. No required sales call.
@@ -108,7 +108,7 @@ export default function ContactPage() {
               What will I get?
             </h2>
             <p className="mt-4 max-w-xl text-stone">
-              A straightforward look at your local visibility — and what I&apos;d
+              A straightforward look at your local visibility — and what we&apos;d
               prioritize first.
             </p>
             <ul className="mt-6 grid gap-2.5">
@@ -125,7 +125,7 @@ export default function ContactPage() {
               </p>
               <h3 className="font-serif mt-3 text-2xl tracking-tight">That&apos;s okay.</h3>
               <p className="mt-3 text-sm leading-relaxed text-stone">
-                You can still request the game plan. I&apos;ll tell you what I&apos;d
+                You can still request the game plan. We&apos;ll tell you what we&apos;d
                 prioritize first — whether that&apos;s your Google Business Profile,
                 website, reviews, or something else.
               </p>
@@ -143,7 +143,7 @@ export default function ContactPage() {
       <section className="border-y border-mist bg-cream py-16 md:py-20">
         <div className="mx-auto max-w-site px-6">
           <h2 className="font-serif max-w-[18ch] text-4xl tracking-tightest md:text-5xl">
-            Here&apos;s what I&apos;ll actually send you.
+            Here&apos;s what we&apos;ll actually send you.
           </h2>
           <p className="mt-5 max-w-2xl text-stone">
             Sample audit — representative of what you&apos;ll receive. This is not a
@@ -174,7 +174,7 @@ export default function ContactPage() {
               </p>
             </div>
             <div className="mt-10">
-              <h3 className="font-serif text-2xl tracking-tight">What I would fix first</h3>
+              <h3 className="font-serif text-2xl tracking-tight">What we would fix first</h3>
               <ol className="mt-5 grid gap-3 text-sm text-stone">
                 {firstFixes.map((item, index) => (
                   <li key={item} className="flex gap-3">
@@ -230,7 +230,7 @@ export default function ContactPage() {
       <div className="pt-16 md:pt-20">
         <FinalCta
           title="See what Google sees."
-          body="Get your free local SEO game plan and find out what I'd fix first."
+          body="Get your free local SEO game plan and find out what we'd fix first."
           buttonLabel="Get My Free SEO Game Plan →"
           href="#audit-form"
         />

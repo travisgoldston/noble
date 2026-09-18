@@ -26,7 +26,7 @@ import { cta, paths } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "NOBLE local SEO pricing for Dallas–Fort Worth businesses: Maps $1,250, Local $1,850, and Competitive $2,500 per month. Founder-led work, public prices, no agency black box.",
+    "NOBLE local SEO pricing for Dallas–Fort Worth businesses: Maps $1,250, Local $1,850, and Competitive $2,500 per month. Small-team work, public prices, no agency black box.",
   alternates: { canonical: "/pricing" },
 };
 
@@ -107,10 +107,10 @@ export default function PricingPage() {
         <div className="mx-auto grid max-w-site gap-12 px-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
           <div>
             <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-              Why founder-led
+              Why a small team
             </p>
             <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
-              A founder-led practice, not an agency black box.
+              A small-team practice, not an agency black box.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-stone">{pricingGuide.empathy}</p>
             <p className="mt-4 text-lg leading-relaxed text-stone">{pricingGuide.authority}</p>
@@ -233,7 +233,7 @@ export default function PricingPage() {
           </h2>
           <p className="mt-5 max-w-2xl text-stone">
             Most owners comparing SEO firms are really choosing between a
-            founder who does the work, an agency that resells a bench, and a
+            small team that does the work, an agency that resells a bench, and a
             cheap package that treats every suburb in North Texas the same.
           </p>
           <div className="mt-12 grid gap-4 lg:grid-cols-3">
