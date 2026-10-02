@@ -311,7 +311,7 @@ export function AuditForm({ compact = false, variant }: Props) {
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="inline-flex min-h-12 items-center justify-center rounded-full bg-forest px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-forest-deep disabled:opacity-70"
+        className="inline-flex min-h-12 items-center justify-center rounded-full bg-forest px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-forest-deep disabled:opacity-70"
       >
         {status === "submitting" ? "Sending…" : `${cta.form} →`}
       </button>

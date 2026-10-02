@@ -1,14 +1,25 @@
+import Image from "next/image";
 import Link from "next/link";
 
-export function BrandMark({ inverted = false }: { inverted?: boolean }) {
+export function BrandMark({
+  inverted = false,
+  compact = false,
+}: {
+  inverted?: boolean;
+  compact?: boolean;
+}) {
   return (
-    <Link
-      href="/"
-      className="font-serif text-[clamp(1.8rem,1.2vw+1.55rem,1.95rem)] leading-none font-bold tracking-[0.04em]"
-      aria-label="NOBLE SEO home"
-    >
-      <span className={inverted ? "text-white" : "text-ink"}>NOBLE</span>{" "}
-      <span className={inverted ? "text-white" : "text-forest"}>SEO</span>
+    <Link href="/" className="inline-flex shrink-0 items-center" aria-label="NOBLE SEO home">
+      <Image
+        src="/noble-seo-header-logo.png"
+        alt="NOBLE SEO"
+        width={446}
+        height={118}
+        priority
+        className={`w-auto ${compact ? "h-[30px] lg:h-9" : "h-[30px] lg:h-11"} ${
+          inverted ? "brightness-0 invert" : ""
+        }`}
+      />
     </Link>
   );
 }

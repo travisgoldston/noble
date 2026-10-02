@@ -3,23 +3,23 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #0a111a;
+  --foreground: #162533;
   color-scheme: light;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-forest: #3a56e4;
-  --color-forest-deep: #2b42c7;
-  --color-forest-mist: #e8f3ff;
-  --color-ink: #0a111a;
-  --color-cream: #f8f9fa;
+  --color-forest: #05a65b;
+  --color-forest-deep: #048a4c;
+  --color-forest-mist: #e8f7ef;
+  --color-ink: #162533;
+  --color-cream: #f7f8f8;
   --color-paper: #ffffff;
   --color-stone: #5c6770;
-  --color-mist: #e3e8f2;
-  --font-sans: var(--font-montserrat);
-  --font-serif: var(--font-montserrat);
+  --color-mist: #e4e8ea;
+  --font-sans: var(--font-poppins);
+  --font-serif: var(--font-poppins);
 }
 
 html {
@@ -29,16 +29,21 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), Montserrat, system-ui, sans-serif;
+  font-family: var(--font-sans), Poppins, system-ui, sans-serif;
 }
 
 ::selection {
-  background: #3a56e4;
+  background: #05a65b;
   color: #ffffff;
 }
 
 .serif-display {
-  font-family: var(--font-montserrat), Montserrat, system-ui, sans-serif;
+  font-family: var(--font-poppins), Poppins, system-ui, sans-serif;
+  font-weight: 700;
+}
+
+.font-serif {
+  font-weight: 700;
 }
 
 @media (prefers-reduced-motion: reduce) {

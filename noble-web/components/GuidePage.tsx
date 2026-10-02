@@ -124,9 +124,7 @@ export function GuidePage({ guide }: { guide: Guide }) {
             <h2 className="font-serif max-w-[16ch] text-3xl tracking-tightest">
               Want this applied to your business, not just explained?
             </h2>
-            <Button href={paths.contact} variant="light">
-              {cta.primary}
-            </Button>
+            <Button href={paths.contact}>{cta.primary}</Button>
           </div>
         </div>
       </section>

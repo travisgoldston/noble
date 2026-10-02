@@ -145,9 +145,7 @@ export default async function LocationCityPage({ params }: Props) {
               See how {city.name} customers find you today.
             </h2>
             <div className="flex flex-wrap gap-3">
-              <Button href={paths.contact} variant="light">
-                {cta.primary}
-              </Button>
+              <Button href={paths.contact}>{cta.primary}</Button>
               <Button href={paths.caseStudies} variant="onDark">
                 {cta.proof}
               </Button>

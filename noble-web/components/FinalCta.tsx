@@ -16,7 +16,7 @@ export function FinalCta({
   return (
     <section className="pb-20 md:pb-24">
       <div className="mx-auto max-w-site px-6">
-        <div className="flex flex-col items-start justify-between gap-8 rounded-xl bg-forest-deep px-8 py-12 text-white md:flex-row md:items-center md:px-12">
+        <div className="flex flex-col items-start justify-between gap-8 rounded-xl bg-ink px-8 py-12 text-white md:flex-row md:items-center md:px-12">
           <div>
             <p className="text-[0.72rem] font-medium tracking-[0.22em] text-white/55 uppercase">
               {eyebrow}
@@ -26,9 +26,7 @@ export function FinalCta({
             </h2>
             {body ? <p className="mt-4 max-w-xl text-white/70">{body}</p> : null}
           </div>
-          <Button href={href} variant="light">
-            {buttonLabel}
-          </Button>
+          <Button href={href}>{buttonLabel}</Button>
         </div>
       </div>
     </section>

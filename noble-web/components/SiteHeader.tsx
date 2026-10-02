@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { BrandMark } from "@/components/BrandMark";
 import { Button } from "@/components/Button";
 import { capabilities, locations, searchSurfaces } from "@/lib/content";
@@ -37,11 +37,23 @@ function Dropdown({
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-mist/80 bg-white/90 backdrop-blur-md">
-      <div className="mx-auto flex max-w-site items-center gap-6 px-6 py-4">
-        <BrandMark />
+    <header
+      className={`sticky top-0 z-50 bg-white ${
+        scrolled ? "shadow-header" : "border-b border-mist/80"
+      }`}
+    >
+      <div className={`mx-auto flex max-w-site items-center gap-6 px-6 ${scrolled ? "py-3" : "py-4"}`}>
+        <BrandMark compact={scrolled} />
         <nav className="ml-auto hidden items-center gap-6 text-sm text-stone lg:flex" aria-label="Primary">
           <Dropdown label="Services" href={paths.services}>
             <div className="grid w-[34rem] grid-cols-2 gap-6 rounded-xl border border-mist bg-white p-5 shadow-card">

@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { Analytics } from "@/components/Analytics";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { socialLinks } from "@/lib/content";
 import "./globals.css";
 
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
+  weight: ["400", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -35,7 +36,11 @@ export const metadata: Metadata = {
       "Small-team local SEO for Dallas–Fort Worth businesses. SEO built on proof.",
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: "/favicon-512.png",
   },
 };
 
@@ -96,8 +101,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${montserrat.variable} h-full antialiased`}>
-      <body className={`${montserrat.className} min-h-full bg-paper font-sans text-ink flex flex-col`}>
+    <html lang="en" className={`${poppins.variable} h-full antialiased`}>
+      <body className={`${poppins.className} min-h-full bg-paper font-sans text-ink flex flex-col`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

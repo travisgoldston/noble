@@ -8,28 +8,29 @@ module.exports = {
     extend: {
       colors: {
         forest: {
-          DEFAULT: "#3A56E4",
-          deep: "#2B42C7",
-          mist: "#E8F3FF",
+          DEFAULT: "#05A65B",
+          deep: "#048A4C",
+          mist: "#E8F7EF",
         },
-        ink: "#0A111A",
-        cream: "#F8F9FA",
+        ink: "#162533",
+        cream: "#F7F8F8",
         paper: "#FFFFFF",
         stone: "#5C6770",
-        mist: "#E3E8F2",
+        mist: "#E4E8EA",
       },
       fontFamily: {
-        sans: ["var(--font-montserrat)", "Montserrat", "system-ui", "sans-serif"],
-        serif: ["var(--font-montserrat)", "Montserrat", "system-ui", "sans-serif"],
+        sans: ["var(--font-poppins)", "Poppins", "system-ui", "sans-serif"],
+        serif: ["var(--font-poppins)", "Poppins", "system-ui", "sans-serif"],
       },
       letterSpacing: {
-        tightest: "-0.045em",
+        tightest: "-0.03em",
       },
       maxWidth: {
         site: "72rem",
       },
       boxShadow: {
-        card: "0 18px 40px rgba(10, 17, 26, 0.06)",
+        card: "0 18px 40px rgba(22, 37, 51, 0.06)",
+        header: "0 8px 24px rgba(22, 37, 51, 0.08)",
       },
     },
   },
