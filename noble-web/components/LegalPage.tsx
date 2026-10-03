@@ -23,7 +23,7 @@ export function LegalPage({
           <h1 className="font-serif mt-4 max-w-[16ch] text-5xl tracking-tightest md:text-6xl">
             {title}
           </h1>
-          <p className="mt-4 text-sm text-stone">Updated {updated}</p>
+          <p className="mt-4 text-sm text-stone">Last updated {updated}</p>
         </div>
       </section>
       <section className="py-16">

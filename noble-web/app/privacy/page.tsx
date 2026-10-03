@@ -11,13 +11,21 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <LegalPage kicker="Legal" title="Privacy policy" updated="October 2, 2026">
+    <LegalPage kicker="Legal" title="Privacy policy" updated="October 3, 2026">
       <p>
         This policy explains what {site.legalName} (“NOBLE SEO,” “NOBLE,”
         “we,” “us”) collects on{" "}
         <a href={site.url}>{site.url.replace("https://", "")}</a> and how we
         use it. Questions:{" "}
-        <a href={`mailto:${site.email}`}>{site.email}</a>.
+        <a href={`mailto:${site.email}`}>{site.email}</a>
+        {site.phoneTel ? (
+          <>
+            {" "}
+            or{" "}
+            <a href={`tel:${site.phoneTel}`}>{site.phone}</a>
+          </>
+        ) : null}
+        .
       </p>
 
       <div>
@@ -30,68 +38,89 @@ export default function PrivacyPage() {
       </div>
 
       <div>
-        <h2>What we collect</h2>
-        <ul className="mt-3">
-          <li>
-            Game-plan form: name, business name, email, phone, city, website
-            (if you have one), Google Business Profile status, and anything you
-            type in optional fields.
-          </li>
-          <li>
-            Basic server logs (IP address, browser, pages requested) as part of
-            hosting.
-          </li>
-          <li>
-            If Google Analytics is enabled, usage data such as pages viewed,
-            device type, and approximate location.
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <h2>How we use it</h2>
+        <h2>Information you give us</h2>
         <p className="mt-3">
-          We use this information to send your game plan, follow up if you ask
-          us to, deliver paid work if we are hired, and understand which pages
-          on the site are useful. We do not sell personal information.
+          The free game plan form asks for name, business name, and email. It
+          may also ask for website URL (if you have one), Google Business
+          Profile status, city, and primary service. Required fields are marked
+          on the form.
+        </p>
+        <p className="mt-3">
+          If you email, call, or text us, we also have whatever you choose to
+          send in that conversation.
         </p>
       </div>
 
       <div>
-        <h2>Who sees it</h2>
+        <h2>Information collected automatically</h2>
         <p className="mt-3">
-          The small team. Email, and any form webhook we use to receive
-          requests. Hosting and analytics processors that make the site run
-          (currently the site host and, if configured, Google Analytics).
+          Our website host keeps ordinary server logs. Those can include IP
+          address, browser and device information, pages requested, the
+          referring site, timestamps, and an approximate location derived from
+          IP. That is how hosting works. We do not currently run a separate
+          analytics or advertising pixel on this site.
         </p>
       </div>
 
       <div>
-        <h2>Cookies</h2>
+        <h2>Analytics and cookies</h2>
         <p className="mt-3">
-          If Google Analytics is on, it may set cookies to measure site use.
-          The site does not depend on a marketing pixel stack. You can block
-          cookies in your browser; the pages still work.
+          This website does not currently load Google Analytics, Google Tag
+          Manager, Meta Pixel, or similar advertising or analytics scripts. The
+          pages work if you block cookies. If that changes, we will update this
+          page.
+        </p>
+      </div>
+
+      <div>
+        <h2>How we use form and contact information</h2>
+        <p className="mt-3">
+          We use what you submit to reply, to write the requested local SEO
+          game plan, and to talk with you about work you asked about. If we are
+          later hired, that information can become part of the client record.
+          We do not sell personal information. Submitting the form does not add
+          you to a marketing list.
+        </p>
+      </div>
+
+      <div>
+        <h2>Who processes it</h2>
+        <p className="mt-3">
+          The small team. Form submissions are delivered to us through the
+          website host (Vercel) so we can email you a response. Email we send
+          or receive is handled by our email provider. We do not currently use
+          a payment processor, scheduling widget, or CRM on this website.
         </p>
       </div>
 
       <div>
         <h2>How long we keep it</h2>
         <p className="mt-3">
-          Contact and game-plan requests are kept as long as we need them to
-          reply and, if we work together, to keep a client record. Analytics
-          retention follows Google’s defaults unless you ask us to delete
-          associated data we control.
+          We keep personal information only as long as it is reasonably needed
+          for the purposes in this policy, to keep records, to resolve
+          disputes, to meet legal obligations, or for other legitimate business
+          reasons — for example, a game-plan request we still need to answer,
+          or a client file if we work together.
         </p>
       </div>
 
       <div>
-        <h2>Your choices</h2>
+        <h2>Security</h2>
+        <p className="mt-3">
+          We use reasonable administrative, technical, and organizational
+          measures designed to protect information. No website, email, or
+          storage method is completely secure, and we do not claim that
+          incidents are impossible.
+        </p>
+      </div>
+
+      <div>
+        <h2>Privacy requests</h2>
         <p className="mt-3">
           Email{" "}
-          <a href={`mailto:${site.email}`}>{site.email}</a> to access, correct,
-          or delete information we hold about you. We do not sell personal
-          information.
+          <a href={`mailto:${site.email}`}>{site.email}</a> if you want to
+          know what information we have, correct it, or ask us to delete it. We
+          will do what the law requires.
         </p>
       </div>
 
@@ -99,7 +128,18 @@ export default function PrivacyPage() {
         <h2>Children</h2>
         <p className="mt-3">
           This site is not directed at children under 13. We do not knowingly
-          collect personal information from children.
+          collect personal information from children under 13.
+        </p>
+      </div>
+
+      <div>
+        <h2>State privacy laws</h2>
+        <p className="mt-3">
+          Some states give residents extra rights over personal information.
+          Those laws often apply only above certain revenue or data-volume
+          thresholds. We do not claim that every such law applies to{" "}
+          {site.legalName}. If a law does apply to your request, email us and
+          we will handle it as required. We do not sell personal information.
         </p>
       </div>
 
