@@ -6,25 +6,26 @@ import { paths, site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Terms of Use",
   description:
-    "Terms for using nobleseo.co and requesting a free local SEO game plan from NOBLE SEO.",
+    "Terms for using nobleseo.co and requesting a free local SEO game plan from NOBLE SEO LLC.",
   alternates: { canonical: "/terms" },
 };
 
 export default function TermsPage() {
   return (
-    <LegalPage kicker="Legal" title="Terms of use" updated="September 18, 2026">
+    <LegalPage kicker="Legal" title="Terms of use" updated="October 2, 2026">
       <p>
         By using{" "}
         <a href={site.url}>{site.url.replace("https://", "")}</a>, you agree to
-        these terms. Questions:{" "}
+        these terms with {site.legalName}. Questions:{" "}
         <a href={`mailto:${site.email}`}>{site.email}</a>.
       </p>
 
       <div>
         <h2>Who we are</h2>
         <p className="mt-3">
-          NOBLE SEO is a small local SEO team serving Dallas–Fort Worth
-          businesses remotely. We are based in Utah.
+          {site.legalName} is a Utah limited liability company. We serve
+          Dallas–Fort Worth businesses remotely. We do not claim a storefront
+          we do not occupy.
         </p>
       </div>
 
@@ -40,8 +41,8 @@ export default function TermsPage() {
       <div>
         <h2>Paid work</h2>
         <p className="mt-3">
-          Paid work is SEO for DFW local businesses — Foundation, Growth, or Competitive — as described
-          on the{" "}
+          Paid work is SEO for DFW local businesses — Foundation, Growth, or
+          Competitive — as described on the{" "}
           <Link href={paths.pricing}>pricing page</Link>. We do not sell
           social, PPC, branding, or generic web design unless we say so in
           writing. The agreement we send you governs a paid engagement.
@@ -70,8 +71,8 @@ export default function TermsPage() {
       <div>
         <h2>Remote work</h2>
         <p className="mt-3">
-          We serve Dallas–Fort Worth remotely. We do not claim a storefront we
-          do not occupy.
+          We serve Dallas–Fort Worth remotely from Utah. We do not claim a
+          storefront we do not occupy.
         </p>
       </div>
 
@@ -79,17 +80,17 @@ export default function TermsPage() {
         <h2>Limitation of liability</h2>
         <p className="mt-3">
           The website and the free game plan are provided as-is. To the extent
-          allowed by law, NOBLE is not liable for indirect, incidental, or
-          consequential damages arising from use of the site. Paid work is
-          governed by the written agreement we send you.
+          allowed by law, {site.legalName} is not liable for indirect,
+          incidental, or consequential damages arising from use of the site.
+          Paid work is governed by the written agreement we send you.
         </p>
       </div>
 
       <div>
         <h2>Governing law</h2>
         <p className="mt-3">
-          These terms are governed by the laws of the State of Utah, without
-          regard to conflict-of-law rules.
+          These terms are governed by the laws of the State of Utah, where{" "}
+          {site.legalName} is based, without regard to conflict-of-law rules.
         </p>
       </div>
 

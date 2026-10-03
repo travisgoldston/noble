@@ -1,6 +1,7 @@
 export const site = {
   name: "NOBLE",
   businessName: "NOBLE SEO",
+  legalName: "NOBLE SEO LLC",
   url: "https://nobleseo.co",
   email: "hello@nobleseo.co",
   phone: "(817) 676-8022",

@@ -5,15 +5,16 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How NOBLE SEO collects, uses, and protects information from the website and free local SEO game plan form.",
+    "How NOBLE SEO LLC collects, uses, and protects information from the website and free local SEO game plan form.",
   alternates: { canonical: "/privacy" },
 };
 
 export default function PrivacyPage() {
   return (
-    <LegalPage kicker="Legal" title="Privacy policy" updated="September 18, 2026">
+    <LegalPage kicker="Legal" title="Privacy policy" updated="October 2, 2026">
       <p>
-        This policy explains what NOBLE SEO (“NOBLE,” “we,” “us”) collects on{" "}
+        This policy explains what {site.legalName} (“NOBLE SEO,” “NOBLE,”
+        “we,” “us”) collects on{" "}
         <a href={site.url}>{site.url.replace("https://", "")}</a> and how we
         use it. Questions:{" "}
         <a href={`mailto:${site.email}`}>{site.email}</a>.
@@ -22,8 +23,9 @@ export default function PrivacyPage() {
       <div>
         <h2>Who we are</h2>
         <p className="mt-3">
-          NOBLE is a small local SEO team serving Dallas–Fort Worth businesses
-          remotely. We are based in Utah.
+          {site.legalName} is a Utah limited liability company. We serve
+          Dallas–Fort Worth businesses remotely. We do not claim a storefront
+          we do not occupy.
         </p>
       </div>
 

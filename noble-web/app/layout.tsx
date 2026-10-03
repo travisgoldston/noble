@@ -65,7 +65,7 @@ const jsonLd = {
       "@type": "Organization",
       "@id": "https://nobleseo.co/#organization",
       name: "NOBLE",
-      legalName: "NOBLE SEO",
+      legalName: site.legalName,
       alternateName: "NOBLE SEO",
       url: site.url,
       email: site.email,
@@ -82,6 +82,11 @@ const jsonLd = {
       areaServed: {
         "@type": "AdministrativeArea",
         name: "Dallas–Fort Worth",
+      },
+      address: {
+        "@type": "PostalAddress",
+        addressRegion: "UT",
+        addressCountry: "US",
       },
     },
     ...founders.map((person) => ({
