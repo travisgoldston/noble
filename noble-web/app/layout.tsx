@@ -28,12 +28,22 @@ export const metadata: Metadata = {
     siteName: "NOBLE SEO",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "/noble-seo-og.png",
+        width: 1200,
+        height: 630,
+        alt: "NOBLE SEO",
+        type: "image/png",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "NOBLE SEO | SEO built on proof",
     description:
       "On-page and technical SEO for Dallas–Fort Worth local businesses. SEO built on proof.",
+    images: ["/noble-seo-og.png"],
   },
   icons: {
     icon: [
@@ -60,6 +70,7 @@ const jsonLd = {
       url: site.url,
       email: site.email,
       telephone: site.phoneTel,
+      image: "https://nobleseo.co/noble-seo-og.png",
       description:
         "SEO for Dallas–Fort Worth local businesses. On-page SEO, technical SEO, Google Business Profile, and local SEO — served remotely.",
       founder: founders.map((person) => ({
@@ -99,7 +110,7 @@ const jsonLd = {
       url: "https://nobleseo.co",
       email: site.email,
       telephone: site.phoneTel,
-      image: "https://nobleseo.co/favicon-512.png",
+      image: "https://nobleseo.co/noble-seo-og.png",
       description:
         "On-page and technical SEO for Dallas–Fort Worth local businesses, with Google Business Profile and local SEO in support.",
       areaServed: {
