@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useState, type MouseEvent, type ReactNode } from "react";
 import { BrandMark } from "@/components/BrandMark";
 import { Button } from "@/components/Button";
 import { capabilities, locations, searchSurfaces } from "@/lib/content";
@@ -37,23 +37,33 @@ function Dropdown({
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+    if (!open) return;
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpen(false);
+    };
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [open]);
+
+  function closeIfNotLink(event: MouseEvent<HTMLElement>) {
+    const target = event.target as HTMLElement;
+    if (!target.closest("a, button")) setOpen(false);
+  }
 
   return (
     <header
-      className={`sticky top-0 z-50 bg-white ${
-        scrolled ? "shadow-header" : "border-b border-mist/80"
-      }`}
+      className="sticky top-0 z-50 border-b border-mist/80 bg-white"
+      onClick={open ? closeIfNotLink : undefined}
     >
-      <div className={`mx-auto flex max-w-site items-center gap-6 px-6 ${scrolled ? "py-3" : "py-4"}`}>
-        <BrandMark compact={scrolled} />
+      <div className="mx-auto flex h-16 max-w-site items-center gap-6 px-6">
+        <BrandMark />
         <nav className="ml-auto hidden items-center gap-6 text-sm text-stone lg:flex" aria-label="Primary">
           <Dropdown label="Services" href={paths.services}>
             <div className="grid w-[34rem] grid-cols-2 gap-6 rounded-xl border border-mist bg-white p-5 shadow-card">
@@ -154,7 +164,18 @@ export function SiteHeader() {
         </button>
       </div>
       {open ? (
-        <nav className="max-h-[80vh] overflow-y-auto border-t border-mist px-6 py-4 lg:hidden" aria-label="Mobile">
+        <>
+          <button
+            type="button"
+            aria-label="Close menu"
+            className="fixed inset-0 z-40 bg-ink/25 lg:hidden"
+            onClick={() => setOpen(false)}
+          />
+          <nav
+            className="relative z-50 max-h-[80vh] overflow-y-auto border-t border-mist bg-white px-6 py-4 lg:hidden"
+            aria-label="Mobile"
+            onClick={closeIfNotLink}
+          >
           <div className="flex flex-col gap-3 text-sm">
             <p className="text-xs font-medium tracking-[0.14em] text-stone uppercase">Services</p>
             <Link href={paths.services} className="text-ink" onClick={() => setOpen(false)}>
@@ -218,6 +239,7 @@ export function SiteHeader() {
             <Button href={paths.contact}>{cta.nav}</Button>
           </div>
         </nav>
+        </>
       ) : null}
     </header>
   );

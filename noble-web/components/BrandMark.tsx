@@ -1,13 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export function BrandMark({
-  inverted = false,
-  compact = false,
-}: {
-  inverted?: boolean;
-  compact?: boolean;
-}) {
+export function BrandMark({ inverted = false }: { inverted?: boolean }) {
   return (
     <Link href="/" className="inline-flex shrink-0 items-center" aria-label="NOBLE SEO home">
       <Image
@@ -16,9 +10,7 @@ export function BrandMark({
         width={446}
         height={118}
         priority
-        className={`w-auto ${compact ? "h-[30px] lg:h-9" : "h-[30px] lg:h-11"} ${
-          inverted ? "brightness-0 invert" : ""
-        }`}
+        className={`h-[30px] w-auto lg:h-10 ${inverted ? "brightness-0 invert" : ""}`}
       />
     </Link>
   );
