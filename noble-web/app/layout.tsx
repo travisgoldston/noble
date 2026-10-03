@@ -36,8 +36,12 @@ export const metadata: Metadata = {
       "On-page and technical SEO for Dallas–Fort Worth local businesses. SEO built on proof.",
   },
   icons: {
-    icon: [{ url: "/favicon-512.png", type: "image/png", sizes: "512x512" }],
-    apple: "/favicon-512.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-512.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
 };
 
