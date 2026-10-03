@@ -4,29 +4,50 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/Button";
 import { JsonLd, breadcrumbSchema } from "@/components/JsonLd";
+import { LocalCaseStudy } from "@/components/LocalCaseStudy";
 import { RelatedLinks } from "@/components/RelatedLinks";
+import {
+  getPublishedLocalResult,
+  publishedLocalResults,
+} from "@/data/case-studies";
 import { caseStudies, getCaseStudy } from "@/lib/case-studies";
 import { cta, paths } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
-  return caseStudies.map((study) => ({ slug: study.slug }));
+  return [
+    ...caseStudies.map((study) => ({ slug: study.slug })),
+    ...publishedLocalResults().map((study) => ({ slug: study.slug })),
+  ];
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const study = getCaseStudy(slug);
-  if (!study) return { title: "Case study" };
-  return {
-    title: `${study.client} Case Study`,
-    description: study.subhead,
-    alternates: { canonical: `${paths.caseStudies}/${study.slug}` },
-  };
+  if (study) {
+    return {
+      title: `${study.client} Case Study`,
+      description: study.subhead,
+      alternates: { canonical: `${paths.caseStudies}/${study.slug}` },
+    };
+  }
+  const local = getPublishedLocalResult(slug);
+  if (local) {
+    return {
+      title: `${local.industry} local result`,
+      description: `Local SEO result for an anonymized ${local.industry} engagement. Fixed keyword set, caveats included.`,
+      alternates: { canonical: `${paths.caseStudies}/${local.slug}` },
+    };
+  }
+  return { title: "Case study" };
 }
 
 export default async function CaseStudyPage({ params }: Props) {
   const { slug } = await params;
+  const local = getPublishedLocalResult(slug);
+  if (local) return <LocalCaseStudy study={local} />;
+
   const study = getCaseStudy(slug);
   if (!study) notFound();
 

@@ -63,7 +63,7 @@ export const dentalSeoDallas: Article = {
     {
       question: "How much does dental SEO cost in Dallas?",
       answer:
-        "NOBLE’s plans are Maps $1,250, Local $1,850, and Competitive $2,500 per month. Dallas dental is often competitive enough to need more than listing cleanup.",
+        "NOBLE’s plans are Foundation $1,250, Growth $1,850, and Competitive $2,500 per month. Dallas dental is often competitive enough to need more than listing cleanup.",
     },
     {
       question: "Can you guarantee first page for dentist Dallas?",

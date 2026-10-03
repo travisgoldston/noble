@@ -55,11 +55,10 @@ export function serviceSchema({
       name: "NOBLE SEO",
       url: "https://nobleseo.co",
     },
-    areaServed: [
-      { "@type": "AdministrativeArea", name: "Dallas-Fort Worth" },
-      { "@type": "City", name: "Dallas" },
-      { "@type": "City", name: "Fort Worth" },
-    ],
+    areaServed: {
+      "@type": "AdministrativeArea",
+      name: "Dallas–Fort Worth",
+    },
     serviceType: name,
   };
 }
@@ -70,7 +69,7 @@ export function offerCatalogSchema(
   return {
     "@context": "https://schema.org",
     "@type": "OfferCatalog",
-    name: "NOBLE SEO local SEO plans",
+    name: "NOBLE SEO plans",
     url: "https://nobleseo.co/pricing",
     itemListElement: offers.map((offer, index) => ({
       "@type": "Offer",

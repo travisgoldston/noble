@@ -4,18 +4,20 @@ import { CaseStudyCard } from "@/components/CaseStudyCard";
 import { FaqList } from "@/components/FaqList";
 import { FinalCta } from "@/components/FinalCta";
 import { JsonLd, faqSchema } from "@/components/JsonLd";
+import { LocalResultsSection } from "@/components/LocalResults";
 import { PricingBlock } from "@/components/PricingBlock";
 import { caseStudies } from "@/lib/case-studies";
 import {
   capabilities,
+  featuredWhoWeHelp,
   homeFaqs,
   locations,
   processSteps,
   searchSurfaces,
-  whoWeHelp,
 } from "@/lib/content";
-import { cityPath, cta, gamePlan, paths } from "@/lib/site";
+import { cityPath, cta, gamePlan, paths, aboutPhoto } from "@/lib/site";
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
     absolute: "NOBLE SEO | SEO built on proof",
   },
   description:
-    "Small-team local SEO for Dallas–Fort Worth businesses. We help local companies turn Google Search and Maps visibility into more qualified calls.",
+    "On-page and technical SEO for Dallas–Fort Worth local businesses. Google Business Profile and Maps as supporting work — without bloated agency retainers.",
   alternates: { canonical: "/" },
 };
 
@@ -50,12 +52,13 @@ export default function HomePage() {
               .
             </h1>
             <p className="mt-6 max-w-xl text-lg font-medium text-ink md:text-xl">
-              Small-team local SEO for Dallas–Fort Worth businesses.
+              On-page and technical SEO for Dallas–Fort Worth local businesses.
             </p>
             <p className="mt-4 max-w-xl text-lg leading-relaxed text-stone">
-              We help local businesses turn Google Search and Google Maps
-              visibility into more qualified calls, leads, and customers —
-              without bloated agency retainers or black-box reporting.
+              We help local businesses turn search visibility into more
+              qualified calls, leads, and customers — without bloated agency
+              retainers or black-box reporting. Google Business Profile and
+              Maps support the pages and the site.
             </p>
             <p className="mt-4 max-w-xl text-lg leading-relaxed text-stone">
               {gamePlan.alreadyHave}
@@ -183,15 +186,18 @@ export default function HomePage() {
           <p className="mt-6 text-center text-sm text-stone">
             From the{" "}
             <Link href={paths.budgetocity} className="text-forest hover:text-forest-deep">
-              Budgetocity organic SEO case study
+              Budgetocity on-page and content case study
             </Link>
-            . That is software search, not a Fort Worth trades campaign. It is
-            the one published case study. Local service results will be
-            published the same way: with numbers, caveats, and permission — not
-            borrowed.
+            .
+          </p>
+          <p className="mt-2 text-center text-xs leading-relaxed text-stone">
+            One published case study. Software search, not a DFW trades
+            campaign.
           </p>
         </div>
       </section>
+
+      <LocalResultsSection />
 
       <section className="bg-cream py-20 md:py-24">
         <div className="mx-auto max-w-site px-6">
@@ -203,8 +209,8 @@ export default function HomePage() {
           </h2>
           <p className="mt-5 max-w-2xl text-stone">
             The job is to make the business clear wherever a serious customer
-            looks — Search, the Local Pack, Maps, and branded results. That is
-            local SEO, not a pile of disconnected products.
+            looks — Search, the Local Pack, Maps, and branded results. On-page
+            and technical SEO do most of that work. GBP and Maps support it.
           </p>
           <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {searchSurfaces.map((item) => (
@@ -238,8 +244,8 @@ export default function HomePage() {
             customers are ready to buy. These are some of the types we commonly
             help — not a closed list.
           </p>
-          <ul className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {whoWeHelp.map((item) => (
+          <ul className="mt-10 grid gap-3 sm:grid-cols-2">
+            {featuredWhoWeHelp.map((item) => (
               <li key={item.label} className="rounded-xl border border-mist bg-cream px-5 py-4 text-sm">
                 {item.href ? (
                   <Link href={item.href} className="hover:text-forest">
@@ -251,6 +257,14 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
+          <div className="mt-6">
+            <Link
+              href={paths.industries}
+              className="text-sm font-medium text-forest hover:text-forest-deep"
+            >
+              More industries
+            </Link>
+          </div>
           <div className="mt-8 max-w-2xl">
             <p className="font-medium text-ink">
               Don&apos;t see your business? That&apos;s okay.
@@ -272,14 +286,14 @@ export default function HomePage() {
             What NOBLE does
           </p>
           <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
-            Local SEO. That is the product.
+            On-page and technical SEO. That is the core of the work.
           </h2>
           <p className="mt-5 max-w-2xl text-stone">
-            Google Business Profile, Maps, on-page work, and technical fixes
-            are tactics. The customer buys search growth: more of the right
-            people finding the business and calling.
+            We fix the pages and the site first: titles, copy, structure,
+            crawlability. Google Business Profile and Maps are supporting
+            services — important, but not the whole product.
           </p>
-          <div className="mt-12 grid gap-4 md:grid-cols-3">
+          <div className="mt-12 grid gap-4 md:grid-cols-2">
             {capabilities.map((item) => (
               <article key={item.id} className="flex flex-col rounded-xl border border-mist bg-white p-7">
                 <h3 className="font-serif text-2xl tracking-tight">{item.title}</h3>
@@ -328,9 +342,9 @@ export default function HomePage() {
               slow, confusing, or unclear site does not turn into calls.
             </p>
             <p className="mt-4 text-white/70">
-              That is why local SEO is paired with technical work when the site
-              itself is holding you back. Getting found only helps if the next
-              step is obvious.
+              That is why on-page and technical SEO are paired with the listing
+              when the site itself is holding you back. Getting found only
+              helps if the next step is obvious.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button href={paths.contact}>{cta.primary}</Button>
@@ -348,7 +362,7 @@ export default function HomePage() {
             Dallas–Fort Worth
           </p>
           <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
-            Local SEO for the cities you actually serve.
+            SEO for the DFW cities you actually serve.
           </h2>
           <p className="mt-5 max-w-2xl text-stone">
             Search behaves differently in Fort Worth than it does in McKinney.
@@ -370,7 +384,20 @@ export default function HomePage() {
       </section>
 
       <section className="py-20 md:py-24">
-        <div className="mx-auto grid max-w-site gap-12 px-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
+        <div className="mx-auto grid max-w-site items-center gap-10 px-6 lg:grid-cols-2 lg:gap-16">
+          <figure>
+            {/* TODO: swap in a clear photo without sunglasses */}
+            <Image
+              src={aboutPhoto.src}
+              alt={aboutPhoto.alt}
+              width={960}
+              height={958}
+              className="w-full rounded-xl object-cover"
+            />
+            <figcaption className="mt-3 text-sm text-stone">
+              Travis and Victoria Goldston, co-founders.
+            </figcaption>
+          </figure>
           <div>
             <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
               Why a small team
@@ -384,20 +411,20 @@ export default function HomePage() {
               manager. Strategy, diagnosis, and client communication stay with
               us — including our phone numbers.
             </p>
+            <aside className="mt-8 rounded-xl border border-mist bg-cream p-7">
+              <p className="font-serif text-2xl tracking-tight">No bloat. No layers.</p>
+              <p className="mt-3 text-sm leading-relaxed text-stone">
+                If we work together, you work with us. Not a VA. Not an intern.
+                Not an account manager handing notes down a chain. The first
+                conversation is about fit.
+              </p>
+              <div className="mt-6">
+                <Button href={paths.about} variant="secondary">
+                  About NOBLE
+                </Button>
+              </div>
+            </aside>
           </div>
-          <aside className="rounded-xl border border-mist bg-cream p-7">
-            <p className="font-serif text-2xl tracking-tight">No bloat. No layers.</p>
-            <p className="mt-3 text-sm leading-relaxed text-stone">
-              If we work together, you work with us. Not a VA. Not an intern.
-              Not an account manager handing notes down a chain. The first
-              conversation is about fit.
-            </p>
-            <div className="mt-6">
-              <Button href={paths.about} variant="secondary">
-                About NOBLE
-              </Button>
-            </div>
-          </aside>
         </div>
       </section>
 

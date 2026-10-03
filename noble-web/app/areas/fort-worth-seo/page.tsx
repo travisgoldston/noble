@@ -23,7 +23,7 @@ const faqs = [
   {
     question: "How much does local SEO cost in Fort Worth?",
     answer:
-      "Maps is $1,250/month when the listing is the main leak. Local is $1,850/month when the site and local pages need more work. Competitive is $2,500/month when the market is crowded and the build is heavier. Same prices as the rest of DFW — not a Fort Worth discount.",
+      "Foundation is $1,250/month when the listing is the main leak. Growth is $1,850/month when the site and local pages need more work. Competitive is $2,500/month when the market is crowded and the build is heavier. Same prices as the rest of DFW — not a Fort Worth discount.",
   },
   {
     question: "How long does Fort Worth SEO take?",
@@ -414,8 +414,8 @@ export default function FortWorthSeoPage() {
       <section className="pb-4">
         <div className="mx-auto max-w-site px-6">
           <p className="max-w-2xl text-stone">
-            Maps at $1,250/month is focused visibility work when the listing is
-            the leak. Local at $1,850/month is for broader site and local SEO.
+            Foundation at $1,250/month is focused visibility work when the listing is
+            the leak. Growth at $1,850/month is for broader site and local SEO.
             Competitive at $2,500/month is for harder markets and more
             substantial build. Details live on the pricing page. The audit is
             how we tell which scope actually fits.

@@ -24,7 +24,8 @@ export function Button({
   className = "",
 }: ButtonProps) {
   const classes = `inline-flex items-center justify-center rounded-full border px-6 py-3 text-sm font-semibold tracking-wide transition-colors ${variants[variant]} ${className}`;
-  const external = href.startsWith("http");
+  const external =
+    href.startsWith("http") || href.startsWith("tel:") || href.startsWith("mailto:");
 
   if (external) {
     return (

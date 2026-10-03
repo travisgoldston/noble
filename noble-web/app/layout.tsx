@@ -3,7 +3,7 @@ import { Poppins } from "next/font/google";
 import { Analytics } from "@/components/Analytics";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { socialLinks } from "@/lib/content";
+import { activeSocialLinks, founders, site } from "@/lib/site";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -19,11 +19,11 @@ export const metadata: Metadata = {
     template: "%s | NOBLE SEO",
   },
   description:
-    "Small-team local SEO for Dallas–Fort Worth businesses. Google Business Profile, local rankings, and technical SEO — without bloated agency retainers.",
+    "On-page and technical SEO for Dallas–Fort Worth local businesses. Google Business Profile and local search as supporting work — without bloated agency retainers.",
   openGraph: {
     title: "NOBLE SEO | SEO built on proof",
     description:
-      "Small-team local SEO for Dallas–Fort Worth businesses. We help local companies turn Google Search and Maps visibility into more qualified calls.",
+      "On-page and technical SEO for Dallas–Fort Worth local businesses. We help local companies turn search visibility into more qualified calls.",
     url: "https://nobleseo.co",
     siteName: "NOBLE SEO",
     type: "website",
@@ -33,13 +33,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "NOBLE SEO | SEO built on proof",
     description:
-      "Small-team local SEO for Dallas–Fort Worth businesses. SEO built on proof.",
+      "On-page and technical SEO for Dallas–Fort Worth local businesses. SEO built on proof.",
   },
   icons: {
-    icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon-512.png", sizes: "512x512", type: "image/png" },
-    ],
+    icon: [{ url: "/favicon-512.png", type: "image/png", sizes: "512x512" }],
     apple: "/favicon-512.png",
   },
 };
@@ -53,21 +50,34 @@ const jsonLd = {
       name: "NOBLE",
       legalName: "NOBLE SEO",
       alternateName: "NOBLE SEO",
-      url: "https://nobleseo.co",
-      email: "hello@nobleseo.co",
+      url: site.url,
+      email: site.email,
+      telephone: site.phoneTel,
       description:
-        "Small-team local SEO practice serving Dallas-Fort Worth businesses remotely.",
-      founder: [
-        { "@type": "Person", name: "Travis Goldston", jobTitle: "Co-Founder" },
-        { "@type": "Person", name: "Victoria Goldston", jobTitle: "Co-Founder" },
-      ],
-      sameAs: socialLinks.map((item) => item.href),
-      areaServed: [
-        { "@type": "AdministrativeArea", name: "Dallas-Fort Worth" },
-        { "@type": "City", name: "Dallas" },
-        { "@type": "City", name: "Fort Worth" },
-      ],
+        "SEO for Dallas–Fort Worth local businesses. On-page SEO, technical SEO, Google Business Profile, and local SEO — served remotely.",
+      founder: founders.map((person) => ({
+        "@id": `${site.url}/#${person.id}`,
+      })),
+      ...(activeSocialLinks.length
+        ? { sameAs: activeSocialLinks.map((item) => item.href) }
+        : {}),
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: "Dallas–Fort Worth",
+      },
     },
+    ...founders.map((person) => ({
+      "@type": "Person",
+      "@id": `${site.url}/#${person.id}`,
+      name: person.name,
+      jobTitle: person.jobTitle,
+      url: `${site.url}/about`,
+      worksFor: { "@id": `${site.url}/#organization` },
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: "Dallas–Fort Worth",
+      },
+    })),
     {
       "@type": "WebSite",
       "@id": "https://nobleseo.co/#website",
@@ -80,16 +90,21 @@ const jsonLd = {
       "@id": "https://nobleseo.co/#service",
       name: "NOBLE SEO",
       url: "https://nobleseo.co",
-      email: "hello@nobleseo.co",
-      image: "https://nobleseo.co/favicon.svg",
+      email: site.email,
+      telephone: site.phoneTel,
+      image: "https://nobleseo.co/favicon-512.png",
       description:
-        "Small-team local SEO for Dallas-Fort Worth businesses, including Google Business Profile, local search, and technical SEO.",
-      areaServed: [
-        { "@type": "AdministrativeArea", name: "Dallas-Fort Worth" },
-        { "@type": "City", name: "Dallas" },
-        { "@type": "City", name: "Fort Worth" },
+        "On-page and technical SEO for Dallas–Fort Worth local businesses, with Google Business Profile and local SEO in support.",
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: "Dallas–Fort Worth",
+      },
+      serviceType: [
+        "On-page SEO",
+        "Technical SEO",
+        "Google Business Profile",
+        "Local SEO",
       ],
-      serviceType: ["Local SEO", "Google Business Profile", "Technical SEO"],
       parentOrganization: { "@id": "https://nobleseo.co/#organization" },
     },
   ],

@@ -130,7 +130,7 @@ export const hvac: Industry = {
     {
       question: "How much does HVAC SEO cost?",
       answer:
-        "NOBLE’s local SEO plans are Maps at $1,250/month, Local at $1,850/month, and Competitive at $2,500/month. HVAC markets in DFW are often competitive. Scope follows the gaps, not a cheaper HVAC discount.",
+        "NOBLE’s SEO plans are Foundation at $1,250/month, Growth at $1,850/month, and Competitive at $2,500/month. HVAC markets in DFW are often competitive. Scope follows the gaps, not a cheaper HVAC discount.",
     },
     {
       question: "How long does HVAC SEO take?",
@@ -253,7 +253,7 @@ export const plumbing: Industry = {
     {
       question: "How much does SEO cost for a plumber?",
       answer:
-        "Maps is $1,250/month, Local is $1,850/month, and Competitive is $2,500/month. Plumbing in DFW is competitive. We do not discount the trade to win the work.",
+        "Foundation is $1,250/month, Growth is $1,850/month, and Competitive is $2,500/month. Plumbing in DFW is competitive. We do not discount the trade to win the work.",
     },
     {
       question: "Can you guarantee we rank for emergency plumber?",

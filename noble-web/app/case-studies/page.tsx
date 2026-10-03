@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { CaseStudyCard } from "@/components/CaseStudyCard";
 import { FinalCta } from "@/components/FinalCta";
+import { LocalResultCard } from "@/components/LocalResults";
+import { publishedLocalResults } from "@/data/case-studies";
 import { caseStudies } from "@/lib/case-studies";
-import { paths } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Case Studies",
@@ -34,6 +35,9 @@ export default function CaseStudiesPage() {
         <div className="grid gap-6">
           {caseStudies.map((study) => (
             <CaseStudyCard key={study.slug} study={study} />
+          ))}
+          {publishedLocalResults().map((study) => (
+            <LocalResultCard key={study.slug} study={study} />
           ))}
         </div>
         <p className="mt-10 max-w-2xl text-sm text-stone">

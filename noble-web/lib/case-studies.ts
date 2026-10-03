@@ -33,12 +33,12 @@ export const caseStudies: CaseStudy[] = [
     location: "United States (national search)",
     url: "https://budgetocity.com",
     logo: "/budgetocity-logo.png",
-    kicker: "Case study. Organic SEO",
-    headline: "Budgetocity: from page 3 to page 1 with organic SEO",
+    kicker: "Case study. On-page SEO and content",
+    headline: "Budgetocity: from page 3 to page 1 with on-page SEO and content",
     subhead:
       "How we rebuilt their search foundation and the pages people already type — without paid ads.",
     metric:
-      "Avg. position 31.2 to 6.2. +28% clicks year over year. Content engine built without paid ads",
+      "Avg. position 31.2 to 6.2. +28% clicks year over year. On-page SEO and content, without paid ads",
     summary:
       "We rebuilt structure, on-page SEO, and the pages people search for paycheck budgeting, so the product could get found without ad spend.",
     startingSituation:
@@ -61,7 +61,7 @@ export const caseStudies: CaseStudy[] = [
     results: [
       { value: "6.2", label: "Average Google search position after" },
       { value: "+28%", label: "Clicks, year over year" },
-      { value: "~$0 ads", label: "Growth driven by organic SEO and content" },
+      { value: "~$0 ads", label: "Growth driven by on-page SEO and content" },
     ],
     caveats:
       "These figures come from Google Search Console for this engagement. Rankings move with competition, seasonality, and Google changes. This is organic SEO proof for a software product, not a Fort Worth home-services campaign. Local Maps and call results are a different measurement set and will be published only when we have permission and clean data.",

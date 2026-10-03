@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { socialLinks } from "@/lib/content";
+import { socialLinks } from "@/lib/site";
 
 const iconClass = "h-5 w-5";
 
@@ -54,9 +54,12 @@ const icons: Record<string, () => ReactNode> = {
 };
 
 export function SocialIcons() {
+  const active = socialLinks.filter((item) => item.active);
+  if (!active.length) return null;
+
   return (
     <nav aria-label="Social media" className="mt-6 flex flex-wrap items-center gap-3">
-      {socialLinks.map((item) => {
+      {active.map((item) => {
         const Icon = icons[item.label];
         return (
           <a

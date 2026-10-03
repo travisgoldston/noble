@@ -1,19 +1,22 @@
 import Link from "next/link";
 import { BrandMark } from "@/components/BrandMark";
+import { ContactChannels } from "@/components/ContactChannels";
 import { SocialIcons } from "@/components/SocialIcons";
 import { capabilities, locations, searchSurfaces } from "@/lib/content";
-import { cityPath, cta, paths } from "@/lib/site";
+import { cityPath, cta, mailtoHref, paths, site, telHref } from "@/lib/site";
 
 export function SiteFooter() {
+  const phoneHref = telHref();
+
   return (
     <footer className="bg-ink text-white/75">
       <div className="mx-auto grid max-w-site gap-10 px-6 py-14 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <BrandMark inverted />
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/60">
-            Small-team local SEO for Dallas–Fort Worth businesses. SEO built
-            on proof.
+            SEO for Dallas–Fort Worth local businesses. SEO built on proof.
           </p>
+          <ContactChannels className="mt-5 text-sm text-white/75" tone="dark" />
           <SocialIcons />
         </div>
         <div className="grid gap-3 text-sm">
@@ -88,9 +91,14 @@ export function SiteFooter() {
             <Link href={paths.terms} className="hover:text-white">
               Terms
             </Link>
-            <a href="mailto:hello@nobleseo.co" className="hover:text-white">
-              hello@nobleseo.co
+            <a href={mailtoHref()} className="hover:text-white">
+              {site.email}
             </a>
+            {phoneHref ? (
+              <a href={phoneHref} className="hover:text-white">
+                {site.phoneCta} {site.phone}
+              </a>
+            ) : null}
           </p>
         </div>
       </div>

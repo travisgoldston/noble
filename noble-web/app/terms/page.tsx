@@ -40,7 +40,7 @@ export default function TermsPage() {
       <div>
         <h2>Paid work</h2>
         <p className="mt-3">
-          Paid work is local SEO — Maps, Local, or Competitive — as described
+          Paid work is SEO for DFW local businesses — Foundation, Growth, or Competitive — as described
           on the{" "}
           <Link href={paths.pricing}>pricing page</Link>. We do not sell
           social, PPC, branding, or generic web design unless we say so in

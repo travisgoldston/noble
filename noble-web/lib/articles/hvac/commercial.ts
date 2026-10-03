@@ -213,7 +213,7 @@ export const hvacSeoCost: Article = {
   publishedAt: PUBLISHED,
   updatedAt: PUBLISHED,
   answer:
-    "NOBLE’s local SEO plans are Maps at $1,250/month, Local at $1,850/month, and Competitive at $2,500/month. HVAC companies buy a scope of listing, Maps, on-page, and technical work — not a cheaper “HVAC package” and not guaranteed rankings. If a single install does not cover the plan, the economics may not work.",
+    "NOBLE’s SEO plans are Foundation at $1,250/month, Growth at $1,850/month, and Competitive at $2,500/month. HVAC companies buy a scope of listing, Maps, on-page, and technical work — not a cheaper “HVAC package” and not guaranteed rankings. If a single install does not cover the plan, the economics may not work.",
   intro:
     "Owners ask for a number. The honest number is the same as the rest of NOBLE’s local SEO product. HVAC does not get a discount for being a trade, and it does not get a fake “starter package” that skips Maps. Here is what the money buys and what it does not.",
   sections: [
@@ -297,7 +297,7 @@ export const hvacSeoCost: Article = {
     newsletter:
       "Subject: HVAC SEO pricing without the mystery package. CTA: pricing page + audit.",
     outreach:
-      "We price HVAC work as local SEO — Maps, Local, or Competitive — not as a discounted trade package. If the listing is the leak, we say so.",
+      "We price HVAC work as SEO for DFW local businesses — Foundation, Growth, or Competitive — not as a discounted trade package. If the listing is the leak, we say so.",
   },
 };
 

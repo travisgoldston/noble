@@ -7,9 +7,9 @@ import { capabilities, supportingTactics } from "@/lib/content";
 import { cta, paths } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Local SEO Services",
+  title: "SEO Services for DFW Local Businesses",
   description:
-    "Small-team local SEO for Dallas–Fort Worth businesses: Google Business Profile, local rankings, and technical SEO without agency retainers.",
+    "On-page SEO, technical SEO, Google Business Profile, and local SEO for Dallas–Fort Worth businesses — without agency retainers.",
   alternates: { canonical: "/services" },
 };
 
@@ -22,12 +22,12 @@ export default function ServicesPage() {
             Services
           </p>
           <h1 className="font-serif mt-4 max-w-[14ch] text-5xl tracking-tightest md:text-6xl">
-            Local SEO is the product.
+            SEO for DFW local businesses.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-stone">
-            NOBLE is not a full-service marketing agency. The customer buys
-            search growth: more of the right people finding the business on
-            Google Search and Maps.
+            NOBLE is not a full-service marketing agency. The core work is
+            on-page SEO and technical SEO. Google Business Profile and local
+            SEO support that.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Button href={paths.contact}>{cta.primary}</Button>
@@ -70,7 +70,7 @@ export default function ServicesPage() {
             Tactics that support the outcome.
           </h2>
           <p className="mt-4 max-w-2xl text-stone">
-            These are not extra products. They are how local SEO gets done.
+            These are not extra products. They are how the work gets done.
           </p>
           <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {supportingTactics.map((item) => (

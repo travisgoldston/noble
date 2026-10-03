@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { AuditForm } from "@/components/AuditForm";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/Button";
+import { ContactChannels } from "@/components/ContactChannels";
 import { FinalCta } from "@/components/FinalCta";
 import { JsonLd, breadcrumbSchema, faqSchema, serviceSchema } from "@/components/JsonLd";
 import { cta, paths } from "@/lib/site";
@@ -95,6 +96,7 @@ export default function ContactPage() {
           <p className="mt-3 max-w-2xl text-lg leading-relaxed text-stone">
             About 30 seconds. Written response. No required sales call.
           </p>
+          <ContactChannels className="mt-5 text-base" />
           <div className="mt-8">
             <Button href="#audit-form">{cta.primary} →</Button>
           </div>

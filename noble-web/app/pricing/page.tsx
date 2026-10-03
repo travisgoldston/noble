@@ -26,7 +26,7 @@ import { cta, paths } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "NOBLE local SEO pricing for Dallas–Fort Worth businesses: Maps $1,250, Local $1,850, and Competitive $2,500 per month. Small-team work, public prices, no agency black box.",
+    "NOBLE SEO pricing for Dallas–Fort Worth local businesses: Foundation $1,250, Growth $1,850, and Competitive $2,500 per month. Small-team work, public prices, no agency black box.",
   alternates: { canonical: "/pricing" },
 };
 
@@ -41,7 +41,7 @@ export default function PricingPage() {
           ]),
           offerCatalogSchema(
             pricingTiers.map((tier) => ({
-              name: `${tier.name} local SEO`,
+              name: `${tier.name} SEO`,
               description: tier.summary,
               price: tier.price,
             })),

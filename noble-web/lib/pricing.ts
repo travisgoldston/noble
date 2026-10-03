@@ -3,13 +3,13 @@ export const pricing = {
   startingLabel: "$1,250/month",
   rangeLabel: "$1,250–$2,500/month",
   summary:
-    "Local SEO is $1,250, $1,850, or $2,500/month depending on how competitive the market is and how much of the site needs work. Every plan includes on-page SEO. The plans are scopes of the same product — not Bronze/Silver/Gold filler.",
+    "SEO for DFW local businesses is $1,250, $1,850, or $2,500/month depending on how competitive the market is and how much of the site needs work. Every plan includes on-page SEO. The plans are scopes of the same product — not Bronze/Silver/Gold filler.",
 };
 
 export const pricingTiers = [
   {
-    id: "maps",
-    name: "Maps",
+    id: "foundation",
+    name: "Foundation",
     price: 1250,
     priceLabel: "$1,250/month",
     featured: false,
@@ -33,8 +33,8 @@ export const pricingTiers = [
     ],
   },
   {
-    id: "local",
-    name: "Local",
+    id: "growth",
+    name: "Growth",
     price: 1850,
     priceLabel: "$1,850/month",
     featured: true,
@@ -44,7 +44,7 @@ export const pricingTiers = [
     bestFor:
       "Owner-led trades and clinics across DFW where a booked job pays for the work, and both the listing and the site need attention.",
     includes: [
-      "Everything in Maps, including on-page SEO",
+      "Everything in Foundation, including on-page SEO",
       "New service pages for the jobs that actually pay the bills",
       "Technical basics: indexation, crawl issues, and the templates that get traffic",
       "Internal linking and a clear next step on the money pages",
@@ -67,7 +67,7 @@ export const pricingTiers = [
     bestFor:
       "Multiple services, tougher competitors, or a site that needs a real content and authority engine on top of local SEO.",
     includes: [
-      "Everything in Local, including on-page SEO",
+      "Everything in Growth, including on-page SEO",
       "A tighter page system for the services and cities you actually serve",
       "Local content that answers real questions, not blog volume",
       "Ethical local authority and link acquisition",
@@ -91,7 +91,7 @@ export const pricingPlan = [
   {
     n: "02",
     title: "Pick the scope",
-    body: "Maps, Local, or Competitive. The plan matches the market and the gaps, not a menu of busywork. If $1,250/month is not realistic, we say so.",
+    body: "Foundation, Growth, or Competitive. The plan matches the market and the gaps, not a menu of busywork. If $1,250/month is not realistic, we say so.",
   },
   {
     n: "03",
@@ -119,7 +119,7 @@ export const pricingGuide = {
   empathy:
     "If the trucks are busy and Google still sends the next job to someone else, that is not a branding problem. It is a findability problem. Owners feel it as a quieter phone and a thicker stack of invoices they cannot defend.",
   authority:
-    "NOBLE is a small-team local SEO practice, not a full-service agency. We take on a handful of clients at a time, and we plan to keep it that way. You will not get handed off to a VA, intern, or account manager. The work is Google Search, Maps, on-page, and technical SEO for Dallas–Fort Worth businesses. We publish proof with numbers and caveats. We do not fabricate case studies, guarantee rankings, or claim a storefront we do not occupy.",
+    "NOBLE is a small team doing SEO for Dallas–Fort Worth local businesses, not a full-service agency. We take on a handful of clients at a time, and we plan to keep it that way. You will not get handed off to a VA, intern, or account manager. The work is on-page SEO, technical SEO, Google Business Profile, and local SEO for DFW. We publish proof with numbers and caveats. We do not fabricate case studies, guarantee rankings, or claim a storefront we do not occupy.",
 };
 
 export const pricingSuccess = {
@@ -136,11 +136,11 @@ export const pricingComparisons = [
   {
     id: "noble",
     name: "NOBLE SEO",
-    kicker: "Small-team local SEO",
+    kicker: "SEO for DFW local businesses",
     highlight: true,
     points: [
       "Handful of clients. You work with us — no VA, intern, or account-manager handoff",
-      "Local SEO is the product — not a bundled retainer",
+      "On-page and technical SEO are the core of the work — not a bundled retainer",
       "Prices on the page: $1,250, $1,850, $2,500/month",
       "Proof published with numbers, caveats, and permission",
       "No ranking guarantees. Anyone selling those is selling something Google does not sell",
@@ -187,12 +187,12 @@ export const pricingFaqs = [
   {
     question: "Why not a cheaper SEO package?",
     answer:
-      "Most $99–$500 packages are citation blasts, generic city pages, or link schemes. They are cheap because the work is not specific to your business or your DFW market. If a single booked job is worth real money, a package that puts the listing at risk is not a savings. Maps starts at $1,250/month so the right owners can self-qualify.",
+      "Most $99–$500 packages are citation blasts, generic city pages, or link schemes. They are cheap because the work is not specific to your business or your DFW market. If a single booked job is worth real money, a package that puts the listing at risk is not a savings. Foundation starts at $1,250/month so the right owners can self-qualify.",
   },
   {
     question: "Why not a bigger SEO agency?",
     answer:
-      "A larger agency can be the right fit if you want a full marketing department. You will usually pay for account layers, a stacked retainer, and a process built to scale their bench — not to diagnose your Maps listing on a Tuesday. We take on a handful of clients at a time so you work with us, not a VA, intern, or account manager. If you need PPC, social, and branding under one roof, we are not the right firm.",
+      "A larger agency can be the right fit if you want a full marketing department. You will usually pay for handoffs, a stacked retainer, and a process built to scale their bench — not to diagnose your listing on a Tuesday. We take on a handful of clients at a time so you work with us, not a VA, intern, or account manager. If you need PPC, social, and branding under one roof, we are not the right firm.",
   },
   {
     question: "Can you guarantee rankings or a number of leads?",
@@ -202,7 +202,7 @@ export const pricingFaqs = [
   {
     question: "How long before this produces calls?",
     answer:
-      "Listing and on-page fixes can show up quickly. Competitive Local Pack movement usually takes longer and depends on the category and the city. We set expectations against your market, not a generic 90-day promise. If the website cannot convert a click, rankings will not save the month — that is why every plan includes on-page SEO, and Local and Competitive add technical work when the engine is the leak.",
+      "Listing and on-page fixes can show up quickly. Competitive Local Pack movement usually takes longer and depends on the category and the city. We set expectations against your market, not a generic 90-day promise. If the website cannot convert a click, rankings will not save the month — that is why every plan includes on-page SEO, and Growth and Competitive add technical work when the engine is the leak.",
   },
   {
     question: "I already have an SEO company. Should I stay?",
@@ -237,17 +237,17 @@ export const pricingFaqs = [
   {
     question: "I also need a new website, ads, or social. Can you do that?",
     answer:
-      "No. NOBLE is local SEO: Maps, Google Business Profile, on-page, and technical work that supports visibility. If the engine is broken we will say so. We will not take a branding or media retainer to keep the invoice interesting.",
+      "No. NOBLE is SEO for DFW local businesses: on-page, technical, Google Business Profile, and local SEO that supports visibility. If the engine is broken we will say so. We will not take a branding or media retainer to keep the invoice interesting.",
   },
   {
     question: "Which plan should I pick?",
     answer:
-      "If the listing is the obvious leak and the site is already usable, start with Maps — it still includes on-page SEO on the pages you have. Most owner-led service businesses belong on Local. Competitive is for crowded categories and businesses that need a real page and authority system, not only a complete profile. The game plan will recommend one — including “not yet” if the budget or the market is wrong.",
+      "If the listing is the obvious leak and the site is already usable, start with Foundation — it still includes on-page SEO on the pages you have. Most owner-led service businesses belong on Growth. Competitive is for crowded categories and businesses that need a real page and authority system, not only a complete profile. The game plan will recommend one — including “not yet” if the budget or the market is wrong.",
   },
   {
     question: "Didn’t you say you don’t sell packages?",
     answer:
-      "We do not sell Bronze/Silver/Gold menus padded with 50 citations and a blog nobody reads. These three plans are different intensities of the same product: local SEO. The work is still scoped to your market. The prices are public so you can self-qualify.",
+      "We do not sell Bronze/Silver/Gold menus padded with 50 citations and a blog nobody reads. These three plans are different intensities of the same product: SEO for DFW local businesses. The work is still scoped to your market. The prices are public so you can self-qualify.",
   },
   {
     question: "Is $1,250/month worth it for a plumber, HVAC company, or clinic?",
@@ -262,6 +262,6 @@ export const pricingFaqs = [
   {
     question: "I got burned by SEO before. Why would this be different?",
     answer:
-      "Because the first deliverable is an honest read, not a close. We publish proof we can stand behind, refuse ranking guarantees, and stay on local SEO instead of a pile of unrelated services. If we cannot see a path, we will tell you. That is a worse sales motion and a better way to keep the brand promise: SEO built on proof.",
+      "Because the first deliverable is an honest read, not a close. We publish proof we can stand behind, refuse ranking guarantees, and stay on SEO for DFW local businesses instead of a pile of unrelated services. If we cannot see a path, we will tell you. That is a worse sales motion and a better way to keep the brand promise: SEO built on proof.",
   },
 ];

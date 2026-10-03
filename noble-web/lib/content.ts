@@ -41,14 +41,24 @@ export const searchSurfaces = [
 
 export const capabilities = [
   {
-    id: "local-seo",
-    title: "Local SEO",
-    href: "/local-seo",
-    body: "Improve local visibility, rankings, on-page signals, and the factors that influence Google Search and Maps when nearby customers are ready to hire.",
+    id: "on-page-seo",
+    title: "On-page SEO",
+    href: "/on-page-seo",
+    body: "Titles, headings, service-page copy, and internal links so the pages match how DFW customers search — and so Search and Maps tell the same story.",
     exampleSetup:
-      "A Fort Worth plumber shows up for the business name, then disappears for “water heater repair near me.” The profile lists half of Tarrant County. The site never names south Fort Worth, the Stockyards, or the jobs they actually want.",
+      "A Fort Worth electrician’s site has one generic “Services” page. The jobs that pay — panel upgrades, EV chargers, storm repair — are mentioned in a paragraph, not as pages people can land on.",
     exampleFix:
-      "NOBLE would tighten service areas to the cities they actually drive, match categories to the work they want, and write pages that sound like how a Fort Worth customer searches. Distance still matters. Confusion should not.",
+      "NOBLE would write pages for the work they actually want, with titles and headings that match the search, and internal links from the homepage and service hub. That is on-page SEO. It is not a blog mill.",
+  },
+  {
+    id: "technical-seo",
+    title: "Technical SEO",
+    href: "/technical-seo",
+    body: "Site health, indexing, crawlability, structured data, internal linking, and Core Web Vitals — the technical work that supports visibility.",
+    exampleSetup:
+      "A Frisco home services site looks fine on a laptop and dies on a phone in the Stonebriar parking lot. Important pages are noindex by accident. The blog is a maze of tags.",
+    exampleFix:
+      "NOBLE would fix crawl and index rules first, speed up the templates that actually get traffic, and simplify the structure so Google can find the service pages. Content cannot help if the engine is broken.",
   },
   {
     id: "google-business-profile",
@@ -61,14 +71,14 @@ export const capabilities = [
       "NOBLE would correct hours, services, and the site link, replace empty photos with real rooms and faces, and set a simple weekly check so Google edits do not sit unanswered.",
   },
   {
-    id: "technical-seo",
-    title: "Technical SEO",
-    href: "/technical-seo",
-    body: "Site health, indexing, crawlability, structured data, internal linking, and Core Web Vitals — the technical work that supports local visibility.",
+    id: "local-seo",
+    title: "Local SEO",
+    href: "/local-seo",
+    body: "Maps, the Local Pack, and the local signals that help nearby customers find the business when they are ready to hire.",
     exampleSetup:
-      "A Frisco home services site looks fine on a laptop and dies on a phone in the Stonebriar parking lot. Important pages are noindex by accident. The blog is a maze of tags.",
+      "A Fort Worth plumber shows up for the business name, then disappears for “water heater repair near me.” The profile lists half of Tarrant County. The site never names south Fort Worth, the Stockyards, or the jobs they actually want.",
     exampleFix:
-      "NOBLE would fix crawl and index rules first, speed up the templates that actually get traffic, and simplify the structure so Google can find the service pages. Content cannot help if the engine is broken.",
+      "NOBLE would tighten service areas to the cities they actually drive, match categories to the work they want, and write pages that sound like how a Fort Worth customer searches. Distance still matters. Confusion should not.",
   },
 ];
 
@@ -99,18 +109,21 @@ export const whoWeHelp = [
   { label: "HVAC", href: industryPath("hvac-seo") },
   { label: "Plumbing", href: industryPath("plumbing-seo") },
   { label: "Roofing", href: industryPath("roofing-seo") },
+  { label: "Electrical", href: industryPath("electrical-seo") },
   { label: "Dental", href: industryPath("dental-seo") },
   { label: "Home Services", href: industryPath("home-services") },
   { label: "Professional Services", href: industryPath("professional-services") },
-  { label: "Electrical", href: industryPath("electrical-seo") },
   { label: "Optometry", href: industryPath("optometry-seo") },
 ];
 
+export const featuredWhoWeHelp = whoWeHelp.slice(0, 4);
+
 export const supportingTactics = [
-  "Google Business Profile",
-  "Google Maps visibility",
   "On-page SEO",
   "Technical SEO",
+  "Google Business Profile",
+  "Local SEO",
+  "Google Maps visibility",
   "Keyword and service-page strategy",
   "Local content",
   "Review strategy",
@@ -122,7 +135,7 @@ export const homeFaqs = [
   {
     question: "What does NOBLE actually do?",
     answer:
-      "NOBLE is a small-team local SEO practice. The core work is local search visibility: Google Business Profile, Google Maps, on-page SEO, and the technical issues that keep a good business from showing up. We do not sell social media, PPC, or a pile of unrelated marketing services.",
+      "NOBLE does SEO for Dallas–Fort Worth local businesses. The core work is on-page SEO and technical SEO. Google Business Profile and local SEO (Maps and the Local Pack) support that. We do not sell social media, PPC, or a pile of unrelated marketing services.",
   },
   {
     question: "Who is this for?",
@@ -140,9 +153,9 @@ export const homeFaqs = [
       "We serve businesses across Dallas–Fort Worth. We work remotely and do not claim a physical office in any DFW city.",
   },
   {
-    question: "How much does local SEO cost?",
+    question: "How much does SEO cost?",
     answer:
-      "Maps is $1,250/month, Local is $1,850/month, and Competitive is $2,500/month. The plans are different intensities of the same product — not Bronze/Silver/Gold filler. Details are on the pricing page.",
+      "Foundation is $1,250/month, Growth is $1,850/month, and Competitive is $2,500/month. The plans are different scopes of the same product — not Bronze/Silver/Gold filler. Details are on the pricing page.",
   },
   {
     question: "Do I need a website or a Google listing first?",
@@ -442,12 +455,12 @@ export const budgetocity = {
   name: "Budgetocity",
   url: "https://budgetocity.com",
   logo: "/budgetocity-logo.png",
-  kicker: "Case study. Organic SEO",
+  kicker: "Case study. On-page SEO and content",
   metric:
     "Avg. position 31.2 to 6.2. +28% clicks year over year. Content engine built without paid ads",
   summary:
     "We rebuilt structure, on-page SEO, and the pages people search for paycheck budgeting, so the product could get found without ad spend.",
-  headline: "Budgetocity: from page 3 to page 1 with organic SEO",
+  headline: "Budgetocity: from page 3 to page 1 with on-page SEO and content",
     subhead:
       "How we rebuilt their search foundation and the pages people already type — without paid ads.",
   stats: [
@@ -457,10 +470,4 @@ export const budgetocity = {
   ],
 };
 
-export const socialLinks = [
-  { label: "X", href: "https://x.com/noble_seo", handle: "@noble_seo" },
-  { label: "TikTok", href: "https://www.tiktok.com/@noble.seo", handle: "@noble.seo" },
-  { label: "Instagram", href: "https://www.instagram.com/noble.seo", handle: "@noble.seo" },
-  { label: "Facebook", href: "https://www.facebook.com/nobleseo", handle: "@nobleseo" },
-  { label: "YouTube", href: "https://www.youtube.com/@noble_seo", handle: "@noble_seo" },
-];
+export { socialLinks } from "./site";

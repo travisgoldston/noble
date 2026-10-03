@@ -1,14 +1,22 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { FinalCta } from "@/components/FinalCta";
+import { Button } from "@/components/Button";
+import { ContactChannels } from "@/components/ContactChannels";
 import { JsonLd } from "@/components/JsonLd";
 import { RelatedLinks } from "@/components/RelatedLinks";
-import { paths, site } from "@/lib/site";
+import {
+  aboutPhoto,
+  cta,
+  founders,
+  paths,
+  site,
+  telHref,
+} from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About NOBLE",
   description:
-    "NOBLE is a small local SEO team serving Dallas–Fort Worth. We work remotely and stay small on purpose. Your story is the work.",
+    "SEO for Dallas–Fort Worth local businesses. A small team — Travis and Victoria Goldston — doing on-page, technical, and local search work remotely. No handoffs.",
   alternates: { canonical: "/about" },
 };
 
@@ -33,7 +41,24 @@ const team = [
   },
 ];
 
+const howWeWork = [
+  {
+    title: "A handful of clients",
+    body: "We take on a handful of clients at a time, and we plan to keep it that way.",
+  },
+  {
+    title: "Direct work. No handoffs.",
+    body: "You will not get handed off to a VA, intern, or account manager. You work with us. You have our phone numbers.",
+  },
+  {
+    title: "Remote, serving DFW",
+    body: "We serve businesses across Dallas–Fort Worth. We operate remotely and do not claim a physical office in any DFW city.",
+  },
+];
+
 export default function AboutPage() {
+  const phoneHref = telHref();
+
   return (
     <div>
       <JsonLd
@@ -47,36 +72,38 @@ export default function AboutPage() {
             name: site.businessName,
             url: site.url,
             email: site.email,
-            founder: team.map((person) => ({
+            founder: founders.map((person) => ({
               "@type": "Person",
               name: person.name,
-              jobTitle: person.role,
+              jobTitle: person.jobTitle,
             })),
           },
         }}
       />
       <section className="bg-cream">
-        <div className="mx-auto max-w-site px-6 py-20">
+        <div className="mx-auto max-w-site px-6 py-16 md:py-20">
           <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
             About
           </p>
-          <h1 className="font-serif mt-4 max-w-[16ch] text-5xl tracking-tightest md:text-6xl">
+          <h1 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-6xl">
             Your story is the work. Ours is just the team.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-stone">
-            NOBLE is a small local SEO team, not a full-service agency. We stay
-            small on purpose so the work stays direct: more of the right
-            customers finding local businesses on Google Search and Maps.
+            NOBLE does SEO for Dallas–Fort Worth local businesses. We stay
+            small on purpose so the work stays direct: on-page SEO, technical
+            SEO, and the Google Business Profile and Maps work that supports
+            them.
           </p>
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-12 md:py-16">
         <div className="mx-auto grid max-w-site items-center gap-10 px-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <figure>
+            {/* TODO: swap in a clear photo without sunglasses */}
             <Image
-              src="/travis-victoria.jpg"
-              alt="Travis and Victoria Goldston, co-founders of NOBLE SEO"
+              src={aboutPhoto.src}
+              alt={aboutPhoto.alt}
               width={960}
               height={958}
               className="w-full rounded-xl object-cover"
@@ -95,8 +122,8 @@ export default function AboutPage() {
             </h2>
             <p className="mt-5 text-stone">
               The About page exists so you know who you are talking to. It is
-              not the product. The product is whether nearby customers can find
-              you, trust the listing, and call.
+              not the product. The product is whether the right customers can
+              find you, trust what they see, and call.
             </p>
             <p className="mt-4 text-stone">
               If you want the work, start with a game plan. If you want the
@@ -106,13 +133,13 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="border-y border-mist bg-cream py-16">
+      <section className="border-y border-mist bg-cream py-12 md:py-16">
         <div className="mx-auto max-w-site px-6">
           <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
             The team
           </p>
           <h2 className="font-serif mt-3 text-3xl tracking-tight md:text-4xl">
-            A small team. Direct work. No account layer.
+            A small team. Direct work. No handoffs.
           </h2>
           <div className="mt-10 grid gap-6 md:grid-cols-2">
             {team.map((person) => (
@@ -135,123 +162,58 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-16">
-        <div className="mx-auto max-w-site px-6">
-          <article className="max-w-3xl">
-            <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-              How we work
-            </p>
-            <h2 className="font-serif mt-3 text-3xl tracking-tight md:text-4xl">
-              Direct work. Limited capacity. No account layer.
-            </h2>
-            <p className="mt-5 text-stone">
-              We take on a handful of clients at a time, and we plan to keep it
-              that way. You will not get handed off to a VA, intern, or account
-              manager. You work with us. You have our phone numbers.
-            </p>
-            <p className="mt-4 text-stone">
-              That is intentional. Local SEO fails when the work is handed down
-              a chain of people who never looked at the listing.
-            </p>
-            <p className="mt-4 text-stone">
-              We serve businesses across Dallas–Fort Worth. We operate remotely
-              and do not claim a physical office in any DFW city.
-            </p>
-            <p className="mt-4 text-stone">
-              The brand promise is simple: SEO built on proof. If we cannot
-              measure it or will not publish it honestly, we do not sell it as
-              theater.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section className="border-y border-mist bg-cream py-16">
-        <div className="mx-auto grid max-w-site gap-6 px-6 md:grid-cols-2">
-          <article className="rounded-xl border border-mist bg-white p-8">
-            <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-              What you can expect
-            </p>
-            <h2 className="font-serif mt-3 text-2xl tracking-tight">
-              Plain language. Clear fit. No runaround.
-            </h2>
-            <p className="mt-4 text-sm leading-relaxed text-stone">
-              The first step is a free local SEO game plan, not a 15-field
-              interrogation. If we work together, you work with us — not a VA,
-              intern, or account manager. If the work is not a fit, you will
-              hear that. If it is, you will know what the work costs and what
-              it is for.
-            </p>
-          </article>
-          <article className="rounded-xl border border-mist bg-white p-8">
-            <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-              The standard
-            </p>
-            <h2 className="font-serif mt-3 text-2xl tracking-tight">
-              Show up. Do it right. Treat people fairly.
-            </h2>
-            <p className="mt-4 text-sm leading-relaxed text-stone">
-              The moment that matters is when the right customer finds you and
-              decides to call. Rankings are a means. Proof is the point.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section className="py-16">
+      <section className="py-12 md:py-16">
         <div className="mx-auto max-w-site px-6">
           <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-            Quick facts
+            How we work
           </p>
-          <h2 className="font-serif mt-3 text-3xl tracking-tight">
-            Because people ask.
+          <h2 className="font-serif mt-3 text-3xl tracking-tight md:text-4xl">
+            Limited capacity. Direct access.
           </h2>
-          <div className="mt-8 grid gap-4 md:grid-cols-2">
-            <div className="rounded-xl border border-mist p-6">
-              <p className="font-medium">Are you an agency?</p>
-              <p className="mt-2 text-sm text-stone">
-                No. Small team. A handful of clients at a time. You work with
-                us directly — including our phone numbers.
-              </p>
-            </div>
-            <div className="rounded-xl border border-mist p-6">
-              <p className="font-medium">Where are you located?</p>
-              <p className="mt-2 text-sm text-stone">
-                We work remotely and serve businesses across Dallas–Fort Worth.
-                We do not claim a storefront we do not occupy.
-              </p>
-            </div>
-            <div className="rounded-xl border border-mist p-6">
-              <p className="font-medium">What do you sell?</p>
-              <p className="mt-2 text-sm text-stone">
-                Local SEO: $1,250, $1,850, or $2,500/month. Not social, PPC,
-                branding, or generic web design.
-              </p>
-            </div>
-            <div className="rounded-xl border border-mist p-6">
-              <p className="font-medium">Why so small?</p>
-              <p className="mt-2 text-sm text-stone">
-                We take on a handful of clients at a time, and we plan to keep
-                it that way. You will not get handed off to a VA, intern, or
-                account manager. This is not a high-volume $300 package mill.
-              </p>
-            </div>
+          <div className="mt-10 grid gap-4 md:grid-cols-3">
+            {howWeWork.map((item) => (
+              <article
+                key={item.title}
+                className="rounded-xl border border-mist bg-cream p-6"
+              >
+                <h3 className="font-serif text-xl tracking-tight">{item.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-stone">{item.body}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-mist bg-cream py-12 md:py-16">
+        <div className="mx-auto max-w-site px-6">
+          <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
+            Contact
+          </p>
+          <h2 className="font-serif mt-3 max-w-[16ch] text-3xl tracking-tight md:text-4xl">
+            Talk to us directly.
+          </h2>
+          <ContactChannels className="mt-5 text-lg" />
+          <div className="mt-8 flex flex-wrap items-center gap-4">
+            <Button href={paths.contact}>{cta.primary}</Button>
+            {phoneHref ? (
+              <Button href={phoneHref} variant="secondary">
+                {site.phoneCta} {site.phone}
+              </Button>
+            ) : null}
           </div>
           <RelatedLinks
             title="Where this work happens"
             items={[
+              { href: paths.onPage, label: "On-page SEO" },
+              { href: paths.technical, label: "Technical SEO" },
+              { href: paths.gbp, label: "Google Business Profile" },
               { href: paths.localSeo, label: "Local SEO" },
-              { href: paths.industries, label: "Industries" },
-              { href: paths.fortWorth, label: "Fort Worth SEO" },
-              { href: paths.areas, label: "DFW areas" },
               { href: paths.pricing, label: "Pricing" },
               { href: paths.caseStudies, label: "Case studies" },
             ]}
           />
         </div>
       </section>
-
-      <FinalCta title="Ready to see where you stand?" />
     </div>
   );
 }

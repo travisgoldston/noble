@@ -9,9 +9,9 @@ export function PricingBlock({ id = "pricing" }: { id?: string }) {
         <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
           Pricing
         </p>
-        <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
-          Local SEO, priced in the open.
-        </h2>
+          <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
+            SEO for DFW local businesses, priced in the open.
+          </h2>
         <p className="mt-5 max-w-2xl text-stone">{pricing.summary}</p>
         <div className="mt-10 grid gap-4 md:grid-cols-3">
           {pricingTiers.map((tier) => {

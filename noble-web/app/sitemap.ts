@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     paths.services,
     paths.localSeo,
+    paths.onPage,
     paths.gbp,
     paths.technical,
     paths.caseStudies,

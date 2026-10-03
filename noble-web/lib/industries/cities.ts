@@ -202,7 +202,7 @@ export const industryCities: IndustryCity[] = [
       {
         question: "How much does dental SEO cost in Dallas?",
         answer:
-          "The plans are Maps $1,250, Local $1,850, and Competitive $2,500 per month. Dallas dental is often competitive enough to need more than listing cleanup.",
+          "The plans are Foundation $1,250, Growth $1,850, and Competitive $2,500 per month. Dallas dental is often competitive enough to need more than listing cleanup.",
       },
       {
         question: "Do you have a Dallas dental case study?",
@@ -275,7 +275,7 @@ export const industryCities: IndustryCity[] = [
       {
         question: "How much does dental SEO cost in Fort Worth?",
         answer:
-          "Maps is $1,250/month, Local is $1,850/month, and Competitive is $2,500/month. Same plans as the rest of DFW. Scope follows the gaps, not a city discount.",
+          "Foundation is $1,250/month, Growth is $1,850/month, and Competitive is $2,500/month. Same plans as the rest of DFW. Scope follows the gaps, not a city discount.",
       },
       {
         question: "Does a Fort Worth dentist need a different SEO plan than Dallas?",

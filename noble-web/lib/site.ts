@@ -3,17 +3,87 @@ export const site = {
   businessName: "NOBLE SEO",
   url: "https://nobleseo.co",
   email: "hello@nobleseo.co",
-  instagram: "https://www.instagram.com/noble.seo",
-  instagramHandle: "@noble.seo",
+  phone: "(817) 676-8022",
+  phoneTel: "+18176768022",
+  phoneCta: "Call/Text me!",
+  areaServed: "Dallas–Fort Worth",
 };
+
+export const founders = [
+  {
+    id: "travis-goldston",
+    name: "Travis Goldston",
+    jobTitle: "Co-Founder",
+  },
+  {
+    id: "victoria-goldston",
+    name: "Victoria Goldston",
+    jobTitle: "Co-Founder",
+  },
+] as const;
+
+export const socialLinks = [
+  {
+    id: "x",
+    label: "X",
+    href: "https://x.com/noble_seo",
+    handle: "@noble_seo",
+    active: false,
+  },
+  {
+    id: "tiktok",
+    label: "TikTok",
+    href: "https://www.tiktok.com/@noble.seo",
+    handle: "@noble.seo",
+    active: false,
+  },
+  {
+    id: "instagram",
+    label: "Instagram",
+    href: "https://www.instagram.com/noble.seo",
+    handle: "@noble.seo",
+    active: false,
+  },
+  {
+    id: "facebook",
+    label: "Facebook",
+    href: "https://www.facebook.com/nobleseo",
+    handle: "@nobleseo",
+    active: false,
+  },
+  {
+    id: "youtube",
+    label: "YouTube",
+    href: "https://www.youtube.com/@noble_seo",
+    handle: "@noble_seo",
+    active: false,
+  },
+] as const;
+
+export const activeSocialLinks = socialLinks.filter((item) => item.active);
+
+export const aboutPhoto = {
+  src: "/about/travis-victoria.jpg",
+  alt: "Travis and Victoria Goldston, co-founders of NOBLE SEO, standing together outdoors.",
+};
+
+export function mailtoHref() {
+  return `mailto:${site.email}`;
+}
+
+export function telHref() {
+  return site.phoneTel ? `tel:${site.phoneTel}` : undefined;
+}
 
 export const paths = {
   home: "/",
   services: "/services",
   localSeo: "/local-seo",
+  onPage: "/on-page-seo",
   gbp: "/google-business-profile",
   technical: "/technical-seo",
   caseStudies: "/case-studies",
+  sampleGamePlan: "/sample-game-plan",
   budgetocity: "/case-studies/budgetocity",
   about: "/about",
   privacy: "/privacy",
@@ -96,10 +166,16 @@ export { pricing } from "./pricing";
 
 export const primaryServices = [
   {
-    id: "local-seo",
-    title: "Local SEO",
-    href: paths.localSeo,
-    body: "Improve local visibility, rankings, on-page signals, and the factors that influence Google Search and Maps when nearby customers are ready to hire.",
+    id: "on-page-seo",
+    title: "On-page SEO",
+    href: paths.onPage,
+    body: "Titles, headings, service-page copy, and internal links so the pages match how DFW customers search — and so Search and Maps tell the same story.",
+  },
+  {
+    id: "technical-seo",
+    title: "Technical SEO",
+    href: paths.technical,
+    body: "Site health, indexing, crawlability, structured data, internal linking, and Core Web Vitals — the technical work that supports visibility.",
   },
   {
     id: "google-business-profile",
@@ -108,9 +184,9 @@ export const primaryServices = [
     body: "Categories, services, photos, posts, reviews, and ongoing monitoring so the listing matches the business and earns the call.",
   },
   {
-    id: "technical-seo",
-    title: "Technical SEO",
-    href: paths.technical,
-    body: "Site health, indexing, crawlability, structured data, internal linking, and Core Web Vitals — the technical work that supports local visibility.",
+    id: "local-seo",
+    title: "Local SEO",
+    href: paths.localSeo,
+    body: "Maps, the Local Pack, and the local signals that help nearby customers find the business when they are ready to hire.",
   },
 ] as const;
