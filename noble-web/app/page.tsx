@@ -35,7 +35,7 @@ export default function HomePage() {
   return (
     <>
       <JsonLd data={faqSchema(homeFaqs)} />
-      <section className="relative overflow-hidden bg-[radial-gradient(circle_at_88%_0%,rgba(5,166,91,0.16),transparent_40%),radial-gradient(circle_at_12%_100%,rgba(22,37,51,0.08),transparent_42%),linear-gradient(180deg,#f7f8f8_0%,#ffffff_72%)]">
+      <section className="relative overflow-hidden bg-cream md:bg-[radial-gradient(circle_at_88%_0%,rgba(5,166,91,0.16),transparent_40%),radial-gradient(circle_at_12%_100%,rgba(22,37,51,0.08),transparent_42%),linear-gradient(180deg,#f7f8f8_0%,#ffffff_72%)]">
         <div className="mx-auto grid max-w-site items-start gap-12 px-6 py-12 md:py-16 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
             <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
