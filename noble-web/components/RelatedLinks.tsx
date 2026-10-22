@@ -15,7 +15,7 @@ export function RelatedLinks({
           <Link
             key={item.href}
             href={item.href}
-            className="text-forest hover:text-forest-deep"
+            className="text-forest-deep hover:text-forest"
           >
             {item.label}
           </Link>

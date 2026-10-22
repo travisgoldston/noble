@@ -92,7 +92,7 @@ export function IndustryPage({ industry }: { industry: Industry }) {
               {industry.approach.map((item) => (
                 <li key={item.title} className="rounded-xl border border-mist px-5 py-4">
                   {item.href ? (
-                    <Link href={item.href} className="font-medium text-forest hover:text-forest-deep">
+                    <Link href={item.href} className="font-medium text-forest-deep hover:text-forest">
                       {item.title}
                     </Link>
                   ) : (
@@ -134,7 +134,7 @@ export function IndustryPage({ industry }: { industry: Industry }) {
             <h2 className="font-serif mt-16 text-3xl tracking-tight">Proof</h2>
             <p className="mt-4 text-stone">{industry.proof}</p>
             <p className="mt-4 text-sm text-stone">
-              <Link href={paths.caseStudies} className="text-forest hover:text-forest-deep">
+              <Link href={paths.caseStudies} className="text-forest-deep hover:text-forest">
                 See published case studies
               </Link>
               — including what they are and what they are not.

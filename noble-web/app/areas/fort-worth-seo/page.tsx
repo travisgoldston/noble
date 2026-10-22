@@ -209,22 +209,22 @@ export default function FortWorthSeoPage() {
               </p>
               <ul className="mt-4 grid gap-2 text-sm text-stone">
                 <li>
-                  <Link href={industryCityPath("hvac-seo", "fort-worth")} className="text-forest hover:text-forest-deep">
+                  <Link href={industryCityPath("hvac-seo", "fort-worth")} className="text-forest-deep hover:text-forest">
                     HVAC
                   </Link>
                 </li>
                 <li>
-                  <Link href={industryPath("plumbing-seo")} className="text-forest hover:text-forest-deep">
+                  <Link href={industryPath("plumbing-seo")} className="text-forest-deep hover:text-forest">
                     Plumbing
                   </Link>
                 </li>
                 <li>
-                  <Link href={industryPath("roofing-seo")} className="text-forest hover:text-forest-deep">
+                  <Link href={industryPath("roofing-seo")} className="text-forest-deep hover:text-forest">
                     Roofing
                   </Link>
                 </li>
                 <li>
-                  <Link href={industryPath("electrical-seo")} className="text-forest hover:text-forest-deep">
+                  <Link href={industryPath("electrical-seo")} className="text-forest-deep hover:text-forest">
                     Electrical
                   </Link>
                 </li>
@@ -242,22 +242,22 @@ export default function FortWorthSeoPage() {
               </p>
               <ul className="mt-4 grid gap-2 text-sm text-stone">
                 <li>
-                  <Link href={industryCityPath("dental-seo", "fort-worth")} className="text-forest hover:text-forest-deep">
+                  <Link href={industryCityPath("dental-seo", "fort-worth")} className="text-forest-deep hover:text-forest">
                     Dental
                   </Link>
                 </li>
                 <li>
-                  <Link href={industryPath("orthodontic-seo")} className="text-forest hover:text-forest-deep">
+                  <Link href={industryPath("orthodontic-seo")} className="text-forest-deep hover:text-forest">
                     Orthodontics
                   </Link>
                 </li>
                 <li>
-                  <Link href={industryCityPath("optometry-seo", "fort-worth")} className="text-forest hover:text-forest-deep">
+                  <Link href={industryCityPath("optometry-seo", "fort-worth")} className="text-forest-deep hover:text-forest">
                     Optometry
                   </Link>
                 </li>
                 <li>
-                  <Link href={industryPath("med-spa-seo")} className="text-forest hover:text-forest-deep">
+                  <Link href={industryPath("med-spa-seo")} className="text-forest-deep hover:text-forest">
                     Med spas
                   </Link>
                 </li>
@@ -273,7 +273,7 @@ export default function FortWorthSeoPage() {
                 <li>Auto repair</li>
                 <li>Specialty contractors</li>
                 <li>
-                  <Link href={industryPath("professional-services")} className="text-forest hover:text-forest-deep">
+                  <Link href={industryPath("professional-services")} className="text-forest-deep hover:text-forest">
                     Professional services
                   </Link>
                 </li>
@@ -301,7 +301,7 @@ export default function FortWorthSeoPage() {
             <p className="mt-6 text-sm">
               <Link
                 href={industryCityPath("hvac-seo", "fort-worth")}
-                className="text-forest hover:text-forest-deep"
+                className="text-forest-deep hover:text-forest"
               >
                 HVAC SEO in Fort Worth
               </Link>

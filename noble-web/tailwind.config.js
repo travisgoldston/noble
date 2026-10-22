@@ -8,9 +8,9 @@ module.exports = {
     extend: {
       colors: {
         forest: {
-          DEFAULT: "#05A65B",
-          deep: "#048A4C",
-          mist: "#E8F7EF",
+          DEFAULT: "#0EA5E9",
+          deep: "#0369A1",
+          mist: "#E0F2FE",
         },
         ink: "#162533",
         cream: "#F7F8F8",

@@ -27,7 +27,7 @@ export function LegalPage({
         </div>
       </section>
       <section className="py-16">
-        <article className="mx-auto grid max-w-3xl gap-8 px-6 text-stone [&_a]:text-forest [&_a]:hover:text-forest-deep [&_h2]:font-serif [&_h2]:text-2xl [&_h2]:tracking-tight [&_h2]:text-ink [&_li]:leading-relaxed [&_p]:leading-relaxed [&_ul]:grid [&_ul]:list-disc [&_ul]:gap-2 [&_ul]:pl-5">
+        <article className="mx-auto grid max-w-3xl gap-8 px-6 text-stone [&_a]:text-forest-deep [&_a]:hover:text-forest [&_h2]:font-serif [&_h2]:text-2xl [&_h2]:tracking-tight [&_h2]:text-ink [&_li]:leading-relaxed [&_p]:leading-relaxed [&_ul]:grid [&_ul]:list-disc [&_ul]:gap-2 [&_ul]:pl-5">
           {children}
         </article>
       </section>

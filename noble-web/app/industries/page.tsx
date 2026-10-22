@@ -88,7 +88,7 @@ export default function IndustriesPage() {
             </h2>
             <p className="mt-3 max-w-2xl text-sm leading-relaxed text-stone">
               We work with other local businesses too.{" "}
-              <Link href={paths.contact} className="text-forest hover:text-forest-deep">
+              <Link href={paths.contact} className="text-forest-deep hover:text-forest">
                 Request a free game plan
               </Link>{" "}
               and we&apos;ll tell you whether NOBLE is a fit. We will not

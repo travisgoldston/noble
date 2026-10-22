@@ -23,7 +23,7 @@ export default function ThanksPage() {
       </p>
       <p className="mt-4 max-w-xl text-stone">
         If you do not see a reply, check spam or email{" "}
-        <a className="text-forest hover:text-forest-deep" href="mailto:hello@nobleseo.co">
+        <a className="text-forest-deep hover:text-forest" href="mailto:hello@nobleseo.co">
           hello@nobleseo.co
         </a>
         .

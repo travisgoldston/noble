@@ -40,7 +40,7 @@ export function CaseStudyCard({ study }: { study: CaseStudy }) {
         <p className="mt-3 font-medium text-ink">{study.metric}</p>
         <p className="mt-3 text-sm leading-relaxed text-stone">{study.summary}</p>
         <div className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
-          <Link href={href} className="text-forest hover:text-forest-deep">
+          <Link href={href} className="text-forest-deep hover:text-forest">
             Read the case study
           </Link>
           {study.url ? (
@@ -48,7 +48,7 @@ export function CaseStudyCard({ study }: { study: CaseStudy }) {
               href={study.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-forest hover:text-forest-deep"
+              className="text-forest-deep hover:text-forest"
             >
               Visit {study.client}
             </a>

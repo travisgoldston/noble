@@ -36,7 +36,7 @@ export default function HomePage() {
   return (
     <>
       <JsonLd data={faqSchema(homeFaqs)} />
-      <section className="relative overflow-hidden bg-cream md:bg-[radial-gradient(circle_at_88%_0%,rgba(5,166,91,0.16),transparent_40%),radial-gradient(circle_at_12%_100%,rgba(22,37,51,0.08),transparent_42%),linear-gradient(180deg,#f7f8f8_0%,#ffffff_72%)]">
+      <section className="relative overflow-hidden bg-cream md:bg-[radial-gradient(circle_at_88%_0%,rgba(14,165,233,0.16),transparent_40%),radial-gradient(circle_at_12%_100%,rgba(22,37,51,0.08),transparent_42%),linear-gradient(180deg,#f7f8f8_0%,#ffffff_72%)]">
         <div className="mx-auto grid max-w-site items-start gap-12 px-6 py-12 md:py-16 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
             <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
@@ -188,7 +188,7 @@ export default function HomePage() {
           </div>
           <p className="mt-6 text-center text-sm text-stone">
             From the{" "}
-            <Link href={paths.budgetocity} className="text-forest hover:text-forest-deep">
+            <Link href={paths.budgetocity} className="text-forest-deep hover:text-forest">
               Budgetocity on-page and content case study
             </Link>
             .
@@ -263,7 +263,7 @@ export default function HomePage() {
           <div className="mt-6">
             <Link
               href={paths.industries}
-              className="text-sm font-medium text-forest hover:text-forest-deep"
+              className="text-sm font-medium text-forest-deep hover:text-forest"
             >
               More industries
             </Link>
@@ -274,7 +274,7 @@ export default function HomePage() {
             </p>
             <p className="mt-2 text-sm leading-relaxed text-stone">
               We work with other local businesses too.{" "}
-              <Link href={paths.contact} className="text-forest hover:text-forest-deep">
+              <Link href={paths.contact} className="text-forest-deep hover:text-forest">
                 Request a free game plan
               </Link>{" "}
               and we&apos;ll tell you whether NOBLE is a fit.

@@ -10,7 +10,7 @@ export function ContactChannels({
   const linkClass =
     tone === "dark"
       ? "hover:text-white"
-      : "text-forest hover:text-forest-deep";
+      : "text-forest-deep hover:text-forest";
   const phoneHref = telHref();
 
   return (

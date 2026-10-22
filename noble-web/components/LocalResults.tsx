@@ -35,7 +35,7 @@ export function LocalResultCard({ study }: { study: LocalResult }) {
       </p>
       <Link
         href={`${paths.caseStudies}/${study.slug}`}
-        className="mt-4 inline-block text-sm font-medium text-forest hover:text-forest-deep"
+        className="mt-4 inline-block text-sm font-medium text-forest-deep hover:text-forest"
       >
         Read the local result
       </Link>

@@ -10,9 +10,9 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-forest: #05a65b;
-  --color-forest-deep: #048a4c;
-  --color-forest-mist: #e8f7ef;
+  --color-forest: #0ea5e9;
+  --color-forest-deep: #0369a1;
+  --color-forest-mist: #e0f2fe;
   --color-ink: #162533;
   --color-cream: #f7f8f8;
   --color-paper: #ffffff;
@@ -33,7 +33,7 @@ body {
 }
 
 ::selection {
-  background: #05a65b;
+  background: #0ea5e9;
   color: #ffffff;
 }
 

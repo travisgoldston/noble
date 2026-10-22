@@ -56,7 +56,7 @@ export default function AreasPage() {
             is different enough to deserve a URL — HVAC, dental, and optometry
             in Fort Worth, plus Dallas counterparts where the copy is locally
             true.{" "}
-            <Link href={paths.industries} className="text-forest hover:text-forest-deep">
+            <Link href={paths.industries} className="text-forest-deep hover:text-forest">
               See industries
             </Link>
             .

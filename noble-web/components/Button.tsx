@@ -9,7 +9,7 @@ type ButtonProps = {
 
 const variants = {
   primary:
-    "bg-forest text-white hover:bg-forest-deep border-forest",
+    "bg-forest text-ink hover:bg-forest-deep hover:text-white border-forest",
   secondary:
     "bg-transparent text-ink border-mist hover:border-ink/40 hover:bg-cream",
   onDark:

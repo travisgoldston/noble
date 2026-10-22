@@ -69,7 +69,7 @@ export default async function ResourceTopicPage({ params }: Props) {
           {list.length === 0 ? (
             <p className="max-w-2xl text-stone">
               Nothing published in this category yet. Other resources are on the{" "}
-              <Link href={paths.resources} className="text-forest hover:text-forest-deep">
+              <Link href={paths.resources} className="text-forest-deep hover:text-forest">
                 resources hub
               </Link>
               .

@@ -7,10 +7,10 @@ export function BrandMark({ inverted = false }: { inverted?: boolean }) {
       <Image
         src="/noble-seo-header-logo.png"
         alt="NOBLE SEO"
-        width={446}
-        height={118}
+        width={333}
+        height={88}
         priority
-        className={`h-[30px] w-auto lg:h-10 ${inverted ? "brightness-0 invert" : ""}`}
+        className={`h-[30px] w-auto lg:h-11 ${inverted ? "brightness-0 invert" : ""}`}
       />
     </Link>
   );
