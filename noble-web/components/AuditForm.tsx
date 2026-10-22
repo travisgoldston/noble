@@ -171,13 +171,11 @@ export function AuditForm({ compact = false, variant }: Props) {
           : "grid gap-5 rounded-xl border border-mist bg-white p-6 md:p-8"
       }
     >
-      {isCompact ? (
-        <div>
-          <p className="font-medium text-ink">{gamePlan.introTitle}</p>
-          <p className="mt-1 text-sm leading-relaxed text-stone">{gamePlan.introBody}</p>
-          <p className="mt-1 text-sm text-stone">{gamePlan.introMeta}</p>
-        </div>
-      ) : null}
+      <div>
+        <p className="font-medium text-ink">{gamePlan.introTitle}</p>
+        <p className="mt-1 text-sm leading-relaxed text-stone">{gamePlan.introBody}</p>
+        <p className="mt-1 text-sm text-stone">{gamePlan.introMeta}</p>
+      </div>
       <div className="grid gap-3 sm:grid-cols-2">
         <Field
           id={`${prefix}name`}
@@ -311,7 +309,7 @@ export function AuditForm({ compact = false, variant }: Props) {
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="inline-flex min-h-12 items-center justify-center rounded-full bg-forest px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-forest-deep hover:text-white disabled:opacity-70"
+        className="inline-flex min-h-12 items-center justify-center rounded-full bg-forest px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-forest-deep hover:text-white disabled:opacity-70"
       >
         {status === "submitting" ? "Sending…" : `${cta.form} →`}
       </button>

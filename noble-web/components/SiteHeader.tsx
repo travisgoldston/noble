@@ -1,12 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState, type MouseEvent, type ReactNode } from "react";
 import { BrandMark } from "@/components/BrandMark";
 import { Button } from "@/components/Button";
 import { capabilities, locations, searchSurfaces } from "@/lib/content";
 import { industries, industryHref } from "@/lib/industries";
-import { cityPath, cta, paths } from "@/lib/site";
+import { cityPath, cta, gamePlan, paths } from "@/lib/site";
 
 function Dropdown({
   label,
@@ -36,7 +37,9 @@ function Dropdown({
 }
 
 export function SiteHeader() {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const showOfferBar = pathname !== paths.contact && pathname !== paths.thanks;
 
   useEffect(() => {
     if (!open) return;
@@ -62,6 +65,20 @@ export function SiteHeader() {
       className="sticky top-0 z-50 border-b border-mist/80 bg-white"
       onClick={open ? closeIfNotLink : undefined}
     >
+      {showOfferBar ? (
+        <Link
+          href={`${paths.contact}#audit-form`}
+          className="block bg-forest text-white"
+        >
+          <span className="mx-auto flex max-w-site items-center justify-center gap-2 px-4 py-2 text-center text-sm font-semibold tracking-wide">
+            <span>{gamePlan.banner}</span>
+            <span className="hidden font-normal sm:inline">
+              — {gamePlan.bannerBody}
+            </span>
+            <span aria-hidden="true">→</span>
+          </span>
+        </Link>
+      ) : null}
       <div className="mx-auto flex h-16 max-w-site items-center gap-6 px-6">
         <BrandMark />
         <nav className="ml-auto hidden items-center gap-6 text-sm text-stone lg:flex" aria-label="Primary">

@@ -127,9 +127,11 @@ export const cta = {
 
 export const gamePlan = {
   offer: "Free Local SEO Game Plan",
-  introTitle: "Tell us about your business.",
+  banner: "Free SEO Game Plan",
+  bannerBody: "We'll tell you what needs to be done. If it works, you can hire us.",
+  introTitle: "This is free.",
   introBody:
-    "Whether you've been online for years or haven't built your online presence yet, we'll tell you what we'd do first.",
+    "We'll tell you what needs to be done — Google Business Profile, on-page SEO, and how you show up in Search and Maps. If the work is a fit, you can hire us. If it isn't, you still have the plan.",
   introMeta: "30 seconds. Written response. No sales call required.",
   alreadyHave: "Already have a website? We'll show you what's holding it back.",
   startingZero: "Starting from zero? We'll tell you what to build first.",

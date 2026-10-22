@@ -1,4 +1,4 @@
-import { pricing, pricingTiers } from "@/lib/pricing";
+import { freeAudit, pricing, pricingTiers } from "@/lib/pricing";
 import { Button } from "@/components/Button";
 import { cta, paths } from "@/lib/site";
 
@@ -13,7 +13,19 @@ export function PricingBlock({ id = "pricing" }: { id?: string }) {
             SEO for DFW local businesses, priced in the open.
           </h2>
         <p className="mt-5 max-w-2xl text-stone">{pricing.summary}</p>
-        <div className="mt-10 grid gap-4 md:grid-cols-3">
+        <article className="mt-10 rounded-xl border border-forest bg-forest-mist p-6 md:p-7">
+          <p className="text-[0.72rem] font-medium tracking-[0.18em] text-forest uppercase">
+            {freeAudit.kicker}
+          </p>
+          <div className="mt-2 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+            <p className="font-serif text-2xl tracking-tight">{freeAudit.name}</p>
+            <p className="text-lg font-medium">{freeAudit.priceLabel}</p>
+          </div>
+          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-stone">
+            {freeAudit.summary} {freeAudit.bestFor}
+          </p>
+        </article>
+        <div className="mt-4 grid gap-4 md:grid-cols-3">
           {pricingTiers.map((tier) => {
             const featured = tier.featured;
             return (

@@ -11,6 +11,7 @@ import {
 } from "@/components/JsonLd";
 import { RelatedLinks } from "@/components/RelatedLinks";
 import {
+  freeAudit,
   pricing,
   pricingComparisons,
   pricingFailure,
@@ -40,11 +41,18 @@ export default function PricingPage() {
             { name: "Pricing", href: paths.pricing },
           ]),
           offerCatalogSchema(
-            pricingTiers.map((tier) => ({
-              name: `${tier.name} SEO`,
-              description: tier.summary,
-              price: tier.price,
-            })),
+            [
+              {
+                name: freeAudit.name,
+                description: freeAudit.summary,
+                price: freeAudit.price,
+              },
+              ...pricingTiers.map((tier) => ({
+                name: `${tier.name} SEO`,
+                description: tier.summary,
+                price: tier.price,
+              })),
+            ],
           ),
           faqSchema(pricingFaqs),
         ]}
@@ -173,7 +181,26 @@ export default function PricingPage() {
             Local SEO, priced for the work.
           </h2>
           <p className="mt-5 max-w-2xl text-stone">{pricing.summary}</p>
-          <div className="mt-12 grid gap-4 lg:grid-cols-3">
+          <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            <article className="flex flex-col rounded-xl border border-forest bg-forest-mist p-7">
+              <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
+                {freeAudit.kicker}
+              </p>
+              <h3 className="font-serif mt-3 text-3xl tracking-tight">{freeAudit.name}</h3>
+              <p className="font-serif mt-3 text-4xl tracking-tight">{freeAudit.priceLabel}</p>
+              <p className="mt-4 flex-1 text-sm leading-relaxed text-stone">{freeAudit.summary}</p>
+              <p className="mt-4 text-sm text-ink">{freeAudit.bestFor}</p>
+              <ul className="mt-6 grid gap-2 text-sm text-stone">
+                {freeAudit.includes.map((item) => (
+                  <li key={item} className="border-t border-mist pt-2 first:border-0 first:pt-0">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-8">
+                <Button href={`${paths.contact}#audit-form`}>{cta.primary}</Button>
+              </div>
+            </article>
             {pricingTiers.map((tier) => {
               const featured = tier.featured;
               return (

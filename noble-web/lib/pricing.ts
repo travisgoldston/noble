@@ -6,6 +6,24 @@ export const pricing = {
     "SEO for DFW local businesses is $1,250, $1,850, or $2,500/month depending on how competitive the market is and how much of the site needs work. Every plan includes on-page SEO. The plans are scopes of the same product — not Bronze/Silver/Gold filler.",
 };
 
+export const freeAudit = {
+  id: "free-audit",
+  name: "Free SEO Audit",
+  price: 0,
+  priceLabel: "Free",
+  kicker: "Start here",
+  summary:
+    "I'll look at your Google Business Profile, on-page SEO, and how you show up in Search and Maps. You get a written plan. No charge.",
+  bestFor:
+    "If the work is a fit, you can hire us. If it isn't, you still walk away knowing what to fix first.",
+  includes: [
+    "Google Business Profile: categories, services, photos, hours, and gaps",
+    "On-page SEO: titles, headings, and whether the pages match how people search",
+    "How you show up in Search and Maps today",
+    "What I'd fix first — and whether paid SEO even makes sense yet",
+  ],
+};
+
 export const pricingTiers = [
   {
     id: "foundation",

@@ -90,11 +90,13 @@ export default function ContactPage() {
             Get Your Free Local SEO Game Plan
           </h1>
           <p className="mt-6 max-w-2xl text-lg font-medium text-ink">
-            Find out what Google sees when customers search for your business — and
-            what we&apos;d fix first.
+            This is free. We&apos;ll tell you what needs to be done. If it works, you
+            can hire us.
           </p>
           <p className="mt-3 max-w-2xl text-lg leading-relaxed text-stone">
-            About 30 seconds. Written response. No required sales call.
+            Find out what Google sees when customers search for your business — and
+            what we&apos;d fix first. About 30 seconds. Written response. No required
+            sales call.
           </p>
           <ContactChannels className="mt-5 text-base" />
           <div className="mt-8">
@@ -136,7 +138,7 @@ export default function ContactPage() {
               </p>
             </div>
           </div>
-          <div id="audit-form" className="order-1 scroll-mt-28 lg:sticky lg:top-28 lg:order-2">
+          <div id="audit-form" className="order-1 scroll-mt-36 lg:sticky lg:top-36 lg:order-2">
             <AuditForm variant="contact" />
           </div>
         </div>
