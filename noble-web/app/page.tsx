@@ -1,4 +1,5 @@
 import { AuditForm } from "@/components/AuditForm";
+import { HelpedLogos } from "@/components/HelpedLogos";
 import { Button } from "@/components/Button";
 import { CaseStudyCard } from "@/components/CaseStudyCard";
 import { FaqList } from "@/components/FaqList";
@@ -105,6 +106,8 @@ export default function HomePage() {
           </ol>
         </div>
       </section>
+
+      <HelpedLogos />
 
       <section className="border-y border-mist bg-cream py-16 md:py-20">
         <div className="mx-auto grid max-w-site gap-10 px-6 lg:grid-cols-2 lg:gap-16">
