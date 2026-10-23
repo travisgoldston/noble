@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s | NOBLE SEO",
   },
   description:
-    "On-page and technical SEO for Dallas–Fort Worth local businesses. Google Business Profile and local search as supporting work — without bloated agency retainers.",
+    "On-page and technical SEO for Dallas–Fort Worth local businesses, with Google Business Profile and Maps as supporting work.",
   openGraph: {
     title: "NOBLE SEO | SEO built on proof",
     description:
@@ -47,6 +47,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
       { url: "/favicon-n.ico", type: "image/x-icon", sizes: "48x48" },
       { url: "/favicon-n-32.png", type: "image/png", sizes: "32x32" },
       { url: "/favicon-512.png", type: "image/png", sizes: "512x512" },
@@ -95,6 +96,9 @@ const jsonLd = {
       name: person.name,
       jobTitle: person.jobTitle,
       url: `${site.url}/about`,
+      ...(person.id === "travis-goldston"
+        ? { sameAs: ["https://github.com/travisgoldston"] }
+        : {}),
       worksFor: { "@id": `${site.url}/#organization` },
       areaServed: {
         "@type": "AdministrativeArea",
@@ -128,6 +132,11 @@ const jsonLd = {
         "Google Business Profile",
         "Local SEO",
       ],
+      address: {
+        "@type": "PostalAddress",
+        addressRegion: "UT",
+        addressCountry: "US",
+      },
       parentOrganization: { "@id": "https://nobleseo.co/#organization" },
     },
   ],

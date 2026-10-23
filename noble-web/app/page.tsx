@@ -3,10 +3,11 @@ import { Button } from "@/components/Button";
 import { CaseStudyCard } from "@/components/CaseStudyCard";
 import { FaqList } from "@/components/FaqList";
 import { FinalCta } from "@/components/FinalCta";
-import { JsonLd, faqSchema } from "@/components/JsonLd";
+import { JsonLd, faqSchema, offerCatalogSchema } from "@/components/JsonLd";
 import { LocalResultsSection } from "@/components/LocalResults";
 import { PricingBlock } from "@/components/PricingBlock";
 import { caseStudies } from "@/lib/case-studies";
+import { freeAudit, pricingTiers } from "@/lib/pricing";
 import {
   capabilities,
   featuredWhoWeHelp,
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     absolute: "NOBLE SEO | SEO built on proof",
   },
   description:
-    "On-page and technical SEO for Dallas–Fort Worth local businesses. Google Business Profile and Maps as supporting work — without bloated agency retainers.",
+    "On-page and technical SEO for Dallas–Fort Worth local businesses, with Google Business Profile and Maps as supporting work.",
   alternates: { canonical: "/" },
 };
 
@@ -34,7 +35,23 @@ export default function HomePage() {
 
   return (
     <>
-      <JsonLd data={faqSchema(homeFaqs)} />
+      <JsonLd
+        data={[
+          faqSchema(homeFaqs),
+          offerCatalogSchema([
+            {
+              name: freeAudit.name,
+              description: freeAudit.summary,
+              price: freeAudit.price,
+            },
+            ...pricingTiers.map((tier) => ({
+              name: `${tier.name} SEO`,
+              description: tier.summary,
+              price: tier.price,
+            })),
+          ]),
+        ]}
+      />
       <section className="relative overflow-hidden bg-cream md:bg-[radial-gradient(circle_at_88%_0%,rgba(14,165,233,0.16),transparent_40%),radial-gradient(circle_at_12%_100%,rgba(22,37,51,0.08),transparent_42%),linear-gradient(180deg,#f7f8f8_0%,#ffffff_72%)]">
         <div className="mx-auto grid max-w-site items-start gap-12 px-6 py-12 md:py-16 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
@@ -58,7 +75,8 @@ export default function HomePage() {
               We help local businesses turn search visibility into more
               qualified calls, leads, and customers — without bloated agency
               retainers or black-box reporting. Google Business Profile and
-              Maps support the pages and the site.
+              Maps support the pages and the site. Paid plans are $1,250,
+              $1,850, or $2,500/month.
             </p>
             <p className="mt-4 max-w-xl text-lg leading-relaxed text-stone">
               {gamePlan.alreadyHave}
@@ -117,7 +135,8 @@ export default function HomePage() {
             </h2>
             <p className="mt-4 text-stone">
               Not a sales deck. A plain-English read on what we would do first
-              if this were our business.
+              if this were our business. The form takes 30 seconds. The written
+              plan is free.
             </p>
             <ul className="mt-8 grid gap-3">
               {gamePlan.youGet.map((item) => (
@@ -135,7 +154,9 @@ export default function HomePage() {
             <h2 className="font-serif mt-4 max-w-[16ch] text-3xl tracking-tightest md:text-4xl">
               {gamePlan.noWebsiteTitle}
             </h2>
-            <p className="mt-4 text-stone">{gamePlan.noWebsiteBody}</p>
+            <p className="mt-4 text-stone">
+              {gamePlan.noWebsiteBody} Request the 30-second game plan anyway.
+            </p>
             <p className="mt-4 text-stone">{gamePlan.noWebsiteNext}</p>
             <p className="mt-4 text-stone">
               {gamePlan.alreadyHave} Weak Google listing? Same idea — we will
@@ -158,13 +179,18 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="flex flex-col items-center"
             >
-              <img
-                src="/budgetocity-logo.png"
-                alt="Budgetocity"
-                width={88}
-                height={88}
-                className="h-[88px] w-[88px] rounded-full object-contain"
-              />
+              <picture>
+                <source srcSet="/budgetocity-logo.webp" type="image/webp" />
+                <img
+                  src="/budgetocity-logo.png"
+                  alt="Budgetocity"
+                  width={88}
+                  height={88}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-[88px] w-[88px] rounded-full object-contain"
+                />
+              </picture>
               <span
                 className="mt-2.5 font-sans text-[0.7rem] font-medium tracking-[0.22em] uppercase"
                 style={{ color: "#77C578" }}
@@ -211,6 +237,7 @@ export default function HomePage() {
             The job is to make the business clear wherever a serious customer
             looks — Search, the Local Pack, Maps, and branded results. On-page
             and technical SEO do most of that work. GBP and Maps support it.
+            Six surfaces on this page. Paid work starts at $1,250/month.
           </p>
           <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {searchSurfaces.map((item) => (
@@ -241,8 +268,9 @@ export default function HomePage() {
           </h2>
           <p className="mt-5 max-w-2xl text-stone">
             NOBLE is built for local businesses that depend on being found when
-            customers are ready to buy. These are some of the types we commonly
-            help — not a closed list.
+            customers are ready to buy. These four types — HVAC, plumbing,
+            roofing, and electrical — are some of the businesses we commonly
+            help, not a closed list.
           </p>
           <ul className="mt-10 grid gap-3 sm:grid-cols-2">
             {featuredWhoWeHelp.map((item) => (
@@ -291,7 +319,8 @@ export default function HomePage() {
           <p className="mt-5 max-w-2xl text-stone">
             We fix the pages and the site first: titles, copy, structure,
             crawlability. Google Business Profile and Maps are supporting
-            services — important, but not the whole product.
+            services — important, but not the whole product. Paid plans are
+            $1,250, $1,850, or $2,500/month. Every plan includes on-page SEO.
           </p>
           <div className="mt-12 grid gap-4 md:grid-cols-2">
             {capabilities.map((item) => (
@@ -319,7 +348,8 @@ export default function HomePage() {
           </h2>
           <p className="mt-5 max-w-2xl text-white/65">
             A short cycle keeps the budget on the problems that actually block
-            calls, not a retainer full of activity.
+            calls, not a retainer full of activity. Four steps. Not a stacked
+            retainer.
           </p>
           <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {processSteps.map((step) => (
@@ -339,7 +369,8 @@ export default function HomePage() {
             </h3>
             <p className="mt-4 text-white/70">
               If the engine is broken, you just waste gas. Traffic that hits a
-              slow, confusing, or unclear site does not turn into calls.
+              slow, confusing, or unclear site does not turn into calls. If
+              $1,250/month is not realistic, we are probably not the right fit.
             </p>
             <p className="mt-4 text-white/70">
               That is why on-page and technical SEO are paired with the listing
@@ -368,7 +399,9 @@ export default function HomePage() {
             Search behaves differently in Fort Worth than it does in McKinney.
             These pages are built around how people here look for a business —
             not a city name swapped into a template. We serve DFW remotely and
-            do not claim a physical office.
+            do not claim a physical office. City pages cover eight markets:
+            Fort Worth, McKinney, Dallas, Plano, Frisco, Arlington, Denton, and
+            Irving.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             {locations.map((city) => (
@@ -407,9 +440,9 @@ export default function HomePage() {
             </h2>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-stone">
               We take on a handful of clients at a time, and we plan to keep it
-              that way. You will not get handed off to a VA, intern, or account
-              manager. Strategy, diagnosis, and client communication stay with
-              us — including our phone numbers.
+              that way. Two co-founders. You will not get handed off to a VA,
+              intern, or account manager. Strategy, diagnosis, and client
+              communication stay with us — including our phone numbers.
             </p>
             <aside className="mt-8 rounded-xl border border-mist bg-cream p-7">
               <p className="font-serif text-2xl tracking-tight">No bloat. No layers.</p>
@@ -439,7 +472,8 @@ export default function HomePage() {
           <p className="mt-5 max-w-2xl text-stone">
             Real organic work. No ad spend required to move the needle. We do
             not fabricate results, and we do not imply causation we cannot
-            establish.
+            establish. Published proof includes average position 31.2 to 6.2
+            and +28% clicks year over year.
           </p>
           <div className="mt-12">
             <CaseStudyCard study={proof} />
@@ -457,7 +491,7 @@ export default function HomePage() {
       <FaqList items={homeFaqs} />
       <FinalCta
         title="Find out whether the Google presence is costing you jobs."
-        body="A free local SEO game plan. Written. No sales call required. Then a clear yes, no, or not yet."
+        body="A free local SEO game plan. 30-second form. Written, typically within one business day. No sales call required. Then a clear yes, no, or not yet."
       />
     </>
   );

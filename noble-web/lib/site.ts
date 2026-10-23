@@ -29,7 +29,7 @@ export const socialLinks = [
     label: "X",
     href: "https://x.com/noble_seo",
     handle: "@noble_seo",
-    active: false,
+    active: true,
   },
   {
     id: "tiktok",
@@ -57,14 +57,21 @@ export const socialLinks = [
     label: "YouTube",
     href: "https://www.youtube.com/@noble_seo",
     handle: "@noble_seo",
-    active: false,
+    active: true,
+  },
+  {
+    id: "github",
+    label: "GitHub",
+    href: "https://github.com/travisgoldston/noble",
+    handle: "travisgoldston/noble",
+    active: true,
   },
 ] as const;
 
 export const activeSocialLinks = socialLinks.filter((item) => item.active);
 
 export const aboutPhoto = {
-  src: "/about/travis-victoria.jpg",
+  src: "/about/travis-victoria.webp",
   alt: "Travis and Victoria Goldston, co-founders of NOBLE SEO, standing together outdoors.",
 };
 

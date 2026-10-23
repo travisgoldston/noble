@@ -32,7 +32,7 @@ export const caseStudies: CaseStudy[] = [
     industry: "Personal finance software",
     location: "Wylie, Texas · national software search",
     url: "https://budgetocity.com",
-    logo: "/budgetocity-logo.png",
+    logo: "/budgetocity-logo.webp",
     kicker: "Case study. On-page SEO and content",
     headline: "Budgetocity: from page 3 to page 1 with on-page SEO and content",
     subhead:

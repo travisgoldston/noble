@@ -100,6 +100,12 @@ export function SiteFooter() {
               </a>
             ) : null}
           </p>
+          <p className="mt-3 max-w-3xl text-xs leading-relaxed text-white/45">
+            Industry pages about dental, optometry, med spa, and similar
+            practices describe SEO and Google visibility, not diagnosis or
+            treatment. That content is informational. For clinical decisions,
+            talk to a licensed professional.
+          </p>
         </div>
       </div>
     </footer>

@@ -5,37 +5,37 @@ export const searchSurfaces = [
     slug: "google-search",
     title: "Google Search",
     href: "/google-search",
-    body: "Commercial and informational results still shape discovery, comparison, and the first impression of the business.",
+    body: "Commercial and informational results still shape discovery, comparison, and the first impression of the business. Published proof includes average Google search position 6.2 after on-page SEO and content.",
   },
   {
     slug: "local-pack",
     title: "Local Pack",
     href: "/local-pack",
-    body: "Relevance, distance, and prominence decide who appears when a nearby customer is ready to choose.",
+    body: "Relevance, distance, and prominence decide who appears when a nearby customer is ready to choose. Foundation at $1,250/month is for when the listing is the leak in Maps and the Local Pack.",
   },
   {
     slug: "branded-search",
     title: "Branded Search",
     href: "/branded-search",
-    body: "What appears around the business name affects confidence before anyone ever clicks through.",
+    body: "What appears around the business name affects confidence before anyone ever clicks through. The 30-second game plan includes a look at branded search, not just generic keywords.",
   },
   {
     slug: "google-maps",
     title: "Google Maps",
     href: "/google-maps",
-    body: "Local intent often moves straight from a map result to a call. The profile has to be ready.",
+    body: "Local intent often moves straight from a map result to a call. The profile has to be ready. Foundation at $1,250/month includes Google Business Profile and Maps work.",
   },
   {
     slug: "ai-powered-search",
     title: "AI powered search",
     href: "/ai-powered-search",
-    body: "Answer systems pull from pages they can crawl and trust. If the business is vague on the site, it stays vague there too.",
+    body: "Answer systems pull from pages they can crawl and trust. If the business is vague on the site, it stays vague there too. Growth at $1,850/month includes the on-page work those systems read.",
   },
   {
     slug: "reviews-and-entities",
     title: "Reviews and entities",
     href: "/reviews-and-entities",
-    body: "Consistent facts and first-hand reviews help people — and search systems — understand the business.",
+    body: "Consistent facts and first-hand reviews help people — and search systems — understand the business. Foundation at $1,250/month includes a review strategy, not a template blast.",
   },
 ];
 
@@ -44,7 +44,7 @@ export const capabilities = [
     id: "on-page-seo",
     title: "On-page SEO",
     href: "/on-page-seo",
-    body: "Titles, headings, service-page copy, and internal links so the pages match how DFW customers search — and so Search and Maps tell the same story.",
+    body: "Titles, headings, service-page copy, and internal links so the pages match how DFW customers search — and so Search and Maps tell the same story. On-page SEO is in every paid plan, from $1,250/month Foundation up.",
     exampleSetup:
       "A Fort Worth electrician’s site has one generic “Services” page. The jobs that pay — panel upgrades, EV chargers, storm repair — are mentioned in a paragraph, not as pages people can land on.",
     exampleFix:
@@ -54,7 +54,7 @@ export const capabilities = [
     id: "technical-seo",
     title: "Technical SEO",
     href: "/technical-seo",
-    body: "Site health, indexing, crawlability, structured data, internal linking, and Core Web Vitals — the technical work that supports visibility.",
+    body: "Site health, indexing, crawlability, structured data, internal linking, and Core Web Vitals — the technical work that supports visibility. Growth at $1,850/month includes technical basics on the templates that get traffic.",
     exampleSetup:
       "A Frisco home services site looks fine on a laptop and dies on a phone in the Stonebriar parking lot. Important pages are noindex by accident. The blog is a maze of tags.",
     exampleFix:
@@ -64,7 +64,7 @@ export const capabilities = [
     id: "google-business-profile",
     title: "Google Business Profile",
     href: "/google-business-profile",
-    body: "Categories, services, photos, posts, reviews, and ongoing monitoring so the listing matches the business and earns the call.",
+    body: "Categories, services, photos, posts, reviews, and ongoing monitoring so the listing matches the business and earns the call. The free game plan looks at the listing in 30 seconds of your time; the written follow-up is typically one business day.",
     exampleSetup:
       "A Plano dentist’s listing still has Saturday hours from two owners ago, stock photos, and a website link that 404s. People search the name after a referral and keep looking.",
     exampleFix:
@@ -74,7 +74,7 @@ export const capabilities = [
     id: "local-seo",
     title: "Local SEO",
     href: "/local-seo",
-    body: "Maps, the Local Pack, and the local signals that help nearby customers find the business when they are ready to hire.",
+    body: "Maps, the Local Pack, and the local signals that help nearby customers find the business when they are ready to hire. Competitive is $2,500/month when the local market is crowded.",
     exampleSetup:
       "A Fort Worth plumber shows up for the business name, then disappears for “water heater repair near me.” The profile lists half of Tarrant County. The site never names south Fort Worth, the Stockyards, or the jobs they actually want.",
     exampleFix:
@@ -86,22 +86,22 @@ export const processSteps = [
   {
     n: "01",
     title: "Diagnose",
-    body: "Review Google Business Profile, Maps, the website, and the searches that should produce calls. Find the gaps that are actually in the way.",
+    body: "Review Google Business Profile, Maps, the website, and the searches that should produce calls. Find the gaps that are actually in the way. The first pass is the free game plan, typically returned in one business day.",
   },
   {
     n: "02",
     title: "Prioritize",
-    body: "Focus the budget on the work most likely to change visibility and leads, not a menu of busywork.",
+    body: "Focus the budget on the work most likely to change visibility and leads, not a menu of busywork. Paid work starts at $1,250/month (Foundation) when the listing is the leak.",
   },
   {
     n: "03",
     title: "Fix",
-    body: "Correct the listing, the important pages, and the technical issues suppressing them. Then build only what is still missing.",
+    body: "Correct the listing, the important pages, and the technical issues suppressing them. Then build only what is still missing. Growth at $1,850/month includes this cycle on both the listing and the site.",
   },
   {
     n: "04",
     title: "Monitor",
-    body: "Track rankings, Maps visibility, and qualified actions. Use evidence to choose the next useful move.",
+    body: "Track rankings, Maps visibility, and qualified actions. Use evidence to choose the next useful move. Published proof includes average position 31.2 to 6.2 and +28% clicks year over year on the Budgetocity engagement.",
   },
 ];
 
@@ -454,7 +454,7 @@ export const locations: CityLocation[] = [
 export const budgetocity = {
   name: "Budgetocity",
   url: "https://budgetocity.com",
-  logo: "/budgetocity-logo.png",
+  logo: "/budgetocity-logo.webp",
   kicker: "Case study. On-page SEO and content",
   metric:
     "Avg. position 31.2 to 6.2. +28% clicks year over year. Content engine built without paid ads",
