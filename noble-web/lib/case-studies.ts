@@ -30,7 +30,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "budgetocity",
     client: "Budgetocity",
     industry: "Personal finance software",
-    location: "United States (national search)",
+    location: "Wylie, Texas · national software search",
     url: "https://budgetocity.com",
     logo: "/budgetocity-logo.png",
     kicker: "Case study. On-page SEO and content",
@@ -42,7 +42,7 @@ export const caseStudies: CaseStudy[] = [
     summary:
       "We rebuilt structure, on-page SEO, and the pages people search for paycheck budgeting, so the product could get found without ad spend.",
     startingSituation:
-      "Budgetocity is a paycheck budgeting app for people living paycheck to paycheck. The product was real. Search demand was real. The site was averaging position 31.2 in Google — page three, effectively invisible — with no content engine and no durable organic presence.",
+      "Budgetocity is a paycheck budgeting app based in Wylie, Texas, for people living paycheck to paycheck. The product was real. Search demand was real. The site was averaging position 31.2 in Google — page three, effectively invisible — with no content engine and no durable organic presence.",
     problem:
       "They did not need another ad campaign. They needed to be findable for the searches that already existed around paycheck budgeting.",
     strategy:

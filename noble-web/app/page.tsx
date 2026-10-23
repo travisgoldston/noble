@@ -1,5 +1,4 @@
 import { AuditForm } from "@/components/AuditForm";
-import { HelpedLogos } from "@/components/HelpedLogos";
 import { Button } from "@/components/Button";
 import { CaseStudyCard } from "@/components/CaseStudyCard";
 import { FaqList } from "@/components/FaqList";
@@ -107,8 +106,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <HelpedLogos />
-
       <section className="border-y border-mist bg-cream py-16 md:py-20">
         <div className="mx-auto grid max-w-site gap-10 px-6 lg:grid-cols-2 lg:gap-16">
           <div>
@@ -194,8 +191,8 @@ export default function HomePage() {
             .
           </p>
           <p className="mt-2 text-center text-xs leading-relaxed text-stone">
-            One published case study. Software search, not a DFW trades
-            campaign.
+            One published case study. A Wylie, Texas software company.
+            National search, not a DFW trades campaign.
           </p>
         </div>
       </section>

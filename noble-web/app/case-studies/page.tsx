@@ -43,8 +43,9 @@ export default function CaseStudiesPage() {
         <p className="mt-10 max-w-2xl text-sm text-stone">
           Local service case studies for DFW will be added here
           as client work produces clean, permissible results. Until then, the
-          published record is organic SEO for Budgetocity — real, inspectable,
-          and not dressed up as a Maps campaign.
+          published record is organic SEO for Budgetocity, a Wylie, Texas
+          software company — real, inspectable, and not dressed up as a Maps
+          campaign.
         </p>
       </section>
       <FinalCta title="Want this kind of look at your search presence?" />
