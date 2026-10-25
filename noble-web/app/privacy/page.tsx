@@ -57,18 +57,20 @@ export default function PrivacyPage() {
           Our website host keeps ordinary server logs. Those can include IP
           address, browser and device information, pages requested, the
           referring site, timestamps, and an approximate location derived from
-          IP. That is how hosting works. We do not currently run a separate
-          analytics or advertising pixel on this site.
+          IP. That is how hosting works. The site also loads Google Analytics 4
+          to measure page views and whether someone submitted the free game
+          plan form.
         </p>
       </div>
 
       <div>
         <h2>Analytics and cookies</h2>
         <p className="mt-3">
-          This website does not currently load Google Analytics, Google Tag
-          Manager, Meta Pixel, or similar advertising or analytics scripts. The
-          pages work if you block cookies. If that changes, we will update this
-          page.
+          This website loads Google Analytics 4 (measurement ID G-KLEQJFXR7Z)
+          through Google Tag Manager’s gtag.js. Google may set cookies and
+          collect device, browser, and usage data under Google’s terms. We do
+          not load Meta Pixel or similar advertising scripts. The pages still
+          work if you block cookies; analytics may simply not record the visit.
         </p>
       </div>
 
