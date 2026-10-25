@@ -1,4 +1,5 @@
 import Script from "next/script";
+import { PhoneClickTracker } from "@/components/PhoneClickTracker";
 
 const gaId = process.env.NEXT_PUBLIC_GA_ID || "G-KLEQJFXR7Z";
 
@@ -17,6 +18,7 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', '${gaId}');`}
       </Script>
+      <PhoneClickTracker />
     </>
   );
 }

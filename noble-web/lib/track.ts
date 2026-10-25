@@ -1,8 +1,26 @@
+declare global {
+  interface Window {
+    dataLayer?: Record<string, unknown>[];
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
+function gtagFn() {
+  return typeof window !== "undefined" ? window.gtag : undefined;
+}
+
 export function trackLead() {
-  if (typeof window === "undefined") return;
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({ event: "generate_lead", lead_type: "seo_audit" });
-  window.gtag?.("event", "generate_lead", { method: "seo_audit" });
+  const gtag = gtagFn();
+  if (typeof gtag === "function") {
+    gtag("event", "generate_lead");
+  }
+}
+
+export function trackPhoneClick() {
+  const gtag = gtagFn();
+  if (typeof gtag === "function") {
+    gtag("event", "phone_click");
+  }
 }
 
 export type AuditTrackEvent =
@@ -13,15 +31,8 @@ export type AuditTrackEvent =
   | "audit_form_submitted";
 
 export function trackAuditEvent(event: AuditTrackEvent) {
-  if (typeof window === "undefined") return;
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({ event });
-  window.gtag?.("event", event);
-}
-
-declare global {
-  interface Window {
-    dataLayer?: Record<string, unknown>[];
-    gtag?: (...args: unknown[]) => void;
+  const gtag = gtagFn();
+  if (typeof gtag === "function") {
+    gtag("event", event);
   }
 }
