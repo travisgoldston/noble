@@ -332,8 +332,8 @@ export default function HomePage() {
           <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
             Dallas–Fort Worth
           </p>
-          <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
-            SEO for the DFW cities you actually serve.
+          <h2 className="font-serif mt-4 max-w-[18ch] text-4xl tracking-tightest md:text-5xl">
+            Local SEO for Dallas–Fort Worth.
           </h2>
           <p className="mt-5 max-w-2xl text-stone">
             Search behaves differently in Fort Worth than it does in McKinney.

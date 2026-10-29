@@ -158,6 +158,11 @@ export const homeFaqs = [
       "We serve businesses across Dallas–Fort Worth. We work remotely and do not claim a physical office in any DFW city.",
   },
   {
+    question: "Do you do local SEO in Dallas–Fort Worth?",
+    answer:
+      "Yes. Local SEO for Dallas–Fort Worth businesses is the product — on-page SEO, technical SEO, Google Business Profile, and Maps. We serve the metro remotely and publish city pages for Fort Worth, Dallas, Plano, Frisco, McKinney, Arlington, Denton, and Irving.",
+  },
+  {
     question: "How much does SEO cost?",
     answer:
       "Foundation is $1,250/month, Growth is $1,850/month, and Competitive is $2,500/month. The plans are different scopes of the same product — not Bronze/Silver/Gold filler. Details are on the pricing page.",
