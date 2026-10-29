@@ -338,8 +338,9 @@ export default function HomePage() {
           <p className="mt-5 max-w-2xl text-stone">
             Search behaves differently in Fort Worth than it does in McKinney.
             These pages are built around how people here look for a business —
-            not a city name swapped into a template. We serve DFW remotely and
-            do not claim a physical office. City pages cover eight markets:
+            not a city name swapped into a template. We serve DFW remotely from
+            Irving, TX 75038, and do not invent offices in other cities. City
+            pages cover eight markets:
             Fort Worth, McKinney, Dallas, Plano, Frisco, Arlington, Denton, and
             Irving.
           </p>

@@ -7,6 +7,7 @@ const guide = guides.find((item) => item.slug === "local-pack")!;
 export const metadata: Metadata = {
   title: guide.title,
   description: guide.description,
+  alternates: { canonical: `/${guide.slug}` },
 };
 
 export default function Page() {

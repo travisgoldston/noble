@@ -156,7 +156,7 @@ export const homeFaqs = [
   {
     question: "Where do you work?",
     answer:
-      "We serve businesses across Dallas–Fort Worth. We work remotely and do not claim a physical office in any DFW city.",
+      "We serve businesses across Dallas–Fort Worth. The public address is Irving, TX 75038. We work remotely and do not invent offices in other DFW cities to game Maps.",
   },
   {
     question: "Do you do local SEO in Dallas–Fort Worth?",

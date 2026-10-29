@@ -9,7 +9,10 @@ import { cityPath, paths } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://nobleseo.co";
-  const now = new Date("2026-08-30");
+  const siteUpdated = new Date("2026-10-28");
+  const articleDates = new Map(
+    articles.map((article) => [articlePath(article.slug), new Date(article.updatedAt)]),
+  );
   const pathsList = [
     "",
     paths.services,
@@ -40,6 +43,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
   return pathsList.map((path) => ({
     url: `${base}${path}`,
-    lastModified: now,
+    lastModified: articleDates.get(path) ?? siteUpdated,
   }));
 }

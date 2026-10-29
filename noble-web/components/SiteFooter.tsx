@@ -16,7 +16,8 @@ export function SiteFooter() {
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/60">
             SEO for Dallas–Fort Worth local businesses. SEO built on proof.
           </p>
-          <ContactChannels className="mt-5 text-sm text-white/75" tone="dark" />
+          <p className="mt-5 text-sm text-white/60">{site.napLine}</p>
+          <ContactChannels className="mt-2 text-sm text-white/75" tone="dark" />
           <SocialIcons />
         </div>
         <div className="grid gap-3 text-sm">

@@ -3,7 +3,7 @@ import { Poppins } from "next/font/google";
 import { Analytics } from "@/components/Analytics";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { activeSocialLinks, founders, site } from "@/lib/site";
+import { activeSocialLinks, founders, postalAddress, site } from "@/lib/site";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -84,11 +84,7 @@ const jsonLd = {
         "@type": "AdministrativeArea",
         name: "Dallas–Fort Worth",
       },
-      address: {
-        "@type": "PostalAddress",
-        addressRegion: "UT",
-        addressCountry: "US",
-      },
+      address: postalAddress,
     },
     ...founders.map((person) => ({
       "@type": "Person",
@@ -132,10 +128,23 @@ const jsonLd = {
         "Google Business Profile",
         "Local SEO",
       ],
-      address: {
-        "@type": "PostalAddress",
-        addressRegion: "UT",
-        addressCountry: "US",
+      address: postalAddress,
+      parentOrganization: { "@id": "https://nobleseo.co/#organization" },
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://nobleseo.co/#localbusiness",
+      name: "NOBLE SEO",
+      url: site.url,
+      email: site.email,
+      telephone: site.phoneTel,
+      image: "https://nobleseo.co/noble-seo-og.png",
+      description:
+        "Local SEO for Dallas–Fort Worth businesses. On-page SEO, technical SEO, Google Business Profile, and Maps.",
+      address: postalAddress,
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: "Dallas–Fort Worth",
       },
       parentOrganization: { "@id": "https://nobleseo.co/#organization" },
     },
