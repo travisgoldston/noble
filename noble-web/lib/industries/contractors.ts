@@ -5,7 +5,7 @@ export const contractors: Industry = {
   slug: "contractor-seo",
   id: "contractor",
   group: "home-services",
-  name: "Contractors",
+  name: "General contractor",
   navLabel: "Contractor SEO",
   title: "SEO for Contractors in DFW",
   h1: "SEO for general contractors in Dallas–Fort Worth",

@@ -171,11 +171,13 @@ export function AuditForm({ compact = false, variant }: Props) {
           : "grid gap-5 rounded-xl border border-mist bg-white p-6 md:p-8"
       }
     >
-      <div>
-        <p className="font-medium text-ink">{gamePlan.introTitle}</p>
-        <p className="mt-1 text-sm leading-relaxed text-stone">{gamePlan.introBody}</p>
-        <p className="mt-1 text-sm text-stone">{gamePlan.introMeta}</p>
-      </div>
+      {isCompact ? null : (
+        <div>
+          <p className="font-medium text-ink">{gamePlan.introTitle}</p>
+          <p className="mt-1 text-sm leading-relaxed text-stone">{gamePlan.introBody}</p>
+          <p className="mt-1 text-sm text-stone">{gamePlan.introMeta}</p>
+        </div>
+      )}
       <div className="grid gap-3 sm:grid-cols-2">
         <Field
           id={`${prefix}name`}
