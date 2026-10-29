@@ -53,7 +53,7 @@ const howWeWork = [
   },
   {
     title: "Remote, serving DFW",
-    body: "We serve businesses across Dallas–Fort Worth from Irving, TX 75038. We work remotely and do not invent offices in other DFW cities to game Maps.",
+    body: "We serve businesses across Dallas–Fort Worth. We operate remotely and do not claim a physical office in any DFW city.",
   },
 ];
 
@@ -196,8 +196,7 @@ export default function AboutPage() {
           <h2 className="font-serif mt-3 max-w-[16ch] text-3xl tracking-tight md:text-4xl">
             Talk to us directly.
           </h2>
-          <p className="mt-5 text-stone">{site.napLine}</p>
-          <ContactChannels className="mt-2 text-lg" />
+          <ContactChannels className="mt-5 text-lg" />
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Button href={paths.contact}>{cta.primary}</Button>
             {phoneHref ? (

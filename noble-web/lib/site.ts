@@ -8,21 +8,6 @@ export const site = {
   phoneTel: "+18176768022",
   phoneCta: "Call/Text me!",
   areaServed: "Dallas–Fort Worth",
-  address: {
-    addressLocality: "Irving",
-    addressRegion: "TX",
-    postalCode: "75038",
-    addressCountry: "US",
-  },
-  napLine: "Irving, TX 75038",
-};
-
-export const postalAddress = {
-  "@type": "PostalAddress" as const,
-  addressLocality: site.address.addressLocality,
-  addressRegion: site.address.addressRegion,
-  postalCode: site.address.postalCode,
-  addressCountry: site.address.addressCountry,
 };
 
 export const founders = [

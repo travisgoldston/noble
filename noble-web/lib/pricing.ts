@@ -245,7 +245,7 @@ export const pricingFaqs = [
   {
     question: "You’re remote. Don’t I need a local Fort Worth or Dallas agency?",
     answer:
-      "You need someone who understands how DFW search actually behaves — neighborhoods, service areas, Maps distance, and honest categories. You do not need a fake pin. We serve Dallas–Fort Worth remotely from Irving, TX 75038, and do not invent offices in other cities.",
+      "You need someone who understands how DFW search actually behaves — neighborhoods, service areas, Maps distance, and honest categories. You do not need a fake pin. We serve businesses across Dallas–Fort Worth remotely and do not claim a physical office in any DFW city.",
   },
   {
     question: "Are there setup fees or surprise add-ons?",

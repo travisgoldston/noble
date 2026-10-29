@@ -8,7 +8,7 @@ import { locations } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Service Areas",
   description:
-    "Small-team local SEO for Dallas–Fort Worth businesses. Based in Irving, TX. We serve DFW remotely and do not invent offices in other cities.",
+    "Small-team local SEO for Dallas–Fort Worth businesses. We serve DFW remotely and do not claim a physical office.",
   alternates: { canonical: "/areas" },
 };
 
@@ -26,8 +26,8 @@ export default function AreasPage() {
           <p className="mt-6 max-w-2xl text-lg text-stone">
             NOBLE serves businesses throughout DFW. These pages exist because
             search behaves differently in each city — not as thin doorway pages
-            with the city name swapped. We work remotely from Irving, TX 75038,
-            and do not invent offices in other DFW cities.
+            with the city name swapped. We work remotely and do not claim a
+            physical office.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Button href={paths.contact}>{cta.primary}</Button>
