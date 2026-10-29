@@ -5,37 +5,37 @@ export const searchSurfaces = [
     slug: "google-search",
     title: "Google Search",
     href: "/google-search",
-    body: "Commercial and informational results still shape discovery, comparison, and the first impression of the business. Published proof includes average Google search position 6.2 after on-page SEO and content.",
+    body: "Commercial and informational results still shape discovery, comparison, and the first impression of the business.",
   },
   {
     slug: "local-pack",
     title: "Local Pack",
     href: "/local-pack",
-    body: "Relevance, distance, and prominence decide who appears when a nearby customer is ready to choose. The listing is often the leak in Maps and the Local Pack.",
+    body: "Relevance, distance, and prominence decide who appears when a nearby customer is ready to choose.",
   },
   {
     slug: "branded-search",
     title: "Branded Search",
     href: "/branded-search",
-    body: "What appears around the business name affects confidence before anyone ever clicks through. The 30-second game plan includes a look at branded search, not just generic keywords.",
+    body: "What appears around the business name affects confidence before anyone ever clicks through.",
   },
   {
     slug: "google-maps",
     title: "Google Maps",
     href: "/google-maps",
-    body: "Local intent often moves straight from a map result to a call. The profile has to be ready, including Google Business Profile and Maps work.",
+    body: "Local intent often moves straight from a map result to a call.",
   },
   {
     slug: "ai-powered-search",
     title: "AI powered search",
     href: "/ai-powered-search",
-    body: "Answer systems pull from pages they can crawl and trust. If the business is vague on the site, it stays vague there too. On-page SEO is what those systems read.",
+    body: "Answer systems pull from pages they can crawl and trust — on-page SEO is what those systems read.",
   },
   {
     slug: "reviews-and-entities",
     title: "Reviews and entities",
     href: "/reviews-and-entities",
-    body: "Consistent facts and first-hand reviews help people — and search systems — understand the business. The work is a review strategy, not a template blast.",
+    body: "Consistent facts and first-hand reviews help people — and search systems — understand the business.",
   },
 ];
 
@@ -64,7 +64,7 @@ export const capabilities = [
     id: "google-business-profile",
     title: "Google Business Profile",
     href: "/google-business-profile",
-    body: "Categories, services, photos, posts, reviews, and ongoing monitoring so the listing matches the business and earns the call. The free game plan looks at the listing in 30 seconds of your time; the written follow-up is typically one business day.",
+    body: "Categories, services, photos, posts, reviews, and ongoing monitoring so the listing matches the business and earns the call.",
     exampleSetup:
       "A Plano dentist’s listing still has Saturday hours from two owners ago, stock photos, and a website link that 404s. People search the name after a referral and keep looking.",
     exampleFix:
@@ -86,7 +86,7 @@ export const processSteps = [
   {
     n: "01",
     title: "Diagnose",
-    body: "Review Google Business Profile, Maps, the website, and the searches that should produce calls. Find the gaps that are actually in the way. The first pass is the free game plan, typically returned in one business day.",
+    body: "Review Google Business Profile, Maps, the website, and the searches that should produce calls. Find the gaps that are actually in the way.",
   },
   {
     n: "02",
@@ -140,7 +140,7 @@ export const homeFaqs = [
   {
     question: "Who is this for?",
     answer:
-      "Local businesses that depend on being found when customers are ready to buy — HVAC, plumbing, roofing, dental, and other owner-operated firms. If a booked job or a new patient pays for the work, local SEO can make sense. You do not need a website to request the free game plan.",
+      "Local businesses that depend on being found when customers are ready to buy — HVAC, plumbing, roofing, dental, and other owner-operated firms. If a booked job or a new patient pays for the work, local SEO can make sense.",
   },
   {
     question: "Will I actually work with you, or get handed off?",
@@ -160,7 +160,7 @@ export const homeFaqs = [
   {
     question: "Do I need a website or a Google listing first?",
     answer:
-      "No. Don't have a website or Google Business Profile yet? That's okay. Request the free game plan anyway. We'll tell you what to set up first, what can wait, and whether SEO even makes sense for your business right now.",
+      "No. Don't have a website or Google Business Profile yet? That's okay. We'll tell you what to set up first, what can wait, and whether SEO even makes sense for your business right now.",
   },
   {
     question: "What happens after I request a game plan?",

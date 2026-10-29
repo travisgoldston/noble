@@ -80,10 +80,6 @@ export default function HomePage() {
             <p className="mt-4 max-w-xl text-lg leading-relaxed text-stone">
               {gamePlan.alreadyHave}
             </p>
-            <p className="mt-3 max-w-xl text-sm leading-relaxed text-stone">
-              <span className="font-medium text-ink">{gamePlan.zeroTitle}</span>{" "}
-              {gamePlan.zeroBody}
-            </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Button href={paths.contact}>{cta.primary}</Button>
               <Button href={paths.caseStudies} variant="secondary">
@@ -99,67 +95,14 @@ export default function HomePage() {
               No big deal
             </p>
             <h2 className="font-serif mt-2 text-2xl tracking-tight">
-              A 30 second look. You can walk away after.
+              A written local SEO game plan.
             </h2>
             <div className="mt-4">
               <AuditForm compact />
             </div>
             <p className="mt-4 text-xs leading-relaxed text-stone">
-              This first look is just information for you. You can choose to do
-              nothing with it.
-            </p>
-          </div>
-        </div>
-        <div className="mx-auto max-w-site px-6 pb-12 md:pb-16">
-          <p className="text-sm font-medium">What happens next</p>
-          <ol className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {gamePlan.next.map((item, index) => (
-              <li key={item} className="flex gap-2 text-sm leading-snug text-stone">
-                <span className="font-serif text-forest">{index + 1}.</span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </section>
-
-      <section className="border-y border-mist bg-cream py-16 md:py-20">
-        <div className="mx-auto grid max-w-site gap-10 px-6 lg:grid-cols-2 lg:gap-16">
-          <div>
-            <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-              What you&apos;ll get
-            </p>
-            <h2 className="font-serif mt-4 max-w-[16ch] text-3xl tracking-tightest md:text-4xl">
-              A written local SEO game plan.
-            </h2>
-            <p className="mt-4 text-stone">
-              Not a sales deck. A plain-English read on what we would do first
-              if this were our business. The form takes 30 seconds. The written
-              plan is free.
-            </p>
-            <ul className="mt-8 grid gap-3">
-              {gamePlan.youGet.map((item) => (
-                <li key={item} className="flex gap-3 text-sm leading-relaxed text-stone">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-forest" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
-              Before SEO
-            </p>
-            <h2 className="font-serif mt-4 max-w-[16ch] text-3xl tracking-tightest md:text-4xl">
-              {gamePlan.noWebsiteTitle}
-            </h2>
-            <p className="mt-4 text-stone">
-              {gamePlan.noWebsiteBody} Request the 30-second game plan anyway.
-            </p>
-            <p className="mt-4 text-stone">{gamePlan.noWebsiteNext}</p>
-            <p className="mt-4 text-stone">
-              {gamePlan.alreadyHave} Weak Google listing? Same idea — we will
-              tell you what to fix before you spend on SEO.
+              No website or Google listing yet? That&apos;s okay. We&apos;ll tell
+              you what to set up first.
             </p>
           </div>
         </div>
@@ -298,9 +241,9 @@ export default function HomePage() {
             <p className="mt-2 text-sm leading-relaxed text-stone">
               We work with other local businesses too.{" "}
               <Link href={paths.contact} className="text-forest-deep hover:text-forest">
-                Request a free game plan
-              </Link>{" "}
-              and we&apos;ll tell you whether NOBLE is a fit.
+                See whether NOBLE is a fit
+              </Link>
+              .
             </p>
           </div>
         </div>
@@ -488,7 +431,7 @@ export default function HomePage() {
       <FaqList items={homeFaqs} />
       <FinalCta
         title="Find out whether the Google presence is costing you jobs."
-        body="A free local SEO game plan. 30-second form. Written, typically within one business day. No sales call required. Then a clear yes, no, or not yet."
+        body="Then a clear yes, no, or not yet — after we look at Search, Maps, and the site."
       />
     </>
   );
