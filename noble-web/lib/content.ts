@@ -11,7 +11,7 @@ export const searchSurfaces = [
     slug: "local-pack",
     title: "Local Pack",
     href: "/local-pack",
-    body: "Relevance, distance, and prominence decide who appears when a nearby customer is ready to choose. Foundation at $1,250/month is for when the listing is the leak in Maps and the Local Pack.",
+    body: "Relevance, distance, and prominence decide who appears when a nearby customer is ready to choose. The listing is often the leak in Maps and the Local Pack.",
   },
   {
     slug: "branded-search",
@@ -23,19 +23,19 @@ export const searchSurfaces = [
     slug: "google-maps",
     title: "Google Maps",
     href: "/google-maps",
-    body: "Local intent often moves straight from a map result to a call. The profile has to be ready. Foundation at $1,250/month includes Google Business Profile and Maps work.",
+    body: "Local intent often moves straight from a map result to a call. The profile has to be ready, including Google Business Profile and Maps work.",
   },
   {
     slug: "ai-powered-search",
     title: "AI powered search",
     href: "/ai-powered-search",
-    body: "Answer systems pull from pages they can crawl and trust. If the business is vague on the site, it stays vague there too. Growth at $1,850/month includes the on-page work those systems read.",
+    body: "Answer systems pull from pages they can crawl and trust. If the business is vague on the site, it stays vague there too. On-page SEO is what those systems read.",
   },
   {
     slug: "reviews-and-entities",
     title: "Reviews and entities",
     href: "/reviews-and-entities",
-    body: "Consistent facts and first-hand reviews help people — and search systems — understand the business. Foundation at $1,250/month includes a review strategy, not a template blast.",
+    body: "Consistent facts and first-hand reviews help people — and search systems — understand the business. The work is a review strategy, not a template blast.",
   },
 ];
 
@@ -44,7 +44,7 @@ export const capabilities = [
     id: "on-page-seo",
     title: "On-page SEO",
     href: "/on-page-seo",
-    body: "Titles, headings, service-page copy, and internal links so the pages match how DFW customers search — and so Search and Maps tell the same story. On-page SEO is in every paid plan, from $1,250/month Foundation up.",
+    body: "Titles, headings, service-page copy, and internal links so the pages match how DFW customers search — and so Search and Maps tell the same story. On-page SEO is in every paid plan.",
     exampleSetup:
       "A Fort Worth electrician’s site has one generic “Services” page. The jobs that pay — panel upgrades, EV chargers, storm repair — are mentioned in a paragraph, not as pages people can land on.",
     exampleFix:
@@ -54,7 +54,7 @@ export const capabilities = [
     id: "technical-seo",
     title: "Technical SEO",
     href: "/technical-seo",
-    body: "Site health, indexing, crawlability, structured data, internal linking, and Core Web Vitals — the technical work that supports visibility. Growth at $1,850/month includes technical basics on the templates that get traffic.",
+    body: "Site health, indexing, crawlability, structured data, internal linking, and Core Web Vitals — the technical work that supports visibility on the templates that get traffic.",
     exampleSetup:
       "A Frisco home services site looks fine on a laptop and dies on a phone in the Stonebriar parking lot. Important pages are noindex by accident. The blog is a maze of tags.",
     exampleFix:
@@ -74,7 +74,7 @@ export const capabilities = [
     id: "local-seo",
     title: "Local SEO",
     href: "/local-seo",
-    body: "Maps, the Local Pack, and the local signals that help nearby customers find the business when they are ready to hire. Competitive is $2,500/month when the local market is crowded.",
+    body: "Maps, the Local Pack, and the local signals that help nearby customers find the business when they are ready to hire.",
     exampleSetup:
       "A Fort Worth plumber shows up for the business name, then disappears for “water heater repair near me.” The profile lists half of Tarrant County. The site never names south Fort Worth, the Stockyards, or the jobs they actually want.",
     exampleFix:
@@ -91,12 +91,12 @@ export const processSteps = [
   {
     n: "02",
     title: "Prioritize",
-    body: "Focus the budget on the work most likely to change visibility and leads, not a menu of busywork. Paid work starts at $1,250/month (Foundation) when the listing is the leak.",
+    body: "Focus the budget on the work most likely to change visibility and leads, not a menu of busywork.",
   },
   {
     n: "03",
     title: "Fix",
-    body: "Correct the listing, the important pages, and the technical issues suppressing them. Then build only what is still missing. Growth at $1,850/month includes this cycle on both the listing and the site.",
+    body: "Correct the listing, the important pages, and the technical issues suppressing them. Then build only what is still missing.",
   },
   {
     n: "04",

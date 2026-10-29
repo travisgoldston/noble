@@ -75,8 +75,7 @@ export default function HomePage() {
               We help local businesses turn search visibility into more
               qualified calls, leads, and customers — without bloated agency
               retainers or black-box reporting. Google Business Profile and
-              Maps support the pages and the site. Paid plans are $1,250,
-              $1,850, or $2,500/month.
+              Maps support the pages and the site.
             </p>
             <p className="mt-4 max-w-xl text-lg leading-relaxed text-stone">
               {gamePlan.alreadyHave}
@@ -237,7 +236,6 @@ export default function HomePage() {
             The job is to make the business clear wherever a serious customer
             looks — Search, the Local Pack, Maps, and branded results. On-page
             and technical SEO do most of that work. GBP and Maps support it.
-            Six surfaces on this page. Paid work starts at $1,250/month.
           </p>
           <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {searchSurfaces.map((item) => (
@@ -319,8 +317,8 @@ export default function HomePage() {
           <p className="mt-5 max-w-2xl text-stone">
             We fix the pages and the site first: titles, copy, structure,
             crawlability. Google Business Profile and Maps are supporting
-            services — important, but not the whole product. Paid plans are
-            $1,250, $1,850, or $2,500/month. Every plan includes on-page SEO.
+            services — important, but not the whole product. Every plan
+            includes on-page SEO.
           </p>
           <div className="mt-12 grid gap-4 md:grid-cols-2">
             {capabilities.map((item) => (
@@ -369,8 +367,7 @@ export default function HomePage() {
             </h3>
             <p className="mt-4 text-white/70">
               If the engine is broken, you just waste gas. Traffic that hits a
-              slow, confusing, or unclear site does not turn into calls. If
-              $1,250/month is not realistic, we are probably not the right fit.
+              slow, confusing, or unclear site does not turn into calls.
             </p>
             <p className="mt-4 text-white/70">
               That is why on-page and technical SEO are paired with the listing
@@ -487,7 +484,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <PricingBlock />
+      <PricingBlock compact />
       <FaqList items={homeFaqs} />
       <FinalCta
         title="Find out whether the Google presence is costing you jobs."

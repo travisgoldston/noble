@@ -2,16 +2,50 @@ import { freeAudit, pricing, pricingTiers } from "@/lib/pricing";
 import { Button } from "@/components/Button";
 import { cta, paths } from "@/lib/site";
 
-export function PricingBlock({ id = "pricing" }: { id?: string }) {
+export function PricingBlock({
+  id = "pricing",
+  compact = false,
+}: {
+  id?: string;
+  compact?: boolean;
+}) {
+  if (compact) {
+    return (
+      <section id={id} className="py-20 md:py-24">
+        <div className="mx-auto max-w-site px-6">
+          <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
+            Pricing
+          </p>
+          <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
+            SEO for DFW local businesses, priced in the open.
+          </h2>
+          <p className="mt-5 text-lg font-medium text-ink">
+            Plans start at {pricing.startingLabel}.
+          </p>
+          <p className="mt-3 max-w-2xl text-stone">
+            If {pricing.startingLabel} is not realistic, we are probably not the
+            right fit.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Button href={paths.pricing}>See pricing</Button>
+            <Button href={paths.contact} variant="secondary">
+              {cta.primary}
+            </Button>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section id={id} className="py-20 md:py-24">
       <div className="mx-auto max-w-site px-6">
         <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
           Pricing
         </p>
-          <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
-            SEO for DFW local businesses, priced in the open.
-          </h2>
+        <h2 className="font-serif mt-4 max-w-[16ch] text-4xl tracking-tightest md:text-5xl">
+          SEO for DFW local businesses, priced in the open.
+        </h2>
         <p className="mt-5 max-w-2xl text-stone">{pricing.summary}</p>
         <article className="mt-10 rounded-xl border border-forest bg-forest-mist p-6 md:p-7">
           <p className="text-[0.72rem] font-medium tracking-[0.18em] text-forest uppercase">
