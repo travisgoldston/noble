@@ -27,9 +27,9 @@ const faqs = [
 ];
 
 export const metadata: Metadata = {
-  title: "Local SEO",
+  title: "Local SEO Services in Dallas–Fort Worth",
   description:
-    "Local SEO for Dallas–Fort Worth service businesses: Maps, Google Business Profile, on-page signals, and the work that turns visibility into calls.",
+    "Maps, the Local Pack, and on-page SEO for DFW service businesses. Small-team work, public pricing, free written game plan.",
   alternates: { canonical: "/local-seo" },
 };
 

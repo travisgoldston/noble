@@ -153,7 +153,7 @@ export const plumbing: Industry = {
   group: "home-services",
   name: "Plumbing",
   navLabel: "Plumbing SEO",
-  title: "Plumbing SEO",
+  title: "SEO for Plumbers in DFW",
   h1: "Local SEO for plumbing companies",
   lede: "Get found when a homeowner searches for a leak, a water heater, or an emergency plumber — not only when they already know your name.",
   description:
@@ -275,7 +275,7 @@ export const roofing: Industry = {
   group: "home-services",
   name: "Roofing",
   navLabel: "Roofing SEO",
-  title: "Roofing SEO",
+  title: "SEO for Roofers in DFW",
   h1: "Local SEO for roofing companies",
   lede: "Get found when a homeowner searches for a roof repair, a replacement, or a storm inspection — then look like the company they should call.",
   description:
@@ -397,7 +397,7 @@ export const electrical: Industry = {
   group: "home-services",
   name: "Electrical",
   navLabel: "Electrical SEO",
-  title: "Electrical SEO",
+  title: "SEO for Electricians in DFW",
   h1: "Local SEO for electrical contractors",
   lede: "Get found when a homeowner searches for a panel upgrade, an EV charger, or an electrician who can show up after an outage.",
   description:

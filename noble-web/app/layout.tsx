@@ -15,15 +15,15 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL("https://nobleseo.co"),
   title: {
-    default: "NOBLE SEO | SEO built on proof",
+    default: "Local SEO for Dallas–Fort Worth Businesses | NOBLE SEO",
     template: "%s | NOBLE SEO",
   },
   description:
-    "On-page and technical SEO for Dallas–Fort Worth local businesses, with Google Business Profile and Maps as supporting work.",
+    "Local SEO for Dallas–Fort Worth businesses. On-page and technical SEO that turns search into calls. Free written game plan — no sales call.",
   openGraph: {
-    title: "NOBLE SEO | SEO built on proof",
+    title: "Local SEO for Dallas–Fort Worth Businesses | NOBLE SEO",
     description:
-      "On-page and technical SEO for Dallas–Fort Worth local businesses. We help local companies turn search visibility into more qualified calls.",
+      "Local SEO for Dallas–Fort Worth businesses. On-page and technical SEO that turns search into calls. Free written game plan — no sales call.",
     url: "https://nobleseo.co",
     siteName: "NOBLE SEO",
     type: "website",
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "NOBLE SEO | SEO built on proof",
+    title: "Local SEO for Dallas–Fort Worth Businesses | NOBLE SEO",
     description:
-      "On-page and technical SEO for Dallas–Fort Worth local businesses. SEO built on proof.",
+      "Local SEO for Dallas–Fort Worth businesses. On-page and technical SEO that turns search into calls. Free written game plan — no sales call.",
     images: ["/noble-seo-og.png"],
   },
   icons: {

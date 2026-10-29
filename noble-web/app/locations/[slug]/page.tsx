@@ -18,9 +18,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const city = locations.find((item) => item.slug === slug);
   if (!city) return { title: "Location" };
+  if (slug === "dallas") {
+    return {
+      title: "Dallas SEO Company",
+      description:
+        "Dallas SEO company work for local businesses: on-page SEO, Maps, and Google Business Profile. Free written game plan — no sales call.",
+      alternates: { canonical: cityPath(slug) },
+    };
+  }
   return {
     title: `Local SEO in ${city.name}, TX`,
-    description: city.intro,
+    description: `Local SEO for ${city.name} businesses. ${city.blurb}`,
     alternates: { canonical: cityPath(slug) },
   };
 }

@@ -23,10 +23,10 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "NOBLE SEO | SEO built on proof",
+    absolute: "Local SEO for Dallas–Fort Worth Businesses | NOBLE SEO",
   },
   description:
-    "On-page and technical SEO for Dallas–Fort Worth local businesses, with Google Business Profile and Maps as supporting work.",
+    "Local SEO for Dallas–Fort Worth businesses. On-page and technical SEO that turns search into calls. Free written game plan — no sales call.",
   alternates: { canonical: "/" },
 };
 

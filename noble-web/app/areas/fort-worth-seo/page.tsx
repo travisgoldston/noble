@@ -91,14 +91,14 @@ const fortWorthIndustryNav = [
 ];
 
 export const metadata: Metadata = {
-  title: "Fort Worth SEO",
+  title: "Fort Worth SEO Company",
   description:
-    "Small-team local SEO for Fort Worth businesses. Google Maps, Google Business Profile, and technical SEO — remote, honest, and built on proof. No fake Fort Worth office.",
+    "Local SEO for Fort Worth businesses: Google Maps, Business Profile, and on-page work. Remote DFW team. Free written game plan.",
   alternates: { canonical: "/areas/fort-worth-seo" },
   openGraph: {
-    title: "Fort Worth SEO | NOBLE SEO",
+    title: "Fort Worth SEO Company | NOBLE SEO",
     description:
-      "Small-team local SEO for Fort Worth businesses. Maps, Google Business Profile, and a free audit — without a fake Fort Worth office.",
+      "Local SEO for Fort Worth businesses: Google Maps, Business Profile, and on-page work. Remote DFW team. Free written game plan.",
     url: "/areas/fort-worth-seo",
   },
 };

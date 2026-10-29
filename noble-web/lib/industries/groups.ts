@@ -4,7 +4,7 @@ export const industryGroups: IndustryGroup[] = [
   {
     slug: "home-services",
     name: "Home services",
-    title: "Local SEO for home service companies",
+    title: "Home Service SEO in DFW",
     h1: "Home service companies get found when the job is urgent.",
     description:
       "Local SEO for HVAC, plumbing, roofing, and electrical companies in Dallas–Fort Worth. Google Maps, service-area targeting, and pages that match how homeowners actually search.",
