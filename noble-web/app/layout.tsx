@@ -47,14 +47,18 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon-n.ico", type: "image/x-icon", sizes: "48x48" },
-      { url: "/favicon-n-32.png", type: "image/png", sizes: "32x32" },
-      { url: "/favicon-512.png", type: "image/png", sizes: "512x512" },
+      { url: "/favicon.svg?v=sky", type: "image/svg+xml" },
+      { url: "/favicon-n.ico?v=sky", type: "image/x-icon", sizes: "48x48" },
+      { url: "/favicon-n-32.png?v=sky", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-512.png?v=sky", type: "image/png", sizes: "512x512" },
     ],
-    shortcut: "/favicon-n.ico",
+    shortcut: "/favicon-n.ico?v=sky",
     apple: [
-      { url: "/apple-touch-icon-v2.png", sizes: "180x180", type: "image/png" },
+      {
+        url: "/apple-touch-icon-v2.png?v=sky",
+        sizes: "180x180",
+        type: "image/png",
+      },
     ],
   },
 };

@@ -58,8 +58,11 @@ export default function HomePage() {
             <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
               NOBLE SEO
             </p>
-            <h1 className="font-serif mt-5 max-w-[14ch] text-[clamp(3.5rem,2vw+3.1rem,4.5rem)] font-bold leading-[1.05] tracking-tightest text-ink">
-              SEO built on{" "}
+            <h1 className="font-serif mt-5 max-w-[18ch] text-[clamp(3.5rem,2vw+3.1rem,4.5rem)] font-bold leading-[1.05] tracking-tightest text-ink">
+              Local SEO for Dallas–Fort Worth.
+            </h1>
+            <p className="mt-6 max-w-xl text-lg font-medium text-ink md:text-xl">
+              On-page and technical SEO for local businesses. Built on{" "}
               <Link
                 href={paths.caseStudies}
                 className="underline decoration-forest decoration-2 underline-offset-[0.18em] hover:text-forest"
@@ -67,9 +70,6 @@ export default function HomePage() {
                 proof
               </Link>
               .
-            </h1>
-            <p className="mt-6 max-w-xl text-lg font-medium text-ink md:text-xl">
-              On-page and technical SEO for Dallas–Fort Worth local businesses.
             </p>
             <p className="mt-4 max-w-xl text-lg leading-relaxed text-stone">
               We help local businesses turn search visibility into more

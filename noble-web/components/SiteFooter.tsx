@@ -14,7 +14,7 @@ export function SiteFooter() {
         <div>
           <BrandMark inverted />
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/60">
-            SEO for Dallas–Fort Worth local businesses. SEO built on proof.
+            SEO for Dallas–Fort Worth local businesses.
           </p>
           <ContactChannels className="mt-5 text-sm text-white/75" tone="dark" />
           <SocialIcons />
