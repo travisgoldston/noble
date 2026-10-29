@@ -154,7 +154,7 @@ export const plumbing: Industry = {
   name: "Plumbing",
   navLabel: "Plumbing SEO",
   title: "SEO for Plumbers in DFW",
-  h1: "Local SEO for plumbing companies",
+  h1: "SEO for plumbers in Dallas–Fort Worth",
   lede: "Get found when a homeowner searches for a leak, a water heater, or an emergency plumber — not only when they already know your name.",
   description:
     "Local SEO for plumbers in Dallas–Fort Worth. Emergency search, Google Maps, service-area targeting, and pages for the jobs that actually pay: leaks, drains, water heaters, and repipes.",
@@ -246,6 +246,11 @@ export const plumbing: Industry = {
     "We specialize in helping plumbing companies show up in Google Search and Maps for emergency and planned work in the cities they actually run — not a metro-wide slogan.",
   faqs: [
     {
+      question: "Do you do SEO for plumbers?",
+      answer:
+        "Yes. SEO for plumbers in Dallas–Fort Worth is local SEO for plumbing companies: emergency and planned search, Google Maps, an honest service area, and pages for water heater, drain, and leak work.",
+    },
+    {
       question: "Does Google Maps matter for plumbers?",
       answer:
         "Yes. Emergency and “near me” intent often skips the organic results and goes to the pack. An incomplete listing is an expensive leak.",
@@ -276,7 +281,7 @@ export const roofing: Industry = {
   name: "Roofing",
   navLabel: "Roofing SEO",
   title: "SEO for Roofers in DFW",
-  h1: "Local SEO for roofing companies",
+  h1: "SEO for roofers in Dallas–Fort Worth",
   lede: "Get found when a homeowner searches for a roof repair, a replacement, or a storm inspection — then look like the company they should call.",
   description:
     "Local SEO for roofers in Dallas–Fort Worth. Storm-season search, Google Maps, reviews, and service pages for repair, replacement, and inspection — without storm-chaser tactics.",
@@ -368,6 +373,11 @@ export const roofing: Industry = {
     "We specialize in helping roofing companies stay findable in Google Search and Maps year-round — not only during hail week — in the cities they actually work.",
   faqs: [
     {
+      question: "Do you do SEO for roofers?",
+      answer:
+        "Yes. SEO for roofers in Dallas–Fort Worth is local SEO for roofing companies: repair, replacement, and inspection search, Google Maps, and pages that look like a company that was here before the last hail cell.",
+    },
+    {
       question: "Does Google Maps matter for roofers?",
       answer:
         "Yes. “Roofer near me” and roof repair searches often start on Maps. A complete profile with real photos and reviews is table stakes against storm-season noise.",
@@ -398,7 +408,7 @@ export const electrical: Industry = {
   name: "Electrical",
   navLabel: "Electrical SEO",
   title: "SEO for Electricians in DFW",
-  h1: "Local SEO for electrical contractors",
+  h1: "SEO for electricians in Dallas–Fort Worth",
   lede: "Get found when a homeowner searches for a panel upgrade, an EV charger, or an electrician who can show up after an outage.",
   description:
     "Local SEO for electricians in Dallas–Fort Worth. Panel upgrades, EV chargers, emergency electrical search, Google Maps, and service pages that match licensed work — not a generic contractor listing.",
@@ -485,6 +495,11 @@ export const electrical: Industry = {
   outreachLine:
     "We specialize in helping electrical contractors get found in Google Search and Maps for the work they actually want — repair, panel upgrades, and EV installs in the cities they drive.",
   faqs: [
+    {
+      question: "Do you do SEO for electricians?",
+      answer:
+        "Yes. SEO for electricians in Dallas–Fort Worth is local SEO for licensed electrical companies: outage search, panel upgrades, EV chargers, Google Maps, and pages that match the work you actually want.",
+    },
     {
       question: "Does Google Maps matter for electricians?",
       answer:

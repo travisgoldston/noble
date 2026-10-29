@@ -1,10 +1,30 @@
 import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
 import { Button } from "@/components/Button";
+import { FaqList } from "@/components/FaqList";
+import { JsonLd, breadcrumbSchema, faqSchema, serviceSchema } from "@/components/JsonLd";
 import { RelatedLinks } from "@/components/RelatedLinks";
 import { capabilities, locations, searchSurfaces } from "@/lib/content";
 import { industryLinksForCity } from "@/lib/industries";
-import { cityPath, cta, paths } from "@/lib/site";
+import { cityPath, cta, industryPath, paths } from "@/lib/site";
+
+const dallasFaqs = [
+  {
+    question: "Are you a Dallas SEO company?",
+    answer:
+      "Yes. Dallas SEO company work at NOBLE is local SEO for Dallas businesses: on-page SEO, technical SEO, Google Business Profile, and Maps. We serve Dallas remotely as part of DFW coverage.",
+  },
+  {
+    question: "What does SEO Dallas actually include?",
+    answer:
+      "The same product as the rest of DFW, written for how Dallas searches: neighborhood language, honest service areas, and pages that match the jobs you want — not a “Dallas, TX” slogan on a thin template.",
+  },
+  {
+    question: "Do you have a Dallas office?",
+    answer:
+      "No. We do not claim a physical Dallas office or a virtual suite used to manufacture Maps presence. We work remotely and still write Dallas pages around how people here actually search.",
+  },
+];
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -43,15 +63,49 @@ export default async function LocationCityPage({ params }: Props) {
     .map((nearSlug) => locations.find((item) => item.slug === nearSlug))
     .filter((item): item is NonNullable<typeof item> => Boolean(item));
 
+  const isDallas = slug === "dallas";
+  const industryItems = [
+    { href: paths.industries, label: "All industries" },
+    ...industryLinksForCity(city.slug),
+    ...(isDallas
+      ? [
+          { href: industryPath("contractor-seo"), label: "SEO for contractors" },
+          { href: industryPath("roofing-seo"), label: "SEO for roofers" },
+          { href: industryPath("electrical-seo"), label: "SEO for electricians" },
+          { href: industryPath("home-services"), label: "Home service SEO" },
+        ]
+      : []),
+  ];
+
   return (
     <div>
+      {isDallas ? (
+        <JsonLd
+          data={[
+            breadcrumbSchema([
+              { name: "Home", href: "/" },
+              { name: "Areas", href: "/areas" },
+              { name: "Dallas SEO", href: cityPath("dallas") },
+            ]),
+            serviceSchema({
+              name: "Dallas SEO",
+              description:
+                "Dallas SEO company work for local businesses: on-page SEO, Maps, and Google Business Profile.",
+              url: cityPath("dallas"),
+            }),
+            faqSchema(dallasFaqs),
+          ]}
+        />
+      ) : null}
       <section className="bg-cream">
         <div className="mx-auto max-w-site px-6 py-20">
           <p className="text-[0.72rem] font-medium tracking-[0.22em] text-forest uppercase">
             {city.name}, Texas
           </p>
           <h1 className="font-serif mt-4 max-w-[18ch] text-5xl tracking-tightest md:text-6xl">
-            Local SEO for {city.name} businesses.
+            {isDallas
+              ? "Dallas SEO for local businesses."
+              : `Local SEO for ${city.name} businesses.`}
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-stone">{city.intro}</p>
           <div className="mt-8 flex flex-wrap gap-4">
@@ -65,7 +119,28 @@ export default async function LocationCityPage({ params }: Props) {
       <section className="py-16">
         <div className="mx-auto max-w-site px-6">
           <article className="max-w-3xl">
-            <h2 className="font-serif text-3xl tracking-tight">
+            {isDallas ? (
+              <>
+                <h2 className="font-serif text-3xl tracking-tight">
+                  Dallas SEO company work
+                </h2>
+                <p className="mt-4 text-stone">
+                  Dallas SEO company work is neighborhood work. Uptown, Deep
+                  Ellum, Bishop Arts, East Dallas, and Oak Cliff do not search
+                  the same way. NOBLE does local SEO for Dallas businesses —
+                  on-page SEO, technical SEO, Google Business Profile, and Maps —
+                  without treating the city as a keyword swapped into a
+                  template.
+                </p>
+              </>
+            ) : null}
+            <h2
+              className={
+                isDallas
+                  ? "font-serif mt-12 text-3xl tracking-tight"
+                  : "font-serif text-3xl tracking-tight"
+              }
+            >
               How {city.name} actually searches
             </h2>
             {city.places.map((paragraph) => (
@@ -129,10 +204,7 @@ export default async function LocationCityPage({ params }: Props) {
           />
           <RelatedLinks
             title={`${city.name} industries`}
-            items={[
-              { href: paths.industries, label: "All industries" },
-              ...industryLinksForCity(city.slug),
-            ]}
+            items={industryItems}
           />
           <RelatedLinks
             title="Nearby DFW cities"
@@ -146,6 +218,7 @@ export default async function LocationCityPage({ params }: Props) {
           />
         </div>
       </section>
+      {isDallas ? <FaqList items={dallasFaqs} title="Dallas SEO questions" /> : null}
       <section className="bg-cream">
         <div className="mx-auto max-w-site px-6 py-16">
           <div className="flex flex-col items-start justify-between gap-6 rounded-xl bg-ink px-8 py-10 text-white md:flex-row md:items-center">

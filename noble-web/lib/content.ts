@@ -110,6 +110,7 @@ export const whoWeHelp = [
   { label: "Plumbing", href: industryPath("plumbing-seo") },
   { label: "Roofing", href: industryPath("roofing-seo") },
   { label: "Electrical", href: industryPath("electrical-seo") },
+  { label: "Contractors", href: industryPath("contractor-seo") },
   { label: "Dental", href: industryPath("dental-seo") },
   { label: "Home Services", href: industryPath("home-services") },
   { label: "Professional Services", href: industryPath("professional-services") },

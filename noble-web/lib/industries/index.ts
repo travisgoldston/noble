@@ -3,6 +3,7 @@ import { industryCityPath, industryPath } from "@/lib/site";
 import { industryCities } from "./cities";
 import { industryGroups } from "./groups";
 import { dental, medSpa, optometry, orthodontics } from "./healthcare";
+import { contractors } from "./contractors";
 import { electrical, hvac, plumbing, roofing } from "./home-services";
 import type { Industry, IndustryCity, IndustryGroup, IndustryGroupId } from "./types";
 
@@ -13,6 +14,7 @@ export const industries: Industry[] = [
   roofing,
   optometry,
   electrical,
+  contractors,
   medSpa,
   orthodontics,
 ];
@@ -96,7 +98,6 @@ export const tier2Backlog = [
   { name: "Veterinary practices", group: "healthcare" as const },
   { name: "Auto repair", group: "home-services" as const },
   { name: "Landscaping", group: "home-services" as const },
-  { name: "Remodeling", group: "home-services" as const },
   { name: "Foundation repair", group: "home-services" as const },
   { name: "Pool companies", group: "home-services" as const },
   { name: "Law firms", group: "professional-services" as const },

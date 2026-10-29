@@ -5,13 +5,13 @@ export const industryGroups: IndustryGroup[] = [
     slug: "home-services",
     name: "Home services",
     title: "Home Service SEO in DFW",
-    h1: "Home service companies get found when the job is urgent.",
+    h1: "Home service SEO for DFW trades.",
     description:
-      "Local SEO for HVAC, plumbing, roofing, and electrical companies in Dallas–Fort Worth. Google Maps, service-area targeting, and pages that match how homeowners actually search.",
+      "Home service SEO for HVAC, plumbing, roofing, electrical, and general contractors in Dallas–Fort Worth. Google Maps, service-area targeting, and pages that match how homeowners actually search.",
     lede: "A booked job is worth real money. The search happens on a phone, often the same afternoon. Local SEO is how the right company shows up for that search instead of a clearer competitor.",
     body: [
       "Home service search is practical. People type the problem, the trade, and often a city or “near me.” Google Business Profile and Maps usually decide the first three names they see. The website has to convert the click that follows.",
-      "The product is local SEO for local businesses that depend on Search and Maps. HVAC, plumbing, roofing, and electrical are published examples — the same system, different search behavior. Other home service trades are a fit conversation, not a closed door.",
+      "The product is local SEO for local businesses that depend on Search and Maps. HVAC, plumbing, roofing, electrical, and general contractors are published examples — the same system, different search behavior. Other home service trades are a fit conversation, not a closed door.",
       "Service-area businesses are the usual setup. Fake storefront pins are not. Distance is real. Confusion about categories, cities, and services is optional.",
     ],
   },

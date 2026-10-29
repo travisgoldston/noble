@@ -16,6 +16,11 @@ import { notFound } from "next/navigation";
 
 const faqs = [
   {
+    question: "Are you a Fort Worth SEO company?",
+    answer:
+      "Yes. We do local SEO for Fort Worth businesses — Maps, Google Business Profile, on-page SEO, and technical work. We work remotely and do not invent a Fort Worth office to look local.",
+  },
+  {
     question: "Does NOBLE have a Fort Worth office?",
     answer:
       "No. We do not claim a physical Fort Worth office, a virtual office, or a residential address used to manufacture Maps presence. We work remotely and serve Fort Worth businesses as part of DFW coverage.",
@@ -77,6 +82,11 @@ const fortWorthIndustryNav = [
     href: industryPath("electrical-seo"),
     label: "Electrical SEO",
     lede: "Panel, EV charger, and outage searches for licensed shops.",
+  },
+  {
+    href: industryPath("contractor-seo"),
+    label: "Contractor SEO",
+    lede: "Remodel and addition search for licensed general contractors — not a swapped trade page.",
   },
   {
     href: industryPath("med-spa-seo"),
@@ -157,6 +167,16 @@ export default function FortWorthSeoPage() {
         <div className="mx-auto max-w-site px-6">
           <article className="max-w-3xl">
             <h2 className="font-serif text-3xl tracking-tight">
+              Fort Worth SEO company
+            </h2>
+            <p className="mt-4 text-stone">
+              Fort Worth SEO company work is local SEO for businesses that
+              actually serve Fort Worth: Google Business Profile, Maps,
+              on-page service pages, and technical fixes. We work remotely. We
+              do not rent a downtown suite to manufacture a pin.
+            </p>
+
+            <h2 className="font-serif mt-12 text-3xl tracking-tight">
               What NOBLE does in Fort Worth
             </h2>
             <p className="mt-4 text-stone">

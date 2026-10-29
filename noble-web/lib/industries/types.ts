@@ -10,6 +10,7 @@ export type IndustryId =
   | "roofing"
   | "optometry"
   | "electrical"
+  | "contractor"
   | "med-spa"
   | "orthodontics";
 
