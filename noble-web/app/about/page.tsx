@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/Button";
 import { ContactChannels } from "@/components/ContactChannels";
 import { JsonLd } from "@/components/JsonLd";
@@ -89,10 +90,13 @@ export default function AboutPage() {
             Your story is the work. Ours is just the team.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-stone">
-            NOBLE does SEO for Dallas–Fort Worth local businesses. We stay
-            small on purpose so the work stays direct: on-page SEO, technical
-            SEO, and the Google Business Profile and Maps work that supports
-            them.
+            <Link href={paths.home} className="text-forest-deep hover:text-forest">
+              NOBLE SEO
+            </Link>{" "}
+            is the local SEO practice we run for Dallas–Fort Worth businesses.
+            We stay small on purpose so the work stays direct: on-page SEO,
+            technical SEO, and the Google Business Profile and Maps work that
+            supports them.
           </p>
         </div>
       </section>

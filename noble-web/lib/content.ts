@@ -133,6 +133,11 @@ export const supportingTactics = [
 
 export const homeFaqs = [
   {
+    question: "What is NOBLE SEO?",
+    answer:
+      "NOBLE SEO is a small Dallas–Fort Worth local SEO practice run by Travis and Victoria Goldston. The work is on-page SEO, technical SEO, Google Business Profile, and Maps — served remotely. It is not a full-service ad agency.",
+  },
+  {
     question: "What does NOBLE actually do?",
     answer:
       "NOBLE does SEO for Dallas–Fort Worth local businesses. The core work is on-page SEO and technical SEO. Google Business Profile and local SEO (Maps and the Local Pack) support that. We do not sell social media, PPC, or a pile of unrelated marketing services.",
